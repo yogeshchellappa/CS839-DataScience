@@ -17,11 +17,9 @@ def find_entities(s):
     for i, c in enumerate(s):
         if s[i] == '<':
             stack.append(i)
-            print("stack at " + c + ": " + '[%s]' % ', '.join(map(str, stack)))
         elif s[i] == '/' and s[i+1] == '>':
             try:
                 tag_locs.append((stack.pop(), i))
-                print("locs at " + c + ": " + '[%s]' % ', '.join(map(str, tag_locs)))
             except IndexError:
                 raise IndexError('Too many closing tags at index {} in {}'.format(i,s))
         if not stack and tag_locs:
@@ -29,7 +27,6 @@ def find_entities(s):
             entity = clean(s[entity_loc[0]:entity_loc[1]])
             entityList.append(({entity : [entity] + [clean(s[loc[0]:loc[1]]) for loc in tag_locs]}))
             tag_locs = []
-            print("entity list: " + '[%s]' % ', '.join(map(str, entityList)))
     if stack:
         print("stack: " + '[%s]' % ', '.join(map(str, stack)))
         raise IndexError('Unbalanced tags at index {} in {}'.format(stack.pop(),s))
@@ -108,14 +105,16 @@ def getTrainingData(reviewFolderPath):
 		record = OrderedDict()
 
 		# File name serves as record ID
-		record["id"] = file[-7:-4]
+		record["id"] = file[-5:-4]
 		
-		record["review"] = review
+		record["review"] = review.replace("<","").replace("/>","")
 		record["foodItems"] = top_lvl_fo
 		record["indices"] = indices
 		
 		reviewDicts.append(record)
 	
+	print(reviewDicts)
+
 	with open('reviews_shantanu.json', 'w') as outfile:
 		json.dump(reviewDicts, outfile)
 	

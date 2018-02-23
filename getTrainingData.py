@@ -6,6 +6,34 @@ import re
 import sys
 from collections import OrderedDict
 
+def clean(s):
+    return re.sub('[ \t\n]+', ' ', re.sub(r'[\<\/\>]', ' ', s)).strip()
+
+def find_entities(s):
+    n = 0
+    stack = []
+    tag_locs = []
+    entityList = []
+    for i, c in enumerate(s):
+        if s[i] == '<':
+            stack.append(i)
+            print("stack at " + c + ": " + '[%s]' % ', '.join(map(str, stack)))
+        elif s[i] == '/' and s[i+1] == '>':
+            try:
+                tag_locs.append((stack.pop(), i))
+                print("locs at " + c + ": " + '[%s]' % ', '.join(map(str, tag_locs)))
+            except IndexError:
+                raise IndexError('Too many closing tags at index {} in {}'.format(i,s))
+        if not stack and tag_locs:
+            entity_loc = tag_locs.pop() 
+            entity = clean(s[entity_loc[0]:entity_loc[1]])
+            entityList.append(({entity : [entity] + [clean(s[loc[0]:loc[1]]) for loc in tag_locs]}))
+            tag_locs = []
+            print("entity list: " + '[%s]' % ', '.join(map(str, entityList)))
+    if stack:
+        print("stack: " + '[%s]' % ', '.join(map(str, stack)))
+        raise IndexError('Unbalanced tags at index {} in {}'.format(stack.pop(),s))
+    return entityList
 
 def preprocessingRules():
 	"""
@@ -44,6 +72,8 @@ def getTrainingData(reviewFolderPath):
 		filePointer = open(file, 'r')
 		review = filePointer.read()
 		filePointer.close()
+
+		top_lvl_fo = [list(k.keys())[0] for k in find_entities(review)]
 		
 		review = review.lower()
 		review = review.translate(translator)
@@ -81,7 +111,7 @@ def getTrainingData(reviewFolderPath):
 		record["id"] = file[-7:-4]
 		
 		record["review"] = review
-		record["foodItems"] = foodItems
+		record["foodItems"] = top_lvl_fo
 		record["indices"] = indices
 		
 		reviewDicts.append(record)
@@ -96,7 +126,5 @@ if len(sys.argv) < 2:
 	sys.exit(0)
 else:
 	getTrainingData(sys.argv[1])
-	
-	
 	
 	

@@ -11,10 +11,10 @@ def preprocessingRules():
 	"""
 	Returns translator object which encapsulates all the string cleaning we do
 	"""
-	unnecessaryCharacters = string.punctuation + string.digits + '\t\n\r'
+	unnecessaryCharacters = string.punctuation + string.digits + '\n\t\r'
 
 	# We need to retain the punctuation representing the tags we have used to mark up the dataset.
-	unnecessaryCharacters = unnecessaryCharacters.replace("<","").replace(">","").replace("/","").replace(".","")
+	unnecessaryCharacters = unnecessaryCharacters.replace("<","").replace(">","").replace("/","").replace(".",'')
 
 	# translator will be used to map the characters in unnecessaryCharacters to None
 	translator = str.maketrans('', '', unnecessaryCharacters)
@@ -48,6 +48,7 @@ def getTrainingData(reviewFolderPath):
 		review = review.lower()
 		review = review.translate(translator)
 		
+		review = review.replace("."," ")
 		# Stores the food items detected
 		foodItems = []
 		

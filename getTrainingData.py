@@ -80,7 +80,10 @@ def getTrainingData(reviewFolderPath):
 		# File name serves as record ID
 		record["id"] = file[-7:-4]
 		
-		record["review"] = review
+		# Since we skipped / as it was present in the tags, now we remove / as well
+		review = review.replace("/"," ")
+		
+		record["review"] = review.replace("/","")
 		record["foodItems"] = foodItems
 		record["indices"] = indices
 		

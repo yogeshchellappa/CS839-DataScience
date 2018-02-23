@@ -1,5 +1,5 @@
-This is a decent very casual lunch spot.  The chips and salsa are solid.  We opted to add queso for more flavor.  The queso has good flavor.
+This is a decent very casual lunch spot.  The <chips and salsa/> are solid.  We opted to add <queso/> for more flavor.  The <queso/> has good flavor.
 
-We split an order of steak nachos.  They are prepared differently than most nachos.  There are four large chips with toppings stacked high on them.  The chips have quite a bit of steak on them.  They have ok flavor.  Not bad, but not a lot either.
+We split an order of <steak nachos/>.  They are prepared differently than most <nachos/>.  There are four large <chips/> with toppings stacked high on them.  The <chips/> have quite a bit of <steak/> on them.  They have ok flavor.  Not bad, but not a lot either.
 
 They have an assortment of your standard drinks found at most Mexican joints.  The prices are inline with other casual casino options.

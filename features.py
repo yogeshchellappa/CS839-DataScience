@@ -34,11 +34,9 @@ class Features(object):
         '''
 
         data = pd.read_csv(filename)
-
-        tf = data.groupby(['docID', 'term']).count()
-        tf = tf.groupby(['term']).mean()
-        self.tf = dict(zip(tf['term'], tf['mean']))
-
+        tf = data.groupby(['docID', 'term'], as_index=False).count()
+        tf = tf.groupby(['term'], as_index=False).mean()
+        self.tf = dict(zip(tf['term'], tf['position']))
         return self.tf
 
     def calculateIDF(self, filename):
@@ -48,14 +46,17 @@ class Features(object):
         :return: idf dict for all words. stores them as well
         '''
         data = pd.read_csv(filename)
+        df = data.groupby(['term'], as_index=False)['docID'].count()
 
-        tf = data.groupby(['term'])['docID'].count()
-        tf['count'] = 1.0/tf['count']
-        self.idf = dict(zip(tf['term'], tf['count']))
+        df['docID'] = 1.0/df['docID']
+        self.idf = dict(zip(df['term'], df['docID']))
 
         return self.idf
 
 
 
+#f = Features()
+#print f.calculateTF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
+#print f.calculateIDF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
 
 

@@ -14,7 +14,7 @@ def preprocessingRules():
 	unnecessaryCharacters = string.punctuation + string.digits + '\t\n\r'
 
 	# We need to retain the punctuation representing the tags we have used to mark up the dataset.
-	unnecessaryCharacters = unnecessaryCharacters.replace("<","").replace(">","").replace("/","")
+	unnecessaryCharacters = unnecessaryCharacters.replace("<","").replace(">","").replace("/","").replace(".","")
 
 	# translator will be used to map the characters in unnecessaryCharacters to None
 	translator = str.maketrans('', '', unnecessaryCharacters)

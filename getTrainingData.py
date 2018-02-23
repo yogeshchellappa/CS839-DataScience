@@ -116,7 +116,7 @@ def getTrainingData(reviewFolderPath):
 		
 		reviewDicts.append(record)
 	
-	with open('reviews.json', 'w') as outfile:
+	with open('reviews_shantanu.json', 'w') as outfile:
 		json.dump(reviewDicts, outfile)
 	
 	print("Successfully created JSON file!")

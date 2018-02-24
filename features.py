@@ -37,6 +37,10 @@ class Features(object):
         tf = data.groupby(['docID', 'term'], as_index=False).count()
         tf = tf.groupby(['term'], as_index=False).mean()
         self.tf = dict(zip(tf['term'], tf['position']))
+        label_c = data.groupby(['label', 'term'], as_index=False).count()
+        label_c = label_c.groupby(['label']).count()
+        print label_c
+        print len(self.tf.keys())
         return self.tf
 
     def calculateIDF(self, filename):
@@ -51,12 +55,14 @@ class Features(object):
         df['docID'] = 1.0/df['docID']
         self.idf = dict(zip(df['term'], df['docID']))
 
+        print len(self.idf.keys())
         return self.idf
 
 
 
-#f = Features()
-#print f.calculateTF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
-#print f.calculateIDF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
-
+f = Features()
+f.calculateTF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
+#f.calculateIDF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
+f.calculateTF('trainingdata_nostopwords_atall.csv')
+f.calculateIDF('trainingdata_nostopwords_atall.csv')
 

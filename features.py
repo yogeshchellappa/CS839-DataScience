@@ -38,6 +38,7 @@ class Features(object):
         tf = tf.groupby(['term'], as_index=False).mean()
         self.tf = dict(zip(tf['term'], tf['position']))
         label_c = data.groupby(['label', 'term'], as_index=False).count()
+        print label_c
         label_c = label_c.groupby(['label']).count()
         print label_c
         print len(self.tf.keys())
@@ -63,6 +64,6 @@ class Features(object):
 f = Features()
 f.calculateTF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
 #f.calculateIDF('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
-f.calculateTF('trainingdata_nostopwords_atall.csv')
-f.calculateIDF('trainingdata_nostopwords_atall.csv')
+f.calculateTF('trainingdata_nostopwords_nopronouns.csv')
+f.calculateIDF('trainingdata_nostopwords_nopronouns.csv')
 

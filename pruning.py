@@ -6,38 +6,77 @@ from stop_words import get_stop_words
 import pandas as pd
 
 class Prune(object):
-    def __init__(self):
-        ''''''
+    def __init__(self, filename):
+        '''
+        '''
+        self.pronouns = set(["i", "you", "he", "she", "it", "we", "they", "what",
+                         "who", "me", "him", "her", "it", "us", "you", "them",
+                         "whom", "mine", "yours", "his", "hers", "ours", "theirs",
+                         "this", "that", "these", "those", "who", "whom", "which",
+                         "what", "whose", "whoever", "whatever", "whichever", "whomever",
+                         "myself", "yourself", "himself", "herself", "itself", "ourselves",
+                         "themselves", "each other", "one another", "anything", "everybody",
+                         "another", "each", "few", "many", "none", "some", "all", "any",
+                         "anybody", "anyone", "everyone", "everything", "no one", "nobody",
+                         "nothing", "none", "other", "others", "several", "somebody", "someone",
+                         "something", "most", "enough", "little", "more", "both", "either",
+                         "neither", "one", "much", "such"])
 
-    def removeStopwords(self, filename):
+        self.data = pd.read_csv(filename)
+    def removeStopwords(self):
         stopwords = get_stop_words('en')
 
-        data = pd.read_csv(filename)
+        #data =
         todrop = []
 
-        for term in data['term']:
+        for term in self.data['term']:
             parts = term.split(" ")
 
             flag = False
             for p in parts:
                 if p in stopwords:
                     flag = True
-
+                    break
                 else:
                     flag = False
-                    break
 
             if flag:
                 todrop.append(term)
         print len(todrop)
-        print len(data)
-        data = data[~data.term.isin(todrop)]
-        print len(data)
+        print len(self.data)
+        self.data = self.data[~self.data.term.isin(todrop)]
+        print len(self.data)
         #data[data.term not in todrop]
 
-        data.to_csv('trainingdata_nostopwords.csv')
+        #data.to_csv('trainingdata_nostopwords.csv')
 
-p = Prune()
-p.removeStopwords('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
+    def removePronouns(self):
+        todrop = []
 
+        for term in self.data['term']:
+            parts = term.split(" ")
+
+            flag = False
+            for p in parts:
+                if p in self.pronouns:
+                    flag = True
+                    break
+                else:
+                    flag = False
+
+            if flag:
+                todrop.append(term)
+        print len(todrop)
+        print len(self.data)
+        self.data = self.data[~self.data.term.isin(todrop)]
+        print len(self.data)
+
+    def saveData(self):
+        self.data.to_csv('trainingdata_nostopwords_nopronouns.csv')
+
+p = Prune('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
+p.removeStopwords()
+p.removePronouns()
+#p.changeLabels()
+p.saveData()
 

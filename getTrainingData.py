@@ -107,7 +107,7 @@ def getTrainingData(reviewFolderPath):
 		# File name serves as record ID
 		record["id"] = file[-5:-4]
 		
-		record["review"] = review.replace("<","").replace("/>","")
+		record["review"] = re.sub(r'[\<\/\>\.]', ' ', review)
 		record["foodItems"] = top_lvl_fo
 		record["indices"] = indices
 		
@@ -125,5 +125,3 @@ if len(sys.argv) < 2:
 	sys.exit(0)
 else:
 	getTrainingData(sys.argv[1])
-	
-	

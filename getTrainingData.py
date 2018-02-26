@@ -39,14 +39,18 @@ def getTrainingData(reviewFolderPath):
 	
 	# Read the files
 	reviewFiles = glob.glob(reviewFolderPath + "*.txt")
+	count = 0
+	noncount = 0
+	capitalizedWord = 0
 	
 	for file in reviewFiles:
 		filePointer = open(file, 'r')
 		review = filePointer.read()
 		filePointer.close()
 		
-		review = review.lower()
 		review = review.translate(translator)
+		
+		capitalizedWord += sum(1 for c in review if c.isupper())
 		
 		review = review.replace("."," ")
 		# Stores the food items detected
@@ -68,6 +72,12 @@ def getTrainingData(reviewFolderPath):
 			
 			foodItems.append(foodItemWithoutTags)
 		
+		for i in foodItems:
+			if i[0].isupper():
+				count += 1
+			else:
+				noncount += 1
+				
 		# Next, get the indices of the food items
 		for item in foodItems:
 			indices += [[i.start(), i.end()] for i in list(re.finditer(item, review))]
@@ -79,7 +89,8 @@ def getTrainingData(reviewFolderPath):
 		record = OrderedDict()
 
 		# File name serves as record ID
-		record["id"] = file[-7:-4]
+		fileName = file.split("/")[-1].split("\\")[-1].split(".")[0]
+		record["id"] = fileName
 		
 		# Since we skipped / as it was present in the tags, now we remove / as well
 		review = review.replace("/"," ")
@@ -94,6 +105,9 @@ def getTrainingData(reviewFolderPath):
 		json.dump(reviewDicts, outfile)
 	
 	print("Successfully created JSON file!")
+	print("Food with uppercase: " + str(count))
+	print("Food without uppercase: " + str(noncount))
+	print("All capitalized words: " + str(capitalizedWord))
 	
 if len(sys.argv) < 2:
 	print("Usage:\npython getTrainingData <Path to folder with reviews>")

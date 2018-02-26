@@ -1,3 +1,4 @@
+doc_id,index_in_doc,term,is_food
 9,0,not,False
 9,4,sure,False
 9,9,what,False

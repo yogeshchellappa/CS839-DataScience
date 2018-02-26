@@ -27,8 +27,8 @@ class Prune(object):
 	
 	def removeStopwords(self):
         stopwords = get_stop_words('en')
-
-        #data =
+		stopwords = [i.replace("'","") for i in stopwords]
+        
         todrop = []
 
         for term in self.data['term']:

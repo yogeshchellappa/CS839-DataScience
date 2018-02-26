@@ -14,7 +14,7 @@ class Prune(object):
                          "what", "whose", "whoever", "whatever", "whichever", "whomever","eat","ate",
                          "myself", "yourself", "himself", "herself", "itself", "ourselves","diet","vegan",
                          "themselves", "each other", "one another", "anything", "everybody", "special",
-                         "another", "each", "few", "many", "none", "some", "all", "any",
+                         "another", "each", "few", "many", "none", "some", "all", "any","hungry","fast","slow",
                          "anybody", "anyone", "everyone", "everything", "no one", "nobody","service",
                          "nothing", "none", "other", "others", "several", "somebody", "someone",
                          "something", "most", "enough", "little", "more", "both", "either",

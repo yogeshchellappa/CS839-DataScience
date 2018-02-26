@@ -11,9 +11,9 @@ Also splits the training data into training and validation sets
 import sklearn
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression, LinearRegression
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.model_selection import StratifiedShuffleSplit
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifiers
 
 class Data(object):
     def __init__(self, train_features, train_labels, test_features, test_labels):
@@ -133,3 +133,22 @@ class Classifiers(object):
 
         return cv_acc
 
+		
+	def gradientBoostingClassifier(self, n_estimators=50, *kwargs):
+		gradBoostingClf = GradientBoostingClassifier(n_estimators = n_estimators)
+		
+		accuracy = 0
+        print ('Learning using Gradient Boosting')
+
+        for f in range(self.folds):
+            gradBoostingClf.fit(self.train_data[f], self.train_data_labels[f])
+            print ('Training accuracy - %f' % gradBoostingClf.score(self.train_data[f], self.train_data_labels[f]))
+            print ('Validation accuracy - %f' % gradBoostingClf.score(self.valid_data[f], self.valid_data_labels[f]))
+            accuracy += gradBoostingClf.score(self.valid_data[f], self.valid_data_labels[f])
+
+        cv_acc = 1.0 * accuracy / self.folds
+        print ('Cross validated accuracy - %f' % cv_acc)
+        print ('-----------------------------')
+
+        return cv_acc
+	

@@ -47,7 +47,7 @@ class Classifiers(object):
         self.folds = 5
 
     def print_report(self, scores):
-        print scores
+        print (scores)
         print ('Classification report - ')
         print (' Precision Recall f1-score support')
 

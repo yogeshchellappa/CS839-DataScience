@@ -7,7 +7,7 @@ import pandas as pd
 
 class Prune(object):
     def __init__(self, filename):
-        self.pronouns = set(["i", "you", "he", "she", "it", "we", "they", "what","time","staff",
+        self.pronouns = set(["i", "you", "he", "she", "it", "we", "they", "what","time","staff","menu","waitress","waiter",
                          "who", "me", "him", "her", "it", "us", "you", "them","even", "order", "ordered",
                          "whom", "mine", "yours", "his", "hers", "ours", "theirs", "know", "never","customer",
                          "this", "that", "these", "those", "who", "whom", "which", "always","love","like",

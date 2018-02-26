@@ -58,7 +58,7 @@ def main(reviewsJsonPath):
 		writer = csv.writer(f)
 		writer.writerows(trainingData)
 	
-	print("Written to reviews.csv")
+	print("Written to reviews_wp.csv")
 	
 if len(sys.argv) < 2:
 	print("Usage:\npython nGramsGenerator <Path to reviews.json file>")

@@ -7,15 +7,15 @@ import pandas as pd
 
 class Prune(object):
     def __init__(self, filename):
-        self.pronouns = set(["i", "you", "he", "she", "it", "we", "they", "what",
-                         "who", "me", "him", "her", "it", "us", "you", "them",
-                         "whom", "mine", "yours", "his", "hers", "ours", "theirs",
-                         "this", "that", "these", "those", "who", "whom", "which",
+        self.pronouns = set(["i", "you", "he", "she", "it", "we", "they", "what","time","staff",
+                         "who", "me", "him", "her", "it", "us", "you", "them","even", "order", "ordered",
+                         "whom", "mine", "yours", "his", "hers", "ours", "theirs", "know", "never",
+                         "this", "that", "these", "those", "who", "whom", "which", "always",
                          "what", "whose", "whoever", "whatever", "whichever", "whomever",
                          "myself", "yourself", "himself", "herself", "itself", "ourselves",
                          "themselves", "each other", "one another", "anything", "everybody",
                          "another", "each", "few", "many", "none", "some", "all", "any",
-                         "anybody", "anyone", "everyone", "everything", "no one", "nobody",
+                         "anybody", "anyone", "everyone", "everything", "no one", "nobody","service",
                          "nothing", "none", "other", "others", "several", "somebody", "someone",
                          "something", "most", "enough", "little", "more", "both", "either",
                          "neither", "one", "much", "such"])

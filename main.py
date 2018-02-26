@@ -81,6 +81,8 @@ def main():
     print ('Decision Tree accuracy - %f', dtAcc)
     print ('Random Forest accuracy - %f', rfAcc)
 
+if __name__ == "__main__":
+	main()
 
 
 

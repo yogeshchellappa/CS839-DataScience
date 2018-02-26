@@ -9,8 +9,8 @@ class Prune(object):
     def __init__(self, filename):
         self.pronouns = set(["i", "you", "he", "she", "it", "we", "they", "what","time","staff",
                          "who", "me", "him", "her", "it", "us", "you", "them","even", "order", "ordered",
-                         "whom", "mine", "yours", "his", "hers", "ours", "theirs", "know", "never",
-                         "this", "that", "these", "those", "who", "whom", "which", "always",
+                         "whom", "mine", "yours", "his", "hers", "ours", "theirs", "know", "never","customer",
+                         "this", "that", "these", "those", "who", "whom", "which", "always","love","like",
                          "what", "whose", "whoever", "whatever", "whichever", "whomever","eat","ate",
                          "myself", "yourself", "himself", "herself", "itself", "ourselves","diet","vegan",
                          "themselves", "each other", "one another", "anything", "everybody", "special",

@@ -7,12 +7,10 @@ import pandas as pd
 
 class Prune(object):
     def __init__(self, filename):
-        '''
-        '''
         self.pronouns = set(["i", "you", "he", "she", "it", "we", "they", "what",
                          "who", "me", "him", "her", "it", "us", "you", "them",
-                         "whom", "mine", "yours", "his", "hers", "ours", "theirs","shes",
-                         "this", "that", "these", "those", "who", "whom", "which","ive",
+                         "whom", "mine", "yours", "his", "hers", "ours", "theirs",
+                         "this", "that", "these", "those", "who", "whom", "which",
                          "what", "whose", "whoever", "whatever", "whichever", "whomever",
                          "myself", "yourself", "himself", "herself", "itself", "ourselves",
                          "themselves", "each other", "one another", "anything", "everybody",
@@ -23,9 +21,8 @@ class Prune(object):
                          "neither", "one", "much", "such"])
 
         self.data = pd.read_csv(filename)
-    
-	
-	def removeStopwords(self):
+
+    def removeStopwords(self):
         stopwords = get_stop_words('en')
 
         #data =
@@ -48,6 +45,7 @@ class Prune(object):
         print len(self.data)
         self.data = self.data[~self.data.term.isin(todrop)]
         print len(self.data)
+        #data[data.term not in todrop]
 
         #data.to_csv('trainingdata_nostopwords.csv')
 
@@ -73,10 +71,13 @@ class Prune(object):
         print len(self.data)
 
     def saveData(self):
-        self.data.to_csv('trainingdata_nostopwords_nopronouns.csv')
+        self.data.to_csv('trainingdata_nostopwords_nopronouns_2.csv')
 
-p = Prune('reviews.csv')
+'''
+p = Prune('/Users/sukanya/PycharmProjects/cs839DataScience/reviews.csv')
 p.removeStopwords()
 p.removePronouns()
+#p.changeLabels()
 p.saveData()
+'''
 

@@ -37,7 +37,7 @@ class Features(object):
         :return: idf dict for all words. stores them as well
         '''
         df = data.groupby(['term'], as_index=False)['docID'].count()
-        print df.keys()
+        print(df.keys())
         df['docID'] = 1.0/df['docID']
         df.columns = ['term', 'idf']
 
@@ -50,11 +50,16 @@ class Features(object):
         :return: None
         Calculates all the features of the data
         '''
-        tf = self.calculateTF(data)
-        idf = self.calculateIDF(tf)
+        #tf = self.calculateTF(data)
+        #idf = self.calculateIDF(tf)
+        self.isCapitalized(data)
 
     def prefixSuffix(self, data, origData):
-
+        pass
+		
+    def isCapitalized(self, data):
+        data["isCapitalized"] = data['term'].str.contains('[A-Z]', regex=True)
+		return data
 
 
 

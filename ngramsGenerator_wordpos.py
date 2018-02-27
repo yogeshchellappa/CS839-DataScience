@@ -56,6 +56,7 @@ def main(reviewsJsonPath):
 	# Write to CSV file
 	with open("reviews_wp.csv", "w", newline="") as f:
 		writer = csv.writer(f)
+		writer.writerow(["docID", "position", "term", "label"])
 		writer.writerows(trainingData)
 	
 	print("Written to reviews_wp.csv")

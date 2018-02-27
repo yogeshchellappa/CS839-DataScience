@@ -12,15 +12,6 @@ class Labels(object):
         # Labels dict has - (term, label) pairs
         self.labels = {}
 
-    def extractLabels(self, data):
-        for index, row in data.iterrows():
-            if row['term'] in self.labels:
-                if row['label'] != self.labels[row['term']]:
-                    if row['label'] == True:
-                        self.labels[row['term']] = True
-            else:
-                self.labels[row['term']] = row['label']
-
 class Features(object):
     def __init__(self):
         # Features as - 1. tf 2. idf ...
@@ -33,19 +24,11 @@ class Features(object):
         Feel free to change this as you see fit!
         '''
 
-        #data = pd.read_csv(filename)
-        data = data.groupby(['docID', 'term'], as_index=False).count()
-        data = data.groupby(['term'], as_index=False).mean()
-        tf = dict(zip(data['term'], data['position']))
-
-        for key, value in tf.iteritems():
-            self.features[key] = [value]
-
-        label_c = data.groupby(['label', 'term'], as_index=False).count()
-        print label_c
-        label_c = label_c.groupby(['label']).count()
-        print label_c
-        print len(tf.keys())
+        grouped_data = data.groupby(['docID', 'term'], as_index=False).count()
+        grouped_data = grouped_data.drop(columns = 'label')
+        grouped_data.columns = ['docID', 'term', 'tf']
+        merged = pd.merge(left=data, right=grouped_data, on=['docID', 'term'], how='inner')
+        return merged
 
     def calculateIDF(self, data):
         '''
@@ -54,17 +37,12 @@ class Features(object):
         :return: idf dict for all words. stores them as well
         '''
         df = data.groupby(['term'], as_index=False)['docID'].count()
-
+        print df.keys()
         df['docID'] = 1.0/df['docID']
-        idf = dict(zip(df['term'], df['docID']))
+        df.columns = ['term', 'idf']
 
-        for key, value in idf.iteritems():
-            if key not in self.features:
-                print ('Error, key ' + key + ' not found')
-            else:
-                self.features[key].append(value)
-
-        print len(idf.keys())
+        merged = pd.merge(left=data, right=df, on=['term'], how='inner')
+        return merged
 
     def getAllFeatures(self, data):
         '''
@@ -72,8 +50,13 @@ class Features(object):
         :return: None
         Calculates all the features of the data
         '''
-        self.calculateTF(data)
-        self.calculateIDF(data)
+        tf = self.calculateTF(data)
+        idf = self.calculateIDF(tf)
+
+    def prefixSuffix(self, data, origData):
+
+
+
 
 '''
 f = Features()

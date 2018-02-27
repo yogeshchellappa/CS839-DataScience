@@ -7,6 +7,11 @@
 import sys
 import pruning, features, classifiers
 import numpy as np
+import matplotlib
+import pandas as pd
+
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
 
 def main():
     if len(sys.argv) > 2:
@@ -15,6 +20,9 @@ def main():
     else:
         filename_train = 'reviews_train.csv'
         filename_test = 'reviews_test.csv'
+
+    data_orig = pd.read_csv(filename_train)
+    data_test_orig = pd.read_csv(filename_test)
 
     # Call pruning rules
     prune_train = pruning.Prune(filename_train)
@@ -27,64 +35,34 @@ def main():
 
     # Generate features, labels
     feat_train = features.Features()
-    feat_train.getAllFeatures(prune_train.data)
-    train_lab = features.Labels()
-    train_lab.extractLabels(prune_train.data)
+    feat_train.getAllFeatures(prune_train.data, data_orig, 'prefix_suffix.csv', saveTo='features_train.csv')
 
     feat_test = features.Features()
-    feat_test.getAllFeatures(prune_test.data)
-    test_lab = features.Labels()
-    test_lab.extractLabels(prune_test.data)
+    feat_test.getAllFeatures(prune_test.data, data_test_orig, 'prefix_suffix.csv', saveTo='features_test.csv')
 
     # Split data
-    num_train = len(feat_train.features.keys())
-    num_test = len(feat_test.features.keys())
-    num_features = 2 #Change this after more features are added
 
-
-    features_train = np.zeros(shape = [num_train, num_features], dtype=np.float32)
-    labels_train = np.zeros(shape = [num_train, 1], dtype=np.float32)
-
-    features_test = np.zeros(shape=[num_test, num_features], dtype=np.float32)
-    labels_test = np.zeros(shape=[num_test, 1], dtype=np.float32)
-
-    i = 0
-    all_terms = []
-
-    for key, value in feat_train.iteritems():
-        features_train[i] = value
-        labels_train[i] = train_lab[key]
-        all_terms.append(key)
-        i += 1
-
-    i = 0
-    for key, value in feat_test.iteritems():
-        features_test[i] = value
-        labels_test[i] = test_lab[key]
-
-        all_terms.append(key)
-
-    data = classifiers.Data(features_train, labels_train, features_test, labels_test)
+    data = classifiers.Data(feat_train.features, feat_train.labels, feat_test.features, feat_test.labels)
 
     # Train classifiers
     clf = classifiers.Classifiers(data)
 
-    linRegAcc = clf.linearRegression()
+    #linRegAcc = clf.linearRegression()
     logRegAcc = clf.logisticRegression()
     svmAcc = clf.svm_classify()
     dtAcc = clf.decisionTree()
     rfAcc = clf.randomForest()
+    gradB = clf.gradientBoostingClassifier()
 
-    print ('Linear regression accuracy - %f', linRegAcc)
+    #print ('Linear regression accuracy - %f', linRegAcc)
     print ('Logistic regression accuracy - %f', logRegAcc)
     print ('SVM accuracy - %f', svmAcc)
     print ('Decision Tree accuracy - %f', dtAcc)
     print ('Random Forest accuracy - %f', rfAcc)
+    print ('Gradient Boosting accuracy - %f', gradB)
 
 if __name__ == "__main__":
-	main()
-
-
+    main()
 
 
 

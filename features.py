@@ -128,7 +128,7 @@ class Features(object):
         data['hasDescriptiveSuffix'] = suffix_food_desc
         data['hasIngredient'] = contains_veggie_or_fruit
 
-        return pd.merge(left=data_prune, right=data, left_on=['docID', 'position'], right_on=['docID', 'position'], how='inner')
+        return pd.merge(left=data_prune, right=data, left_on=['docID', 'position'], right_on=['docID', 'position'])
 
     def getAllSubstrings(self, word):
         tok = word.strip().split(' ')
@@ -174,7 +174,8 @@ class Features(object):
         data_cap = self.isCapitalized(data_idf)
         data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
         print(data_final.keys())
-
         data_final.to_csv(saveTo)
         self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
-        self.labels = data_final.as_matrix(columns=['label'])
+        #self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized'])
+        self.labels = data_final.as_matrix(columns=['label_x'])
+        return data_final

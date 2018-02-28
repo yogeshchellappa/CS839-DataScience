@@ -16,6 +16,7 @@ from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import precision_recall_fscore_support
 import numpy as np
+import xgboost as xgb
 
 class Data(object):
     def __init__(self, train_features, train_labels, test_features, test_labels):
@@ -77,7 +78,7 @@ class Classifiers(object):
 
         print ('Learning using SVM')
         for f in range(self.folds):
-            svc.fit(self.train_data[f], self.train_data_labels[f])
+            svc.fit(self.train_data[f], self.train_data_labels[f].tolist())
             print ('Training accuracy - %f' %svc.score(self.train_data[f], self.train_data_labels[f]))
 
             valid_acc = svc.score(self.valid_data[f], self.valid_data_labels[f])
@@ -103,7 +104,7 @@ class Classifiers(object):
         print ('Learning using Logistic Regression')
 
         for f in range(self.folds):
-            logReg.fit(self.train_data[f], self.train_data_labels[f])
+            logReg.fit(self.train_data[f], self.train_data_labels[f].tolist())
             print ('Training accuracy - %f' % logReg.score(self.train_data[f], self.train_data_labels[f]))
             valid_acc = logReg.score(self.valid_data[f], self.valid_data_labels[f])
             valid_pred = logReg.predict(self.valid_data[f])
@@ -128,7 +129,7 @@ class Classifiers(object):
         print ('Learning using Linear Regression')
 
         for f in range(self.folds):
-            linReg.fit(self.train_data[f], self.train_data_labels[f])
+            linReg.fit(self.train_data[f], self.train_data_labels[f].tolist())
             print ('Training accuracy - %f' % linReg.score(self.train_data[f], self.train_data_labels[f]))
             valid_acc = linReg.score(self.valid_data[f], self.valid_data_labels[f])
             valid_pred = linReg.predict(self.valid_data[f])
@@ -154,7 +155,7 @@ class Classifiers(object):
         print ('Learning using Random Forest')
 
         for f in range(self.folds):
-            randForest.fit(self.train_data[f], self.train_data_labels[f])
+            randForest.fit(self.train_data[f], self.train_data_labels[f].tolist())
             print ('Training accuracy - %f' % randForest.score(self.train_data[f], self.train_data_labels[f]))
             valid_acc = randForest.score(self.valid_data[f], self.valid_data_labels[f])
             valid_pred = randForest.predict(self.valid_data[f])
@@ -181,7 +182,7 @@ class Classifiers(object):
         print ('Learning using Random Forest')
 
         for f in range(self.folds):
-            decTree.fit(self.train_data[f], self.train_data_labels[f])
+            decTree.fit(self.train_data[f], self.train_data_labels[f].tolist())
             print ('Training accuracy - %f' % decTree.score(self.train_data[f], self.train_data_labels[f]))
             valid_acc = decTree.score(self.valid_data[f], self.valid_data_labels[f])
             valid_pred = decTree.predict(self.valid_data[f])
@@ -208,7 +209,7 @@ class Classifiers(object):
         print ('Learning using Gradient Boosting')
 
         for f in range(self.folds):
-            gradBoostingClf.fit(self.train_data[f], self.train_data_labels[f])
+            gradBoostingClf.fit(self.train_data[f], self.train_data_labels[f].tolist())
             print ('Training accuracy - %f' % gradBoostingClf.score(self.train_data[f], self.train_data_labels[f]))
             valid_acc = gradBoostingClf.score(self.valid_data[f], self.valid_data_labels[f])
             valid_pred = gradBoostingClf.predict(self.valid_data[f])
@@ -226,3 +227,29 @@ class Classifiers(object):
 
         return cv_acc
 
+    def xgbClassifier(self, n_estimators=300, max_depth =3, learning_rate=0.05, *kwargs):
+        xgbClf = xgb.XGBClassifier(max_depth=max_depth, n_estimators=n_estimators, learning_rate=learning_rate)
+
+        accuracy = 0
+        scores = []
+
+        print ('Learning using Gradient Boosting')
+
+        for f in range(self.folds):
+            xgbClf.fit(self.train_data[f], self.train_data_labels[f].tolist())
+            print ('Training accuracy - %f' % xgbClf.score(self.train_data[f], self.train_data_labels[f]))
+            valid_acc = xgbClf.score(self.valid_data[f], self.valid_data_labels[f])
+            valid_pred = xgbClf.predict(self.valid_data[f])
+
+            scores.append(precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
+
+            print ('Validation accuracy - %f' % xgbClf.score(self.valid_data[f], self.valid_data_labels[f]))
+
+            accuracy += valid_acc
+
+        self.print_report(scores)
+        cv_acc = 1.0 * accuracy / self.folds
+        print ('Cross validated accuracy - %f' % cv_acc)
+        print ('-----------------------------')
+
+        return cv_acc

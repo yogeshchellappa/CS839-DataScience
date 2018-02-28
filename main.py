@@ -35,13 +35,12 @@ def main():
 
     # Generate features, labels
     feat_train = features.Features()
-    feat_train.getAllFeatures(prune_train.data, data_orig, 'prefix_suffix.csv', saveTo='features_train.csv')
+    feat_train.getAllFeatures(prune_train.data, data_orig, 'prefix_suffix.csv', 'step-1/food_adj.csv', 'step-1/veggie_and_fruits.csv', saveTo='features_train.csv')
 
     feat_test = features.Features()
-    feat_test.getAllFeatures(prune_test.data, data_test_orig, 'prefix_suffix.csv', saveTo='features_test.csv')
+    feat_test.getAllFeatures(prune_test.data, data_test_orig, 'prefix_suffix.csv', 'step-1/food_adj.csv', 'step-1/veggie_and_fruits.csv', saveTo='features_test.csv')
 
     # Split data
-
     data = classifiers.Data(feat_train.features, feat_train.labels, feat_test.features, feat_test.labels)
 
     # Train classifiers

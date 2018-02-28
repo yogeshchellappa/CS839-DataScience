@@ -85,18 +85,19 @@ class Features(object):
         data['isCapitalized'] = data['term'].str.contains('[A-Z]', regex=True)
         return data
 
-    def extract_features(self, data, data_orig, path_adj, path_veg):
+    def attachDictFeatures(self, data_curr, data_pruned, data_orig, path_adj, path_veg):
         '''
         Takes the complete dataframe and returns an array of features
         [prefix_food_desc, contains_veggie_or_fruit]
         '''
-
-        doc_id = 'docID'
-        term_id = 'term_id'
         term = 'term'
-
+        doc_id = 'docID'
+        position = 'position'
         p_doc_id, p_term = None, None
-        prefix_food_desc, contains_veggie_or_fruit = [], []
+        prefix_food_desc, suffix_food_desc, contains_veggie_or_fruit = [], [], []
+
+        # get data with added information
+        data_pos = self.getPosBeforeAfter(1, 1, data_pruned, data_orig)
 
         # read list of words describing food
         food_adj = pd.read_csv(path_adj)['words'].tolist()
@@ -105,50 +106,42 @@ class Features(object):
         veggie_and_fruit = pd.read_csv(path_veg)['words'].tolist()
 
         # iterate over each row in the dataframe
-        for index, row in data.iterrows():
-            # get index of current row in original dataframe
-            orig_index = data_orig.index[(data_orig[doc_id] == row[doc_id]) & (data_orig[term_id] == row[term_id])][0]
+        for index, row in data_curr.iterrows():
 
-            # get previous and next rows from original
-            if orig_index > 0:
-                print("index")
-                print(orig_index)
-                p_term = data_orig.iloc[[orig_index-1],:][term].values[0]
-                p_doc_id = data_orig.iloc[[orig_index-1],:][doc_id].values[0]
-            
-            # if not the first word in the document and is contained in food adjectives list
-            if p_doc_id and p_doc_id == row[doc_id] and p_term in food_adj:
-                prefix_food_desc.append(1)
-            else:
-                prefix_food_desc.append(0)
+            # get previous and next terms from the position data object
+            curr = data_pos[(data_pos[doc_id] == row[doc_id]) & (data_pos[position] == row[position])]
+            p_term = curr.iloc[0]['term_before']
+            n_term = curr.iloc[0]['term_after']
+
+            # if term is contained in food adjectives list
+            prefix_food_desc.append(1 if p_term and p_term in food_adj else 0)
+            suffix_food_desc.append(1 if n_term and n_term in food_adj else 0)
 
             # if any sub-string of the word is a vegetable or fruit name
             contains_veggie_or_fruit.append(0)
             for s in self.getAllSubstrings(row[term]):
                 if s in veggie_and_fruit:
+                    print(s + " in " + row[term] + " is a vege/fuit")
                     contains_veggie_or_fruit.pop()
                     contains_veggie_or_fruit.append(1)
                     break
 
-        data['hasDescriptivePrefix'] = prefix_food_desc
-        data['hasIngredient'] = contains_veggie_or_fruit
-        
+        data_curr['hasDescriptivePrefix'] = prefix_food_desc
+        data_curr['hasDescriptiveSuffix'] = suffix_food_desc
+        data_curr['hasIngredient'] = contains_veggie_or_fruit
 
-    def getAllSubstrings(word):
+    def getAllSubstrings(self, word):
         tok = word.strip().split(' ')
-        if len(tok) == 1:
+        if len(tok) < 1:
+            return []
+        elif len(tok) == 1:
             return tok
         else:
             all_toks = list(tok)
-            for i in range(len(tok)):
-                for offset in range(2, len(tok)):
-                    if i+offset > len(tok):
-                        break
-                    else:
-                        all_toks.append(" ".join(tok[i:i+offset]))
-                        all_toks.append(word)
-                        return all_toks
-
+            for s in range(len(tok)):
+                for e in range(s + 2, len(tok) + 1):
+                    all_toks.append(" ".join(tok[s:e]))
+            return all_toks
 
     def getPrefixSuffixFeature(self, data, data_orig, prefixSuffixFile):
         reader = csv.reader(open(prefixSuffixFile), delimiter='\t')
@@ -169,7 +162,7 @@ class Features(object):
 
         return data_pos
 
-    def getAllFeatures(self, data, data_orig, prefixsuffixFile, saveTo):
+    def getAllFeatures(self, data, data_orig, prefixsuffixFile, path_adj, path_veg, saveTo):
         '''
         :param data: pandas data frame
         :return: None
@@ -179,8 +172,9 @@ class Features(object):
         data_tf = self.calculateTF(data_prefsuff)
         data_idf = self.calculateIDF(data_tf)
         data_cap = self.isCapitalized(data_idf)
-        print (data_cap.keys())
+        self.attachDictFeatures(data_cap, data, data_orig, path_adj, path_veg)
+        print(data_cap.keys())
 
         data_cap.to_csv(saveTo)
-        self.features = data_cap.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized'])
+        self.features = data_cap.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
         self.labels = data_cap.as_matrix(columns=['label'])

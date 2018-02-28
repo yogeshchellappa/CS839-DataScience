@@ -9,6 +9,7 @@ import pandas as pd
 import json
 import csv
 import numpy as np
+from imblearn.over_sampling import RandomOverSampler
 
 class Labels(object):
     def __init__(self):
@@ -95,7 +96,7 @@ class Features(object):
         position = 'position'
         p_doc_id, p_term = None, None
         prefix_food_desc, suffix_food_desc, contains_veggie_or_fruit = [], [], []
-
+        
         # join with original data to get positions
         data = self.getPosBeforeAfter(1, 1, data_prune[[doc_id, position, 'term', 'label']], data_orig)
 
@@ -162,12 +163,14 @@ class Features(object):
 
         return data_pos
 
-    def getAllFeatures(self, data, data_orig, prefixsuffixFile, path_adj, path_veg, saveTo):
+    def getAllFeatures(self, data, data_orig, prefixsuffixFile, path_adj, path_veg, saveTo, withRos):
         '''
         :param data: pandas data frame
         :return: None
         Calculates all the features of the data
         '''
+        feat_list = ['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient']
+
         data_prefsuff = self.getPrefixSuffixFeature(data, data_orig, prefixsuffixFile)
         data_tf = self.calculateTF(data_prefsuff)
         data_idf = self.calculateIDF(data_tf)
@@ -175,7 +178,13 @@ class Features(object):
         data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
         print(data_final.keys())
         data_final.to_csv(saveTo)
-        self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
-        #self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized'])
-        self.labels = data_final.as_matrix(columns=['label_x'])
-        return data_final
+
+        if withRos:
+            ros = RandomOverSampler(random_state=42)
+            self.features, self.labels = ros.fit_sample(data_final[feat_list], data_final[data_final.columns[3]])
+            return data_final
+        else:
+            self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
+            self.labels = data_final.as_matrix(columns=['label_x'])
+            return data_final
+            

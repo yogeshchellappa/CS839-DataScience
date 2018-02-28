@@ -13,4 +13,4 @@ Extracting food items as entities from Yelp reviews.
 * [Set J](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step-1/set-J)
 * [Code](https://github.com/yogeshchellappa/CS839-DataScience)
 * [Compressed Files](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step-1/step_1.zip)
-* [Stage 1 Report] (TO DO)
+* [Stage 1 Report](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step-1/Report%20-%20Stage%201.pdf)

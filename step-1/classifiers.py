@@ -16,6 +16,7 @@ from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import precision_recall_fscore_support
 import numpy as np
+import warnings
 
 class Data(object):
     def __init__(self, train_features, train_labels, test_features, test_labels):
@@ -47,8 +48,7 @@ class Classifiers(object):
         self.folds = 5
 
     def print_report(self, scores):
-        print ('Classification report - ')
-        print (' Precision Recall f1-score support')
+        print ('Classification Report: ')
 
         prec_f = prec_nf = rec_f = rec_nf = f1_f = f1_nf = num_f = num_nf = 0
 
@@ -65,10 +65,12 @@ class Classifiers(object):
             num_nf += score[3][0]
             num_f += score[3][1]
 
-        print (' Not Food - %f %f %f %f' %(prec_nf*1.0/5, rec_nf*1.0/5, f1_nf*1.0/5, num_nf*1.0/5))
-        print (' Food - %f %f %f %f' % (prec_f * 1.0 / 5, rec_f * 1.0 / 5, f1_f * 1.0 / 5, num_f * 1.0 / 5))
+        print (' Not Food [precision: %f; recall: %f; F1: %f; support: %f]' %(prec_nf*1.0/5, rec_nf*1.0/5, f1_nf*1.0/5, num_nf*1.0/5))
+        print (' Food\t  [precision: %f; recall: %f; F1: %f; support: %f]' % (prec_f * 1.0 / 5, rec_f * 1.0 / 5, f1_f * 1.0 / 5, num_f * 1.0 / 5))
 
     def print_confusion_matrix(self, true, pred):
+        print ('Confusion Matrix: ')
+
         array = np.zeros(shape=[4, 2, 2], dtype=np.float)
         matrix = np.zeros(shape=[2,2], dtype=np.float)
 
@@ -79,17 +81,20 @@ class Classifiers(object):
             for j in range(2):
                 matrix[i][j] = np.mean(array[:,i,j])
 
-        print (matrix)
+        print (matrix.__str__())
 
 
     def svm_classify(self, kernel='linear', max_iter=10, *kwargs):
         svc = SVC(kernel=kernel, max_iter=max_iter)
+        warnings.filterwarnings("ignore", 'Solver terminated early.*')
 
         accuracy = 0
         scores = []
         pred = []
 
+        print ('-----------------------------')
         print ('Learning using SVM')
+        print ('-----------------------------')
         for f in range(self.folds):
             svc.fit(self.train_data[f], self.train_data_labels[f])
 
@@ -101,12 +106,13 @@ class Classifiers(object):
 
             accuracy += valid_acc
 
+        
+        cv_acc = 1.0*accuracy/self.folds
+        
+        print ('Cross validated accuracy: %f' %cv_acc)
         self.print_report(scores)
         self.print_confusion_matrix(pred, self.valid_data_labels)
-        cv_acc = 1.0*accuracy/self.folds
-
-        print ('Cross validated accuracy - %f' %cv_acc)
-        print ('-----------------------------')
+        
         return cv_acc
 
     def logisticRegression(self, penalty='l2', max_iter=10, *kwargs):
@@ -116,7 +122,9 @@ class Classifiers(object):
         scores = []
         pred = []
 
+        print ('-----------------------------')
         print ('Learning using Logistic Regression')
+        print ('-----------------------------')
 
         for f in range(self.folds):
             logReg.fit(self.train_data[f], self.train_data_labels[f])
@@ -127,12 +135,12 @@ class Classifiers(object):
 
             accuracy += valid_acc
 
+        cv_acc = 1.0 * accuracy / self.folds
+
+        print ('Cross validated accuracy: %f' %cv_acc)
         self.print_report(scores)
         self.print_confusion_matrix(pred, self.valid_data_labels)
-        cv_acc = 1.0 * accuracy / self.folds
-        print ('Cross validated accuracy - %f' % cv_acc)
-        print ('-----------------------------')
-
+        
         return cv_acc
 
     def linearRegression(self, *kwargs):
@@ -142,7 +150,9 @@ class Classifiers(object):
         scores = []
         pred = []
 
+        print ('-----------------------------')
         print ('Learning using Linear Regression')
+        print ('-----------------------------')
 
         for f in range(self.folds):
             linReg.fit(self.train_data[f], self.train_data_labels[f])
@@ -154,11 +164,11 @@ class Classifiers(object):
 
             accuracy += valid_acc
 
+        cv_acc = 1.0 * accuracy / self.folds
+
+        print ('Cross validated accuracy - %f' % cv_acc)
         self.print_report(scores)
         self.print_confusion_matrix(pred, self.valid_data_labels)
-        cv_acc = 1.0 * accuracy / self.folds
-        print ('Cross validated accuracy - %f' % cv_acc)
-        print ('-----------------------------')
 
         return cv_acc
 
@@ -170,7 +180,9 @@ class Classifiers(object):
         scores = []
         pred = []
 
+        print ('-----------------------------')
         print ('Learning using Random Forest')
+        print ('-----------------------------')
 
         for f in range(self.folds):
             randForest.fit(self.train_data[f], self.train_data_labels[f])
@@ -182,14 +194,14 @@ class Classifiers(object):
 
             accuracy += valid_acc
 
+        cv_acc = 1.0 * accuracy / self.folds
+        
+        print ('Cross validated accuracy: %f' %cv_acc)
         self.print_report(scores)
         self.print_confusion_matrix(pred, self.valid_data_labels)
         print('Feature importance (higher => more important')
         print(randForest.feature_importances_)
-        cv_acc = 1.0 * accuracy / self.folds
-        print ('Cross validated accuracy - %f' % cv_acc)
-        print ('-----------------------------')
-
+        
         return cv_acc
 
 
@@ -201,7 +213,9 @@ class Classifiers(object):
         scores = []
         pred = []
 
+        print ('-----------------------------')
         print ('Learning using Decision Tree')
+        print ('-----------------------------')
 
         for f in range(self.folds):
             decTree.fit(self.train_data[f], self.train_data_labels[f])
@@ -213,14 +227,13 @@ class Classifiers(object):
 
             accuracy += valid_acc
 
+        cv_acc = 1.0 * accuracy / self.folds
+
+        print ('Cross validated accuracy: %f' %cv_acc)
         self.print_report(scores)
         self.print_confusion_matrix(pred, self.valid_data_labels)
-
         print ('Feature importance (higher => more important')
         print (decTree.feature_importances_)
-        cv_acc = 1.0 * accuracy / self.folds
-        print ('Cross validated accuracy - %f' % cv_acc)
-        print ('-----------------------------')
 
         return cv_acc
 
@@ -231,7 +244,9 @@ class Classifiers(object):
         scores = []
         pred = []
 
+        print ('-----------------------------')
         print ('Learning using Gradient Boosting')
+        print ('-----------------------------')
 
         for f in range(self.folds):
             gradBoostingClf.fit(self.train_data[f], self.train_data_labels[f])
@@ -243,11 +258,11 @@ class Classifiers(object):
 
             accuracy += valid_acc
 
+        cv_acc = 1.0 * accuracy / self.folds
+
+        print ('Cross validated accuracy: %f' % cv_acc)
         self.print_report(scores)
         self.print_confusion_matrix(pred, self.valid_data_labels)
-        cv_acc = 1.0 * accuracy / self.folds
-        print ('Cross validated accuracy - %f' % cv_acc)
-        print ('-----------------------------')
 
         return cv_acc
 
@@ -258,7 +273,9 @@ class Classifiers(object):
         accuracy = 0
         scores = []
 
+        print ('-----------------------------')
         print('Learning using Gradient Boosting')
+        print ('-----------------------------')
 
         for f in range(self.folds):
             xgbClf.fit(self.train_data[f], self.train_data_labels[f].tolist())

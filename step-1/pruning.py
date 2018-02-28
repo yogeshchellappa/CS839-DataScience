@@ -41,10 +41,7 @@ class Prune(object):
 
             if flag:
                 todrop.append(term)
-        print(len(todrop))
-        print(len(self.data))
         self.data = self.data[~self.data.term.isin(todrop)]
-        print(len(self.data))
         #data[data.term not in todrop]
 
         #data.to_csv('trainingdata_nostopwords.csv')
@@ -65,11 +62,8 @@ class Prune(object):
 
             if flag:
                 todrop.append(term)
-        print(len(todrop))
-        print(len(self.data))
         self.data = self.data[~self.data.term.isin(todrop)]
-        print(len(self.data))
-
+        
     def saveData(self):
         self.data.to_csv('trainingdata_nostopwords_nopronouns_2.csv')
 

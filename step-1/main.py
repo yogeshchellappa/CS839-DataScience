@@ -35,10 +35,10 @@ def main():
 
     # Generate features, labels
     feat_train = features.Features()
-    feat_train.getAllFeatures(prune_train.data, data_orig, 'prefix_suffix.csv', 'step-1/food_adj.csv', 'step-1/veggie_and_fruits.csv', saveTo='features_train.csv', withRos=True)
+    feat_train.getAllFeatures(prune_train.data, data_orig, 'res/prefix_suffix.csv', 'res/food_adj.csv', 'res/veggie_and_fruits.csv', saveTo='features_train.csv', withRos=True)
 
     feat_test = features.Features()
-    feat_test.getAllFeatures(prune_test.data, data_test_orig, 'prefix_suffix.csv', 'step-1/food_adj.csv', 'step-1/veggie_and_fruits.csv', saveTo='features_test.csv', withRos=False)
+    feat_test.getAllFeatures(prune_test.data, data_test_orig, 'res/prefix_suffix.csv', 'res/food_adj.csv', 'res/veggie_and_fruits.csv', saveTo='features_test.csv', withRos=False)
 
     # Split data
     data = classifiers.Data(feat_train.features, feat_train.labels, feat_test.features, feat_test.labels)
@@ -52,15 +52,18 @@ def main():
     dtAcc = clf.decisionTree()
     rfAcc = clf.randomForest()
     gradB = clf.gradientBoostingClassifier()
-    xgb = clf.xgbClassifier()	
+    #xgb = clf.xgbClassifier()
 
     #print ('Linear regression accuracy - %f', linRegAcc)
-    print ('Logistic regression accuracy - %f', logRegAcc)
-    print ('SVM accuracy - %f', svmAcc)
-    print ('Decision Tree accuracy - %f', dtAcc)
-    print ('Random Forest accuracy - %f', rfAcc)
-    print ('Gradient Boosting accuracy - %f', gradB)
-    print ('XGBoost accuracy - %f', xgb)
+    print ("======================")
+    print ("Classification Summary")
+    print ("======================")
+    #print ('\tLinear regression accuracy: ', round(linRegAcc))
+    print ('Logistic regression accuracy: ', round(logRegAcc, 4))
+    print ('SVM accuracy: ', round(svmAcc, 4))
+    print ('Decision Tree accuracy: ', round(dtAcc, 4))
+    print ('Random Forest accuracy: ', round(rfAcc, 4))
+    print ('Gradient Boosting accuracy: ', round(gradB, 4))
 
 if __name__ == "__main__":
     main()

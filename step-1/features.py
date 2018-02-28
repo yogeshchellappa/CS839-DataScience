@@ -10,6 +10,7 @@ import json
 import csv
 import numpy as np
 from imblearn.over_sampling import RandomOverSampler
+from sklearn.preprocessing import MinMaxScaler
 
 class Labels(object):
     def __init__(self):
@@ -169,6 +170,10 @@ class Features(object):
         :return: None
         Calculates all the features of the data
         '''
+        # to avoid SettingWithCopy warning during dataframe ops
+        pd.options.mode.chained_assignment = None
+        
+        # final list of features
         feat_list = ['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient']
 
         data_prefsuff = self.getPrefixSuffixFeature(data, data_orig, prefixsuffixFile)
@@ -176,7 +181,12 @@ class Features(object):
         data_idf = self.calculateIDF(data_tf)
         data_cap = self.isCapitalized(data_idf)
         data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
-        print(data_final.keys())
+
+        # feature scaling
+        scaler = MinMaxScaler()
+        data_final[['tf', 'idf']] = scaler.fit_transform(data_final[['tf', 'idf']])
+
+        # save dataframe to csv
         data_final.to_csv(saveTo)
 
         if withRos:
@@ -184,7 +194,7 @@ class Features(object):
             self.features, self.labels = ros.fit_sample(data_final[feat_list], data_final[data_final.columns[3]])
             return data_final
         else:
-            self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
+            self.features = data_final.as_matrix(columns=feat_list)
             self.labels = data_final.as_matrix(columns=['label_x'])
             return data_final
             

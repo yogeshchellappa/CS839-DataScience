@@ -8,7 +8,7 @@ Extracting food items as entities from Yelp reviews.
 
 ## Stage 1 - Information Extraction from Natural Text Documents
 * [Marked Documents](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step-1/set-B)
-  * [README for marked documents](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step-1/set-B/README.md)
+  * [README for marked documents](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step-1/set-B/README.md)
 * [Set I](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step-1/set-I)
 * [Set J](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step-1/set-J)
 * [Code](https://github.com/yogeshchellappa/CS839-DataScience)

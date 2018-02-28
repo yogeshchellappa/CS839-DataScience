@@ -85,7 +85,7 @@ class Features(object):
         data['isCapitalized'] = data['term'].str.contains('[A-Z]', regex=True)
         return data
 
-    def attachDictFeatures(self, data_curr, data_pruned, data_orig, path_adj, path_veg):
+    def attachDictFeatures(self, data_prune, data_orig, path_adj, path_veg):
         '''
         Takes the complete dataframe and returns an array of features
         [prefix_food_desc, contains_veggie_or_fruit]
@@ -96,8 +96,8 @@ class Features(object):
         p_doc_id, p_term = None, None
         prefix_food_desc, suffix_food_desc, contains_veggie_or_fruit = [], [], []
 
-        # get data with added information
-        data_pos = self.getPosBeforeAfter(1, 1, data_pruned, data_orig)
+        # join with original data to get positions
+        data = self.getPosBeforeAfter(1, 1, data_prune[[doc_id, position, 'term', 'label']], data_orig)
 
         # read list of words describing food
         food_adj = pd.read_csv(path_adj)['words'].tolist()
@@ -106,12 +106,11 @@ class Features(object):
         veggie_and_fruit = pd.read_csv(path_veg)['words'].tolist()
 
         # iterate over each row in the dataframe
-        for index, row in data_curr.iterrows():
+        for index, row in data.iterrows():
 
             # get previous and next terms from the position data object
-            curr = data_pos[(data_pos[doc_id] == row[doc_id]) & (data_pos[position] == row[position])]
-            p_term = curr.iloc[0]['term_before']
-            n_term = curr.iloc[0]['term_after']
+            p_term = row['term_before']
+            n_term = row['term_after']
 
             # if term is contained in food adjectives list
             prefix_food_desc.append(1 if p_term and p_term in food_adj else 0)
@@ -121,14 +120,15 @@ class Features(object):
             contains_veggie_or_fruit.append(0)
             for s in self.getAllSubstrings(row[term]):
                 if s in veggie_and_fruit:
-                    print(s + " in " + row[term] + " is a vege/fuit")
                     contains_veggie_or_fruit.pop()
                     contains_veggie_or_fruit.append(1)
                     break
 
-        data_curr['hasDescriptivePrefix'] = prefix_food_desc
-        data_curr['hasDescriptiveSuffix'] = suffix_food_desc
-        data_curr['hasIngredient'] = contains_veggie_or_fruit
+        data['hasDescriptivePrefix'] = prefix_food_desc
+        data['hasDescriptiveSuffix'] = suffix_food_desc
+        data['hasIngredient'] = contains_veggie_or_fruit
+
+        return pd.merge(left=data_prune, right=data, left_on=['docID', 'position'], right_on=['docID', 'position'], how='inner')
 
     def getAllSubstrings(self, word):
         tok = word.strip().split(' ')
@@ -172,9 +172,9 @@ class Features(object):
         data_tf = self.calculateTF(data_prefsuff)
         data_idf = self.calculateIDF(data_tf)
         data_cap = self.isCapitalized(data_idf)
-        self.attachDictFeatures(data_cap, data, data_orig, path_adj, path_veg)
-        print(data_cap.keys())
+        data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
+        print(data_final.keys())
 
-        data_cap.to_csv(saveTo)
-        self.features = data_cap.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
-        self.labels = data_cap.as_matrix(columns=['label'])
+        data_final.to_csv(saveTo)
+        self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
+        self.labels = data_final.as_matrix(columns=['label'])

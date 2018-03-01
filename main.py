@@ -52,7 +52,6 @@ def main():
     dtAcc = clf.decisionTree()
     rfAcc = clf.randomForest()
     gradB = clf.gradientBoostingClassifier()
-    xgb = clf.xgbClassifier()	
 
     #print ('Linear regression accuracy - %f', linRegAcc)
     print ('Logistic regression accuracy - %f', logRegAcc)
@@ -60,7 +59,6 @@ def main():
     print ('Decision Tree accuracy - %f', dtAcc)
     print ('Random Forest accuracy - %f', rfAcc)
     print ('Gradient Boosting accuracy - %f', gradB)
-    print ('XGBoost accuracy - %f', xgb)
 
 if __name__ == "__main__":
     main()

@@ -250,32 +250,3 @@ class Classifiers(object):
         print ('-----------------------------')
 
         return cv_acc
-
-    '''
-    def xgbClassifier(self, n_estimators=300, max_depth=3, learning_rate=0.05, *kwargs):
-        xgbClf = xgb.XGBClassifier(max_depth=max_depth, n_estimators=n_estimators, learning_rate=learning_rate)
-
-        accuracy = 0
-        scores = []
-
-        print('Learning using Gradient Boosting')
-
-        for f in range(self.folds):
-            xgbClf.fit(self.train_data[f], self.train_data_labels[f].tolist())
-            print('Training accuracy - %f' % xgbClf.score(self.train_data[f], self.train_data_labels[f]))
-            valid_acc = xgbClf.score(self.valid_data[f], self.valid_data_labels[f])
-            valid_pred = xgbClf.predict(self.valid_data[f])
-
-            scores.append(precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
-
-            print('Validation accuracy - %f' % xgbClf.score(self.valid_data[f], self.valid_data_labels[f]))
-
-            accuracy += valid_acc
-
-        self.print_report(scores)
-        cv_acc = 1.0 * accuracy / self.folds
-        print('Cross validated accuracy - %f' % cv_acc)
-        print('-----------------------------')
-
-        return cv_acc
-    '''

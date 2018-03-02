@@ -46,14 +46,14 @@ def main():
     # Train classifiers
     clf = classifiers.Classifiers(data)
 
-    #linRegAcc = clf.linearRegression()
+    linRegAcc = clf.linearRegression()
     logRegAcc = clf.logisticRegression()
     svmAcc = clf.svm_classify()
     dtAcc = clf.decisionTree()
     rfAcc = clf.randomForest()
     gradB = clf.gradientBoostingClassifier()
 
-    #print ('Linear regression accuracy - %f', linRegAcc)
+    print ('Linear regression accuracy - %f', linRegAcc)
     print ('Logistic regression accuracy - %f', logRegAcc)
     print ('SVM accuracy - %f', svmAcc)
     print ('Decision Tree accuracy - %f', dtAcc)

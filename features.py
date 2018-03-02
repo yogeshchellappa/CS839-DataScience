@@ -58,11 +58,11 @@ class Features(object):
 
     def getPosBeforeAfter(self, win_size_before, win_size_after, data, data_orig):
 
-        data['pos_before'] = pd.Series(np.random.randn(len(data)), index=data.index)
-        data['pos_after'] = pd.Series(np.random.randn(len(data)), index=data.index)
+        data.loc[:,'pos_before'] = pd.Series(np.random.randn(len(data)), index=data.index)
+        data.loc[:,'pos_after'] = pd.Series(np.random.randn(len(data)), index=data.index)
 
-        data['pos_before'] = data.apply(lambda row: self.pos_before(row, win_size_before), axis=1)
-        data['pos_after'] = data.apply(lambda row: self.pos_after(row, win_size_after), axis=1)
+        data.loc[:,'pos_before'] = data.apply(lambda row: self.pos_before(row, win_size_before), axis=1)
+        data.loc[:,'pos_after'] = data.apply(lambda row: self.pos_after(row, win_size_after), axis=1)
 
         data_single = data_orig[data_orig['term'].apply(lambda x: len(x.split(' ')) == 1)]
 

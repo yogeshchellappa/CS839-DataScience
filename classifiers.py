@@ -73,6 +73,7 @@ class Classifiers(object):
         matrix = np.zeros(shape=[2,2], dtype=np.float)
 
         for i in range(len(true)):
+            true[i] = (true[i]).astype(bool)
             array[i:,:,:] = sklearn.metrics.confusion_matrix(true[i], pred[i])
 
         for i in range(2):
@@ -150,6 +151,7 @@ class Classifiers(object):
             valid_pred = linReg.predict(self.valid_data[f])
 
             pred.append(valid_pred)
+            valid_pred = (valid_pred>0.5).astype(int)
             scores.append(precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
 
             accuracy += valid_acc

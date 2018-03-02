@@ -217,6 +217,11 @@ class Classifiers(object):
 
         self.print_report(scores)
         self.print_confusion_matrix(pred, self.valid_data_labels)
+		
+        test_pred = decTree.predict(self.test_data)
+        print("TEST DATA")
+        print(precision_recall_fscore_support(self.test_data_labels, test_pred))
+        print("END OF TESTING")
 
         print ('Feature importance (higher => more important')
         print (decTree.feature_importances_)
@@ -226,7 +231,7 @@ class Classifiers(object):
 
         return cv_acc
 
-    def gradientBoostingClassifier(self, n_estimators=50, *kwargs):
+    def gradientBoostingClassifier(self, n_estimators=100, *kwargs):
         gradBoostingClf = GradientBoostingClassifier(n_estimators=n_estimators)
 
         accuracy = 0

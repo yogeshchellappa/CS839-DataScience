@@ -176,7 +176,6 @@ class Features(object):
         data_idf = self.calculateIDF(data_tf)
         data_cap = self.isCapitalized(data_idf)
         data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
-        print(data_final.keys())
         data_final.to_csv(saveTo)
 
         if withRos:

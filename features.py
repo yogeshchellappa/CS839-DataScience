@@ -171,7 +171,6 @@ class Features(object):
 
         if readFrom:
             data_final = pd.read_csv(readFrom)
-            print (data_final.keys())
         else:
             feat_list = ['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient']
 
@@ -181,10 +180,8 @@ class Features(object):
             data_cap = self.isCapitalized(data_idf)
             data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
 
-            print (data_final.keys())
             data_final = data_final.drop(columns=['label_y', 'term_before_y', 'term_after_y'])
             data_final = data_final.drop_duplicates()
-            print(data_final.keys())
             data_final.to_csv(saveTo, index=False)
 
         if withRos:

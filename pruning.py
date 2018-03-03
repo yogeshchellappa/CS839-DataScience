@@ -200,7 +200,6 @@ class Prune(object):
         self.stopwords = [i.replace("'","") for i in self.stopwords]
         
         todrop = []
-        print(len(self.data))
 
         for term in self.data['term']:
             parts = term.split(" ")
@@ -217,9 +216,6 @@ class Prune(object):
             if flag:
                 todrop.append(term)
         self.data = self.data[~self.data.term.isin(todrop)]
-
-        print (len(self.data))
-        #data.to_csv('trainingdata_nostopwords.csv')
 
     def removePronouns(self):
         todrop = []
@@ -239,7 +235,6 @@ class Prune(object):
             if flag:
                 todrop.append(term)
         self.data = self.data[~self.data.term.isin(todrop)]
-        print(len(self.data))
 
     def saveData(self):
         self.data.to_csv('trainingdata_nostopwords_nopronouns_2.csv')

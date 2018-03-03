@@ -18,7 +18,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 501,38,overpriced,False,of,for,0.0,1,0.5,False,0,0,0,False,False,True
 107,107,brushetta,True,ordered,as,1.0,3,0.3333333333333333,False,0,0,0,True,True,True
 273,55,and,False,of,are,1.0,3,0.0010050251256281408,False,0,0,0,False,False,True
-1035,17,blueberries and,False,with,was,0.0,1,1.0,False,1,1,0,True,False,False
+1035,17,blueberries and,False,with,was,0.0,1,1.0,False,1,1,0,False,False,True
 29,52,kimchi fries,True,the,which,1.0,1,1.0,False,0,0,0,True,True,True
 260,291,spread,False,nice,of,0.0,1,0.5,False,0,0,0,False,False,True
 258,248,flaming,False,the,Parmesan,1.0,2,0.5,False,0,0,0,True,False,False
@@ -102,7 +102,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 44,121,And,False,lemonade,when,0.0,1,0.030303030303030307,True,0,0,0,False,False,True
 372,133,naan,True,a,just,1.0,1,1.0,False,0,0,0,True,True,True
 379,95,and,False,small,that,0.0,2,0.0010050251256281408,False,0,0,0,False,False,True
-44,106,mango,False,slush,came,0.0,2,0.5,False,0,0,1,True,False,False
+44,106,mango,False,slush,came,0.0,2,0.5,False,0,0,1,False,False,True
 225,5,lived,False,have,in,0.0,1,1.0,False,0,0,0,False,False,True
 506,207,torillas pinto beans,False,two,salsa,0.0,1,1.0,False,0,0,1,False,False,True
 518,57,biriani,False,the,rice,0.0,1,1.0,False,0,0,0,False,False,True
@@ -112,7 +112,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 518,12,cabbage,False,bread,slaw,0.0,2,0.25,False,0,0,1,False,False,True
 44,180,kumquat lemonade,True,the,When,0.0,4,0.25,False,0,0,1,True,True,True
 100,116,and waited,False,correctly,Problem,0.0,1,1.0,False,0,0,0,False,False,True
-128,130,food,False,and,was,1.0,3,0.005405405405405407,False,1,1,0,True,False,False
+128,130,food,False,and,was,1.0,3,0.005405405405405407,False,1,1,0,False,False,True
 258,270,burnt,False,Not,but,0.0,1,0.25,False,0,0,0,False,False,True
 379,34,outgoing,False,an,person,0.0,1,1.0,False,0,0,0,False,False,True
 518,68,walnuts,True,and,It,0.0,1,1.0,False,0,0,0,False,True,False
@@ -198,7 +198,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 230,68,Airways hub,False,US,I,0.0,1,1.0,True,0,0,0,False,False,True
 504,3,Digiorno,False,what,wishes,0.0,1,1.0,True,0,0,0,False,False,True
 94,45,tortillas yuck,False,fried,No,0.0,1,1.0,False,0,0,0,False,False,True
-268,191,cake,False,coconut,Much,0.0,1,0.07142857142857142,False,0,0,0,True,False,False
+268,191,cake,False,coconut,Much,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 613,194,banana german,False,strawberry,and,1.0,1,1.0,False,0,0,1,True,False,False
 266,114,beef,False,roast,dinner,0.0,1,0.06666666666666668,False,1,0,0,False,False,True
 397,12,Fest,False,Beer,only,0.0,1,1.0,True,0,0,0,False,False,True
@@ -296,10 +296,10 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 268,50,sopping,False,for,up,0.0,1,1.0,False,0,0,0,False,False,True
 608,238,egg and,False,raw,parmesan,0.0,1,1.0,False,0,0,0,False,False,True
 268,46,peas,False,pigeon,was,0.0,1,0.5,False,0,0,1,False,False,True
-100,34,breakfast,False,a,place,1.0,3,0.03571428571428571,False,0,0,0,True,False,False
+100,34,breakfast,False,a,place,1.0,3,0.03571428571428571,False,0,0,0,False,False,True
 107,183,bread,True,No,was,1.0,3,0.04,False,0,0,0,True,True,True
 509,59,capitalization,False,both,and,0.0,1,1.0,False,0,0,0,False,False,True
-244,112,meat,True,the,None,0.0,2,0.030303030303030307,False,0,0,0,True,True,True
+244,112,meat,True,the,None,0.0,2,0.030303030303030307,False,0,0,0,False,True,False
 234,161,and,False,bed,couch,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
 525,81,and,False,noodles,into,0.0,2,0.0010050251256281408,False,1,0,0,False,False,True
 46,100,second,False,a,round,0.0,1,0.2,False,0,0,0,False,False,True
@@ -331,7 +331,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 613,78,sandwiched,False,mall,between,0.0,1,1.0,False,0,0,0,False,False,True
 509,154,peanuts,False,dollar,once,0.0,3,0.16666666666666666,False,0,0,0,False,False,True
 16,10,Mtl,False,in,for,0.0,1,1.0,True,0,0,0,False,False,True
-370,2,vegetarian,False,a,this,1.0,1,0.04166666666666666,False,0,0,0,False,False,True
+370,2,vegetarian,False,a,this,1.0,1,0.04166666666666666,False,0,0,0,True,False,False
 119,263,amazingFinally,False,was,Ill,0.0,1,1.0,True,0,0,0,False,False,True
 46,195,and,False,food,this,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 116,26,heads and,False,are,tails,0.0,1,1.0,False,0,0,0,False,False,True
@@ -392,8 +392,8 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 508,35,dip,False,garlic,Dont,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 163,93,pasta,True,the,were,1.0,4,0.05555555555555555,False,0,0,0,True,True,True
 383,4,week,False,last,with,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
-604,228,and potato,False,chicken,hash,0.0,2,0.5,False,0,0,1,True,False,False
-169,118,black,False,pitch,room,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+604,228,and potato,False,chicken,hash,0.0,2,0.5,False,0,0,1,False,False,True
+169,118,black,False,pitch,room,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 71,127,stuff,False,other,Cant,0.0,1,0.2,False,0,0,0,False,False,True
 513,21,Gandolfos deli,False,from,Its,0.0,2,0.5,True,0,0,0,False,False,True
 80,52,says,False,website,When,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
@@ -404,7 +404,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 102,176,establishments,False,future,Anyway,0.0,1,0.5,False,0,0,0,False,False,True
 81,48,scallop tobiko,False,salmon,it,0.0,1,1.0,False,0,0,0,False,False,True
 99,139,BarBurrito,False,by,because,0.0,2,0.5,True,0,0,0,False,False,True
-152,8,brunch,False,breakfast,chain,0.0,1,0.07142857142857142,False,0,0,0,True,False,False
+152,8,brunch,False,breakfast,chain,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 31,77,lovers,False,seafood,vegans,0.0,2,0.5,False,0,0,0,False,False,True
 21,215,and poutine,False,cheese,we,0.0,1,1.0,False,0,0,0,False,False,True
 273,30,dipping,False,for,Its,0.0,1,1.0,False,0,1,0,False,False,True
@@ -430,7 +430,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 639,68,and chips and,False,later,salsa,0.0,1,0.5,False,0,0,0,False,False,True
 211,197,And,False,different,bottles,0.0,1,0.030303030303030307,True,0,0,0,False,False,True
 509,325,and,False,corridor,then,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
-639,15,water,False,and,The,1.0,1,0.09090909090909093,False,0,0,0,False,False,True
+639,15,water,False,and,The,1.0,1,0.09090909090909093,False,0,0,0,True,False,False
 274,8,and,False,Safeway,never,0.0,3,0.0010050251256281408,False,0,0,0,False,False,True
 379,60,vinegar,False,of,In,0.0,1,0.25,False,0,0,0,False,False,True
 261,92,chorizo cheddar cheese,False,with,and,1.0,1,1.0,False,1,0,0,True,False,False
@@ -499,7 +499,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 606,164,Andes,False,it,But,0.0,1,1.0,True,0,0,0,False,False,True
 240,112,cheese crust,False,blue,It,0.0,1,1.0,False,0,0,0,False,False,True
 123,55,dog,False,hot,of,0.0,1,0.25,False,0,0,0,False,False,True
-81,21,rolls,True,two,with,0.0,4,0.14285714285714285,False,0,0,0,True,True,True
+81,21,rolls,True,two,with,0.0,4,0.14285714285714285,False,0,0,0,False,True,False
 211,45,cheese,False,and,and,1.0,2,0.025,False,0,0,0,True,False,False
 632,28,tomato,False,supermarket,sauce,0.0,1,0.08333333333333333,False,0,0,1,False,False,True
 7,50,Chinatown,False,to,this,0.0,2,0.25,True,0,0,0,False,False,True
@@ -563,13 +563,13 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 240,172,occasional,False,the,special,0.0,1,1.0,False,0,0,0,False,False,True
 620,67,translates,False,apparently,to,0.0,1,0.5,False,0,0,0,False,False,True
 526,112,bubbly,False,convenient,study,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-500,46,Patron,False,chilled,with,0.0,1,1.0,True,0,1,0,True,False,False
-376,36,Caesars,False,in,and,1.0,1,0.3333333333333333,True,0,0,0,False,False,True
+500,46,Patron,False,chilled,with,0.0,1,1.0,True,0,1,0,False,False,True
+376,36,Caesars,False,in,and,1.0,1,0.3333333333333333,True,0,0,0,True,False,False
 609,112,bubbly,False,convenient,study,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 142,74,accidentally,False,waiter,dropped,0.0,1,0.5,False,0,0,0,False,False,True
 1002,56,vegetarian and confused,False,youre,by,0.0,1,1.0,False,0,0,0,False,False,True
 380,31,picture,False,See,below,0.0,1,0.5,False,0,0,0,False,False,True
-108,41,cream,False,ice,and,1.0,1,0.09090909090909093,False,0,0,0,False,False,True
+108,41,cream,False,ice,and,1.0,1,0.09090909090909093,False,0,0,0,True,False,False
 614,87,and,False,five,the,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
 107,162,Italian,False,an,restaurant,0.0,2,0.1111111111111111,True,0,0,0,False,False,True
 100,194,toast,True,and,We,0.0,2,0.1,False,0,0,0,False,True,False
@@ -613,7 +613,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 274,224,Mediterranean olive,False,amazing,selection,0.0,1,1.0,True,0,0,1,False,False,True
 136,81,wash hands,False,quickly,its,0.0,1,1.0,False,0,0,0,False,False,True
 56,29,feed,False,probably,assuming,0.0,1,0.5,False,0,0,0,False,False,True
-513,212,salad,False,potato,and,0.0,3,0.037037037037037035,False,0,0,0,True,False,False
+513,212,salad,False,potato,and,0.0,3,0.037037037037037035,False,0,0,0,False,False,True
 387,51,sizes,False,portion,are,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 108,155,synopsis,False,final,This,0.0,1,1.0,False,0,0,0,False,False,True
 265,49,frustration,False,in,over,0.0,1,1.0,False,0,0,0,False,False,True
@@ -632,7 +632,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 520,74,salad,True,side,It,0.0,2,0.037037037037037035,False,1,0,0,False,True,False
 271,234,foods reasonably priced,False,the,Tasty,0.0,1,1.0,False,0,0,0,False,False,True
 122,135,and comfy,False,clean,but,0.0,1,1.0,False,0,0,0,False,False,True
-116,64,burgers,True,those,are,1.0,2,0.16666666666666666,False,0,1,0,False,True,False
+116,64,burgers,True,those,are,1.0,2,0.16666666666666666,False,0,1,0,True,True,True
 274,163,year,False,my,old,0.0,1,0.25,False,0,0,0,False,False,True
 613,193,banana,True,strawberry,german,1.0,1,0.2,False,0,0,1,True,True,True
 1011,71,dumplings,True,friends,were,1.0,5,0.14285714285714285,False,0,0,0,True,True,True
@@ -654,12 +654,12 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 232,85,cheese,True,of,and,1.0,2,0.025,False,0,1,0,True,True,True
 610,182,wimps,False,the,like,0.0,1,1.0,False,0,0,0,False,False,True
 31,84,basil fried,False,the,rice,0.0,1,1.0,False,0,0,1,False,False,True
-612,87,pork,False,pulled,hash,0.0,2,0.037037037037037035,False,0,0,0,True,False,False
+612,87,pork,False,pulled,hash,0.0,2,0.037037037037037035,False,0,0,0,False,False,True
 71,36,carrot,False,following,cake,0.0,1,0.5,False,0,0,1,False,False,True
 99,128,and,False,ahead,placed,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 509,34,growed upI,False,all,have,0.0,1,1.0,True,0,0,0,False,False,True
 609,344,nast Eba,False,kinda,should,0.0,1,1.0,True,0,0,0,False,False,True
-220,68,cake,False,cheese,crust,0.0,1,0.07142857142857142,False,0,0,0,True,False,False
+220,68,cake,False,cheese,crust,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 25,43,chinese and,False,of,choy,0.0,1,1.0,False,0,0,0,False,False,True
 149,163,stuck,False,therefore,there,0.0,1,0.25,False,0,0,0,False,False,True
 265,22,watched,False,that,me,0.0,1,1.0,False,0,0,0,False,False,True
@@ -675,7 +675,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 612,145,mimosas and,False,but,tacos,0.0,1,0.5,False,0,0,0,False,False,True
 158,145,tasting and,False,generic,uninspired,0.0,1,1.0,False,0,0,0,False,False,True
 379,15,underserved,False,completely,when,0.0,1,1.0,False,0,0,0,False,False,True
-526,8,tea,False,bubble,Well,0.0,3,0.037037037037037035,False,0,0,0,True,False,False
+526,8,tea,False,bubble,Well,0.0,3,0.037037037037037035,False,0,0,0,False,False,True
 501,241,Gtown,False,reformed,resident,0.0,1,1.0,True,0,0,0,False,False,True
 1034,63,onion and,False,with,green,0.0,1,1.0,False,0,0,1,False,False,True
 107,30,and,False,live,we,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
@@ -780,7 +780,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 514,44,potato,False,shriveled,skins,0.0,1,0.06666666666666668,False,0,0,1,False,False,True
 365,135,raspberry,False,the,cheesecake,0.0,1,1.0,False,0,0,1,False,False,True
 268,212,fish,False,smoked,and,0.0,1,0.125,False,0,0,0,False,False,True
-44,258,peach ice,False,the,tea,0.0,2,0.5,False,0,0,1,True,False,False
+44,258,peach ice,False,the,tea,0.0,2,0.5,False,0,0,1,False,False,True
 44,6,drinks,False,great,We,0.0,5,0.030303030303030307,False,0,0,0,False,False,True
 613,28,breakfast,False,carb,My,0.0,8,0.03571428571428571,False,0,0,0,False,False,True
 1003,9,delightfully,False,was,overwhelmed,0.0,1,1.0,False,0,0,0,False,False,True
@@ -839,13 +839,13 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 138,44,dip,True,and,were,1.0,1,0.16666666666666666,False,0,0,0,True,True,True
 64,132,and,False,items,not,0.0,5,0.0010050251256281408,False,0,0,0,False,False,True
 227,37,brats and cheeses,False,of,and,1.0,1,1.0,False,0,0,0,True,False,False
-235,76,burger,True,this,Not,0.0,3,0.037037037037037035,False,0,0,0,True,True,True
+235,76,burger,True,this,Not,0.0,3,0.037037037037037035,False,0,0,0,False,True,False
 100,200,smoothies,False,fruit,I,0.0,1,1.0,False,0,0,0,False,False,True
 1031,12,fajitas and,False,veggie,they,0.0,1,1.0,False,0,0,0,False,False,True
 20,113,pork belly bun,True,The,was,1.0,1,1.0,False,0,0,0,True,True,True
 520,137,Central,False,else,American,0.0,1,1.0,True,0,0,0,False,False,True
 93,37,omelet and,False,pepper,peach,0.0,1,0.25,False,0,0,0,False,False,True
-518,16,meat,True,a,of,1.0,1,0.030303030303030307,False,0,0,0,True,True,True
+518,16,meat,True,a,of,1.0,1,0.030303030303030307,False,0,0,0,False,True,False
 504,14,swear,False,I,if,0.0,1,1.0,False,0,0,0,False,False,True
 383,106,taken,False,well,care,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 606,34,dysfunctional kiddo,False,house,families,0.0,1,1.0,False,0,0,0,False,False,True
@@ -929,7 +929,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 369,85,drink whisky and,False,a,wine,0.0,1,1.0,False,0,0,0,False,False,True
 271,8,brewery,False,a,gal,0.0,1,1.0,False,0,0,0,False,False,True
 167,19,food poisoning,False,got,from,0.0,2,0.5,False,0,0,0,False,False,True
-1018,43,drinks,True,and,took,1.0,1,0.030303030303030307,False,0,0,0,True,True,True
+1018,43,drinks,True,and,took,1.0,1,0.030303030303030307,False,0,0,0,False,True,False
 46,184,and tender,False,soft,If,0.0,1,0.5,False,0,0,0,False,False,True
 260,117,comfotable,False,very,The,0.0,1,1.0,False,0,0,0,False,False,True
 262,135,sauce,False,horseradish,which,0.0,1,0.021739130434782608,False,0,0,0,False,False,True
@@ -1126,7 +1126,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 232,35,rolled,False,five,tacos,0.0,2,0.2,False,0,0,0,False,False,True
 523,15,and,False,Oregano,basil,0.0,1,0.0010050251256281408,False,0,0,0,False,False,True
 124,77,herbs infused,False,and,They,0.0,1,1.0,False,0,0,1,False,False,True
-44,114,peach ice tea,True,mousse,oolong,0.0,2,0.5,False,0,0,1,True,True,True
+44,114,peach ice tea,True,mousse,oolong,0.0,2,0.5,False,0,0,1,False,True,False
 526,23,Melty,False,debate,gelatinous,0.0,1,0.5,True,0,0,0,False,False,True
 112,18,heart,False,a,attack,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 609,41,Black phlegmatic chunks,False,it,of,0.0,1,0.5,True,0,0,0,False,False,True
@@ -1188,7 +1188,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 525,58,and tomato sauce,False,them,hurts,0.0,1,0.5,False,0,0,1,False,False,True
 38,36,alongLots,False,move,of,0.0,1,1.0,True,0,0,0,False,False,True
 613,138,volume,False,the,down,0.0,1,1.0,False,0,0,0,False,False,True
-211,134,cheese,False,and,We,0.0,2,0.025,False,0,0,0,True,False,False
+211,134,cheese,False,and,We,0.0,2,0.025,False,0,0,0,False,False,True
 44,112,and mousse peach,False,tapioca,ice,0.0,1,1.0,False,0,0,1,False,False,True
 143,25,perhaps,False,but,it,0.0,1,0.25,False,0,0,0,False,False,True
 523,15,Italian Oregano and,False,fucking,basil,0.0,1,1.0,True,0,0,1,False,False,True
@@ -1196,7 +1196,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 161,31,pizza,True,gourmet,menu,1.0,6,0.05,False,0,0,0,True,True,True
 528,146,tacos,True,and,may,1.0,1,0.1111111111111111,False,0,0,0,True,True,True
 508,221,pickles and,False,weird,secret,0.0,1,1.0,False,0,0,0,False,False,True
-168,60,waffle,True,full,The,0.0,3,0.25,False,0,0,0,True,True,True
+168,60,waffle,True,full,The,0.0,3,0.25,False,0,0,0,False,True,False
 152,107,cheese omelet and,False,and,wasnt,0.0,1,1.0,False,0,0,0,False,False,True
 258,301,and melted cheese,False,scallions,The,0.0,1,1.0,False,0,0,0,False,False,True
 620,59,shoots,False,bamboo,were,0.0,2,0.25,False,0,0,0,False,False,True
@@ -1294,7 +1294,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 605,17,and,False,Icees,the,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 618,11,enchilada,False,Chicken,lunch,0.0,2,0.3333333333333333,False,0,1,0,False,False,True
 83,81,noodle,True,beef,The,0.0,6,0.05882352941176471,False,0,0,0,True,True,True
-375,15,spinach,False,had,salad,0.0,1,0.3333333333333333,False,0,0,1,True,False,False
+375,15,spinach,False,had,salad,0.0,1,0.3333333333333333,False,0,0,1,False,False,True
 245,56,snack,False,small,bowls,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 1005,25,and yummyThe,False,crispy,food,0.0,1,1.0,True,0,0,0,False,False,True
 1023,2,wouldve,False,place,gotten,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1369,9 +1369,9 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 612,54,Hulas Hangover Hash,True,the,The,1.0,1,0.5,True,0,0,0,True,True,True
 52,48,dynamic california,False,katsu,roll,0.0,1,1.0,False,0,0,0,False,False,True
 44,113,mousse peach ice,False,and,tea,0.0,1,1.0,False,0,0,1,False,False,True
-12,10,poutine,False,confit,and,0.0,1,0.07142857142857142,False,0,0,0,True,False,False
+12,10,poutine,False,confit,and,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 81,76,Tuna and,False,Eel,Salmon,0.0,1,1.0,True,0,0,0,False,False,True
-108,90,and chocolate,False,Skor,All,0.0,1,0.5,False,0,1,0,True,False,False
+108,90,and chocolate,False,Skor,All,0.0,1,0.5,False,0,1,0,False,False,True
 504,12,crap,False,crust,I,0.0,1,0.5,False,0,0,0,False,False,True
 1018,10,seared polenta and,False,the,enjoyed,0.0,1,1.0,False,0,0,0,False,False,True
 29,66,banh,False,pork,mi,0.0,1,0.3333333333333333,False,1,0,0,False,False,True
@@ -1450,7 +1450,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 100,372,Unless,False,group,you,0.0,1,0.3333333333333333,True,0,0,0,False,False,True
 5,4,almond croissant,False,chocolate,and,0.0,1,1.0,False,0,0,0,False,False,True
 146,105,dishes,False,of,to,1.0,2,0.0625,False,0,0,0,True,False,False
-518,11,bread,False,pita,cabbage,0.0,1,0.04,False,0,0,0,True,False,False
+518,11,bread,False,pita,cabbage,0.0,1,0.04,False,0,0,0,False,False,True
 268,136,offered,False,jicama,up,0.0,1,0.5,False,0,0,0,False,False,True
 606,92,clouds,False,marshmallow,edible,0.0,1,1.0,False,0,0,0,False,False,True
 614,54,and,False,Food,wine,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
@@ -1501,9 +1501,9 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 229,166,concerned,False,is,I,0.0,1,1.0,False,0,0,0,False,False,True
 49,15,bread palso carry,False,and,a,0.0,1,1.0,False,0,0,0,False,False,True
 604,317,sauce,False,chile,or,0.0,1,0.021739130434782608,False,1,0,0,False,False,True
-608,139,asparagus,True,and,floating,1.0,2,0.25,False,0,0,1,False,True,False
+608,139,asparagus,True,and,floating,1.0,2,0.25,False,0,0,1,True,True,True
 530,71,tingle,False,mild,on,0.0,1,0.5,False,0,0,0,False,False,True
-85,36,sandwich,False,chicken,was,0.0,2,0.045454545454545456,False,1,0,0,True,False,False
+85,36,sandwich,False,chicken,was,0.0,2,0.045454545454545456,False,1,0,0,False,False,True
 146,188,paying,False,youre,extra,0.0,1,0.5,False,0,0,0,False,False,True
 606,279,Poke,False,young,a,0.0,1,1.0,True,0,0,0,False,False,True
 610,197,burger and,False,your,peeling,0.0,1,0.5,False,0,0,0,False,False,True
@@ -1522,12 +1522,12 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 232,106,sauce,False,hot,goes,0.0,2,0.021739130434782608,False,0,0,0,False,False,True
 501,177,flying rats ass,False,a,about,0.0,1,1.0,False,0,0,0,False,False,True
 530,41,lemongrass coconut,False,basil,milk,0.0,1,0.5,False,0,0,1,False,False,True
-613,229,cheese,False,feta,I,0.0,2,0.025,False,0,0,0,True,False,False
+613,229,cheese,False,feta,I,0.0,2,0.025,False,0,0,0,False,False,True
 1000,30,array,False,decent,of,0.0,1,1.0,False,0,0,0,False,False,True
 508,40,started,False,me,on,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 509,156,and,False,once,I,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
 399,23,food and,False,Great,ready,0.0,1,0.05,False,1,0,0,False,False,True
-168,125,salad,False,potato,liked,0.0,2,0.037037037037037035,False,0,0,0,True,False,False
+168,125,salad,False,potato,liked,0.0,2,0.037037037037037035,False,0,0,0,False,False,True
 520,101,and,False,anything,you,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 509,42,unassailable,False,indisputable,golden,0.0,1,1.0,False,0,0,0,False,False,True
 167,162,rice and beans,False,just,The,0.0,1,1.0,False,0,0,1,False,False,True
@@ -1542,7 +1542,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 265,185,filler,False,foodlike,There,0.0,1,1.0,False,0,0,0,False,False,True
 625,31,dish,False,entire,they,0.0,3,0.05263157894736842,False,0,0,0,False,False,True
 239,24,and food,False,hotels,options,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
-237,93,drinks,False,the,seemed,0.0,2,0.030303030303030307,False,0,0,0,True,False,False
+237,93,drinks,False,the,seemed,0.0,2,0.030303030303030307,False,0,0,0,False,False,True
 78,51,dish,False,noodle,What,0.0,1,0.05263157894736842,False,0,0,0,False,False,True
 46,94,dishes,False,other,we,0.0,2,0.0625,False,0,0,0,False,False,True
 606,167,biased,False,Im,I,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
@@ -1681,7 +1681,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 110,93,stress,False,cant,enough,0.0,1,1.0,False,0,0,0,False,False,True
 518,105,and,False,beverages,the,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
 167,136,burrito,False,chicken,and,1.0,1,0.16666666666666666,False,0,0,0,True,False,False
-44,228,milk,False,oolong,tea,0.0,2,0.14285714285714285,False,1,0,0,True,False,False
+44,228,milk,False,oolong,tea,0.0,2,0.14285714285714285,False,1,0,0,False,False,True
 195,106,fries,False,oxtail,which,0.0,1,0.03448275862068965,False,0,0,0,False,False,True
 395,81,and,False,here,maybe,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 263,138,calls,False,ready,and,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1699,7 +1699,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1003,84,au lait,False,cafe,of,0.0,2,0.5,False,0,0,0,False,False,True
 171,132,chose,False,husband,a,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 614,6,Everyday,False,day,Thats,0.0,1,1.0,True,0,0,0,False,False,True
-130,110,iced,False,was,tea,0.0,3,0.25,False,0,0,0,True,False,False
+130,110,iced,False,was,tea,0.0,3,0.25,False,0,0,0,False,False,True
 149,140,and avoid,False,try,the,0.0,1,1.0,False,0,0,0,False,False,True
 509,376,overactive,False,my,imagination,0.0,1,1.0,False,0,0,0,False,False,True
 211,183,greatSo,False,be,would,0.0,1,1.0,True,0,0,0,False,False,True
@@ -1714,7 +1714,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 71,83,sugar,False,no,The,1.0,1,0.1111111111111111,False,0,0,0,True,False,False
 639,13,drinks food,False,get,and,0.0,1,1.0,False,0,0,0,False,False,True
 274,206,Unless,False,nonsense,I,0.0,1,0.3333333333333333,True,0,0,0,False,False,True
-203,46,donuts,True,few,LOLOther,0.0,2,0.14285714285714285,False,0,0,0,True,True,True
+203,46,donuts,True,few,LOLOther,0.0,2,0.14285714285714285,False,0,0,0,False,True,False
 11,62,and,False,menu,its,0.0,2,0.0010050251256281408,False,0,0,0,False,False,True
 49,14,palso,False,bread,carry,0.0,1,1.0,False,0,0,0,False,False,True
 504,12,rising crust crap,False,that,I,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1752,7 +1752,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 107,217,and,False,soggy,couldnt,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
 152,9,chain,False,brunch,Eggsmart,0.0,1,0.5,False,0,0,0,False,False,True
 188,128,steak,False,my,a,0.0,1,0.125,False,0,0,0,False,False,True
-229,124,cheese,False,blue,and,0.0,1,0.025,False,0,0,0,True,False,False
+229,124,cheese,False,blue,and,0.0,1,0.025,False,0,0,0,False,False,True
 605,65,and,False,Raspberry,Mango,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 530,80,sate,False,to,your,0.0,1,0.5,False,0,0,0,False,False,True
 258,297,bacon,True,dressing,scallions,1.0,1,0.07692307692307693,False,0,0,0,True,True,True
@@ -1788,11 +1788,11 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 223,28,Cheesteak,False,Original,sandwich,0.0,1,1.0,True,0,0,0,False,False,True
 604,111,and,False,Shelf,the,0.0,15,0.0010050251256281408,False,0,0,0,False,False,True
 47,90,toast,True,your,to,1.0,3,0.1,False,0,0,0,True,True,True
-261,81,beans,False,black,It,0.0,1,0.1,False,0,0,1,True,False,False
+261,81,beans,False,black,It,0.0,1,0.1,False,0,0,1,False,False,True
 520,48,meat and,False,bland,carbs,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 93,37,and,False,omelet,peach,0.0,3,0.0010050251256281408,False,0,0,0,False,False,True
 618,6,Gollo,False,here,burro,0.0,2,0.5,True,0,0,0,False,False,True
-258,301,cheese,False,melted,The,0.0,1,0.025,False,0,0,0,True,False,False
+258,301,cheese,False,melted,The,0.0,1,0.025,False,0,0,0,False,False,True
 1032,11,portabello mushroom,False,their,sandwich,0.0,1,1.0,False,0,0,0,False,False,True
 620,43,coconut milk and,False,lemongrass,galanga,0.0,1,0.5,False,0,0,1,False,False,True
 514,5,describes,False,aptly,the,0.0,1,0.5,False,0,0,0,False,False,True
@@ -1850,7 +1850,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 515,55,and,False,cucumbers,kalamata,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
 265,46,lash,False,was,out,0.0,1,1.0,False,0,0,0,False,False,True
 261,35,and,False,cool,well,0.0,3,0.0010050251256281408,False,0,0,0,False,False,True
-7,78,vegetarian,False,chicken,and,1.0,1,0.04166666666666666,False,0,0,0,False,False,True
+7,78,vegetarian,False,chicken,and,1.0,1,0.04166666666666666,False,0,0,0,True,False,False
 8,4,coffee,True,this,house,1.0,3,0.05,False,0,0,0,True,True,True
 243,41,losing and,False,am,not,0.0,1,1.0,False,0,0,0,False,False,True
 150,49,tartar,False,OWN,sauce,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
@@ -1886,10 +1886,10 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 606,75,glee paints,False,childlike,the,0.0,1,1.0,False,0,0,0,False,False,True
 501,185,grody cocktail combinations,False,up,that,0.0,1,1.0,False,0,0,0,False,False,True
 273,47,pitchers,False,Sundays,of,0.0,1,1.0,False,0,0,0,False,False,True
-251,24,onions,False,green,I,0.0,1,0.14285714285714285,False,0,0,1,True,False,False
-618,214,Gollo burro,True,remember,green,1.0,2,0.5,True,0,0,0,True,True,True
+251,24,onions,False,green,I,0.0,1,0.14285714285714285,False,0,0,1,False,False,True
+618,214,Gollo burro,True,remember,green,1.0,2,0.5,True,0,0,0,False,True,False
 169,174,food,False,your,and,1.0,6,0.005405405405405407,False,0,0,0,False,False,True
-500,46,And chilled Patron,False,rolling,with,0.0,1,1.0,True,0,1,0,True,False,False
+500,46,And chilled Patron,False,rolling,with,0.0,1,1.0,True,0,1,0,False,False,True
 270,16,beat,False,cant,the,0.0,1,0.5,False,0,0,0,False,False,True
 271,34,brew,False,specialty,But,0.0,1,1.0,False,0,0,0,False,False,True
 130,111,tea,False,iced,Sooooo,0.0,3,0.037037037037037035,False,0,0,0,False,False,True
@@ -1915,7 +1915,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 263,139,calls and,False,ready,visits,0.0,1,1.0,False,0,0,0,False,False,True
 266,7,and,False,Mom,Pop,0.0,4,0.0010050251256281408,False,0,1,0,False,False,True
 1002,7,airprot pickup,False,post,ritual,0.0,1,1.0,False,0,0,0,False,False,True
-120,56,drinks,False,the,were,1.0,3,0.030303030303030307,False,0,0,0,False,False,True
+120,56,drinks,False,the,were,1.0,3,0.030303030303030307,False,0,0,0,True,False,False
 506,104,pinto,False,and,beans,0.0,2,0.5,False,0,0,0,False,False,True
 518,90,garlic,True,and,It,0.0,1,0.1111111111111111,False,0,0,1,False,True,False
 1002,17,food,False,The,is,1.0,1,0.005405405405405407,False,0,0,0,False,False,True
@@ -1927,13 +1927,13 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 614,32,and Tuesday,False,Monday,nights,0.0,1,1.0,True,0,0,0,False,False,True
 170,16,NYC bagels and,False,and,they,1.0,1,1.0,True,0,0,0,True,False,False
 274,198,liquor paloozas,False,pipeselling,along,0.0,1,1.0,False,0,0,0,False,False,True
-83,76,pork,False,veggie,noodle,0.0,2,0.037037037037037035,False,1,0,0,True,False,False
+83,76,pork,False,veggie,noodle,0.0,2,0.037037037037037035,False,1,0,0,False,False,True
 157,106,complaints Yummy,False,no,sushi,0.0,1,1.0,True,0,0,0,False,False,True
 237,129,elaborate,False,the,flavors,0.0,1,1.0,False,0,0,0,False,False,True
 361,18,tuna burger,False,ahi,and,0.0,1,1.0,False,0,0,0,False,False,True
 46,61,and,False,share,no,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 609,124,stuck,False,was,in,0.0,1,0.25,False,0,0,0,False,False,True
-27,43,eggs,False,and,benedict,0.0,2,0.05882352941176471,False,0,0,0,True,False,False
+27,43,eggs,False,and,benedict,0.0,2,0.05882352941176471,False,0,0,0,False,False,True
 235,93,and,False,buds,will,0.0,2,0.0010050251256281408,False,0,0,0,False,False,True
 271,199,drinking,False,was,a,0.0,2,0.5,False,0,0,0,False,False,True
 513,341,and,False,on,preparing,0.0,9,0.0010050251256281408,False,0,0,0,False,False,True
@@ -1947,7 +1947,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 171,150,cheese,True,and,on,1.0,2,0.025,False,0,0,0,True,True,True
 1023,104,Caesars,False,in,Palace,0.0,1,0.3333333333333333,True,0,0,0,False,False,True
 613,314,sausage,True,link,Youll,0.0,3,0.2,False,0,0,0,False,True,False
-613,26,meat,True,eggs,carb,0.0,2,0.030303030303030307,False,0,0,0,True,True,True
+613,26,meat,True,eggs,carb,0.0,2,0.030303030303030307,False,0,0,0,False,True,False
 513,129,meat,True,monstrous,and,1.0,1,0.030303030303030307,False,0,0,0,True,True,True
 47,95,biscuit Emmas,False,buttermilk,Benny,0.0,1,1.0,True,0,0,0,False,False,True
 271,64,Thoroughly,False,drafts,meh,0.0,1,1.0,True,0,0,0,False,False,True
@@ -1967,7 +1967,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 116,109,and,False,drink,then,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 204,15,eating,False,on,at,0.0,1,0.09090909090909093,False,0,0,0,False,False,True
 44,73,Sunday,False,a,afternoon,0.0,1,1.0,True,0,0,0,False,False,True
-203,54,donuts,True,favorite,Youd,0.0,2,0.14285714285714285,False,0,0,0,True,True,True
+203,54,donuts,True,favorite,Youd,0.0,2,0.14285714285714285,False,0,0,0,False,True,False
 610,371,judge,False,to,the,0.0,1,1.0,False,0,0,0,False,False,True
 1036,68,and,False,us,they,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 61,132,belly,False,pork,and,1.0,2,0.16666666666666666,False,0,0,0,True,False,False
@@ -1975,6 +1975,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 613,398,breakfast,False,for,the,0.0,8,0.03571428571428571,False,0,0,0,False,False,True
 604,209,hash,False,potato,is,0.0,2,0.2,False,0,0,0,False,False,True
 245,42,kindly,False,They,provide,0.0,1,1.0,False,0,0,0,False,False,True
+81,69,Tuna,True,Spicy,wrapped,1.0,2,0.3333333333333333,True,0,0,0,False,True,False
 50,3,cakes,True,placeThe,are,1.0,1,0.3333333333333333,False,0,1,0,True,True,True
 134,38,appetizers,False,two,four,0.0,3,0.1111111111111111,False,0,0,0,False,False,True
 46,155,Brioche,False,on,is,0.0,1,0.5,True,0,0,0,False,False,True
@@ -2078,7 +2079,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 47,69,bacon,False,cured,or,0.0,2,0.07692307692307693,False,0,0,0,False,False,True
 183,58,tempered,False,short,guy,0.0,1,1.0,False,0,0,0,False,False,True
 395,73,adorable and,False,also,pretty,0.0,1,1.0,False,0,0,0,False,False,True
-123,77,sandwich,True,my,was,1.0,2,0.045454545454545456,False,1,0,0,False,True,False
+123,77,sandwich,True,my,was,1.0,2,0.045454545454545456,False,1,0,0,True,True,True
 1018,9,polenta,False,seared,and,0.0,1,1.0,False,0,0,0,False,False,True
 613,18,hoity toity,False,something,the,0.0,1,1.0,False,0,0,0,False,False,True
 361,15,oysters crab dip,False,had,ahi,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2126,7 +2127,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 134,65,jalapenos,True,and,which,1.0,1,1.0,False,0,0,0,True,True,True
 515,60,gripe,False,one,about,0.0,1,0.5,False,0,0,0,False,False,True
 107,126,dishes,False,pasta,were,0.0,2,0.0625,False,0,0,0,False,False,True
-29,65,pork,False,grilled,banh,0.0,2,0.037037037037037035,False,0,0,0,True,False,False
+29,65,pork,False,grilled,banh,0.0,2,0.037037037037037035,False,0,0,0,False,False,True
 1003,23,stuffed,False,completely,halfway,0.0,1,0.5,False,0,0,0,False,False,True
 387,19,immensely,False,both,Dont,0.0,1,1.0,False,0,0,0,False,False,True
 1002,6,airprot,False,post,pickup,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2148,7 +2149,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 260,208,food,False,for,From,0.0,2,0.005405405405405407,False,0,0,0,False,False,True
 169,310,translate,False,doesnt,well,0.0,1,1.0,False,0,0,0,False,False,True
 520,49,meat and carbs,False,bland,didnt,0.0,1,1.0,False,0,0,0,False,False,True
-235,76,burger,True,this,Not,0.0,3,0.037037037037037035,False,0,0,0,False,True,False
 49,15,palso carry,False,bread,a,0.0,1,1.0,False,0,0,0,False,False,True
 608,28,Italian food,False,real,I,0.0,1,0.3333333333333333,True,0,0,0,False,False,True
 158,115,schnitzel,True,the,which,1.0,1,0.5,False,0,0,0,True,True,True
@@ -2232,7 +2232,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 146,169,and,False,place,as,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 102,47,pulled pork poutine,False,the,Both,0.0,2,0.5,False,0,0,0,False,False,True
 604,102,and,False,rocks,is,0.0,15,0.0010050251256281408,False,0,1,0,False,False,True
-608,240,cheese,False,parmesan,and,0.0,1,0.025,False,0,0,0,True,False,False
+608,240,cheese,False,parmesan,and,0.0,1,0.025,False,0,0,0,False,False,True
 1036,65,longer,False,even,then,0.0,1,0.5,False,0,0,0,False,False,True
 265,176,whipped,False,and,them,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 224,151,drip,False,it,off,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2242,7 +2242,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 219,12,sorta,False,place,like,0.0,1,1.0,False,0,0,0,False,False,True
 92,4,cater,False,guys,our,0.0,1,0.5,False,0,0,0,False,False,True
 232,40,sour cream and,False,with,cheese,0.0,1,1.0,False,0,0,0,False,False,True
-618,7,Gollo burro,True,here,green,1.0,2,0.5,True,0,0,0,True,True,True
+618,7,Gollo burro,True,here,green,1.0,2,0.5,True,0,0,0,False,True,False
 147,93,food,False,of,that,1.0,2,0.005405405405405407,False,0,0,0,False,False,True
 259,106,needed,False,not,During,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 271,295,vie,False,la,My,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2283,7 +2283,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 501,255,trash,False,my,person,0.0,1,1.0,False,0,0,0,False,False,True
 509,422,toesies,False,little,need,0.0,1,1.0,False,0,0,0,False,False,True
 523,37,supposed,False,was,to,0.0,1,0.5,False,0,0,0,False,False,True
-102,78,curds,False,cheese,A,0.0,1,0.5,False,0,1,0,True,False,False
+102,78,curds,False,cheese,A,0.0,1,0.5,False,0,1,0,False,False,True
 268,177,mac and,False,Kraft,cheese,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 608,157,delight,False,doughy,Its,0.0,1,0.5,False,0,0,0,False,False,True
 608,248,drool,False,into,inducing,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2313,7 +2313,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 509,327,tell,False,then,me,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 232,43,cheese Rolled tacos,False,and,are,1.0,1,1.0,True,0,0,0,True,False,False
 149,72,and,False,dinner,found,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
-102,58,poutine,True,pork,The,0.0,4,0.07142857142857142,False,0,0,0,True,True,True
+102,58,poutine,True,pork,The,0.0,4,0.07142857142857142,False,0,0,0,False,True,False
 138,10,drinks,False,some,We,0.0,1,0.030303030303030307,False,0,0,0,False,False,True
 523,24,salsa,False,hot,today,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 116,97,coke machine,False,great,which,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2372,7 +2372,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 613,245,and cheddar,False,jack,cheese,0.0,1,1.0,False,0,0,0,False,False,True
 397,18,ran,False,they,out,0.0,1,0.5,False,0,0,0,False,False,True
 110,148,shredded,False,of,pork,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-120,114,drinks,False,oz,in,0.0,3,0.030303030303030307,False,0,1,0,True,False,False
+120,114,drinks,False,oz,in,0.0,3,0.030303030303030307,False,0,1,0,False,False,True
 513,217,tea,False,iced,with,0.0,1,0.037037037037037035,False,0,0,0,False,False,True
 524,140,nonbelievers,False,you,out,0.0,1,1.0,False,0,0,0,False,False,True
 91,24,food,False,The,was,1.0,1,0.005405405405405407,False,0,0,0,False,False,True
@@ -2421,7 +2421,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 520,48,and,False,meat,carbs,0.0,6,0.0010050251256281408,False,1,0,0,False,False,True
 610,312,limey,False,a,barstard,0.0,1,1.0,False,0,0,0,False,False,True
 112,172,food and,False,our,gave,0.0,1,0.05,False,0,0,0,False,False,True
-513,32,tomato onion pickles,False,lettuce,mayo,0.0,1,1.0,False,0,1,1,True,False,False
+513,32,tomato onion pickles,False,lettuce,mayo,0.0,1,1.0,False,0,1,1,False,False,True
 385,44,egg,True,the,dishes,1.0,1,0.16666666666666666,False,0,0,0,True,True,True
 69,4,Cheesecake factory,False,of,Came,0.0,1,1.0,True,0,0,0,False,False,True
 259,65,Beef,False,Boiled,Tenderloin,0.0,2,0.5,True,0,0,0,False,False,True
@@ -2587,7 +2587,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 399,22,food,False,Great,and,1.0,2,0.005405405405405407,False,1,0,0,False,False,True
 71,43,cookie,True,chocolate,gluten,1.0,5,0.1111111111111111,False,1,1,0,True,True,True
 130,102,drink and,False,the,gave,0.0,1,0.5,False,0,0,0,False,False,True
-613,246,cheese,False,cheddar,Ohmygod,0.0,2,0.025,False,0,0,0,True,False,False
+613,246,cheese,False,cheddar,Ohmygod,0.0,2,0.025,False,0,0,0,False,False,True
 50,26,chocolate,False,free,cake,0.0,1,0.07692307692307693,False,0,0,0,False,False,True
 398,111,saying,False,without,that,0.0,1,0.2,False,0,0,0,False,False,True
 262,89,rib,False,prime,was,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
@@ -2595,7 +2595,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 263,48,wet,False,was,They,0.0,1,1.0,False,0,0,0,False,False,True
 606,254,od,False,they,on,0.0,1,1.0,False,0,0,0,False,False,True
 163,89,and,False,chicken,mushrooms,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
-78,20,cake,False,radish,calamari,0.0,1,0.07142857142857142,False,0,0,0,True,False,False
+78,20,cake,False,radish,calamari,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 261,91,chorizo cheddar,False,with,cheese,0.0,1,1.0,False,1,0,0,False,False,True
 142,71,centres,False,gooey,YummyThe,0.0,1,1.0,False,0,0,0,False,False,True
 501,201,seedy,False,The,vibe,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2623,7 +2623,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 513,132,and cheese concoctions,False,meat,slathered,0.0,1,1.0,False,0,0,0,False,False,True
 518,11,rice pita bread,False,of,cabbage,0.0,1,1.0,False,0,0,0,False,False,True
 530,64,crunchy,False,mega,Hot,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-46,243,banana,False,with,bread,0.0,1,0.2,False,0,0,1,True,False,False
+46,243,banana,False,with,bread,0.0,1,0.2,False,0,0,1,False,False,True
 21,42,and,False,restrictions,needs,0.0,12,0.0010050251256281408,False,1,0,0,False,False,True
 232,42,Rolled,False,cheese,tacos,0.0,1,1.0,True,0,0,0,False,False,True
 158,49,eating,False,for,in,0.0,2,0.09090909090909093,False,0,0,0,False,False,True
@@ -2646,7 +2646,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 509,373,mystery,False,The,brings,0.0,1,1.0,False,0,0,0,False,False,True
 129,47,eggs,True,your,toast,1.0,1,0.05882352941176471,False,0,0,0,True,True,True
 240,152,truffle,False,in,oil,0.0,2,0.5,False,1,0,0,False,False,True
-1023,74,water,False,of,until,1.0,1,0.09090909090909093,False,0,0,0,False,False,True
+1023,74,water,False,of,until,1.0,1,0.09090909090909093,False,0,0,0,True,False,False
 101,23,consistently,False,its,good,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 610,179,madre burger,False,big,for,0.0,1,1.0,False,0,0,0,False,False,True
 7,103,noodle,False,rice,and,0.0,1,0.05882352941176471,False,1,0,0,False,False,True
@@ -2656,9 +2656,9 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 266,156,shall reward,False,he,you,0.0,1,1.0,False,0,0,0,False,False,True
 147,108,Swiss Chaletsized,False,Little,gravies,0.0,1,1.0,True,0,0,0,False,False,True
 168,74,syrup,True,of,and,1.0,1,0.2,False,0,0,0,True,True,True
-61,46,ramen,True,good,listening,0.0,4,0.14285714285714285,False,0,0,0,True,True,True
+61,46,ramen,True,good,listening,0.0,4,0.14285714285714285,False,0,0,0,False,True,False
 610,343,peanuts,True,free,I,0.0,1,0.16666666666666666,False,0,0,0,False,True,False
-1001,59,noodles,False,pulled,which,0.0,1,0.05555555555555555,False,0,0,0,True,False,False
+1001,59,noodles,False,pulled,which,0.0,1,0.05555555555555555,False,0,0,0,False,False,True
 188,161,and,False,wine,a,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 136,50,feature communal sinks,False,which,the,0.0,1,1.0,False,0,0,0,False,False,True
 508,60,palate,False,flavor,Med,0.0,1,0.25,False,0,0,0,False,False,True
@@ -2672,7 +2672,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 530,74,tongue,False,your,so,0.0,1,0.5,False,0,0,0,False,False,True
 513,150,consuming,False,men,massive,0.0,1,1.0,False,0,0,0,False,False,True
 91,74,Gaylord,False,consider,for,0.0,2,0.5,True,0,0,0,False,False,True
-114,183,cheesecake Cheesecakes,False,apple,were,0.0,1,1.0,True,0,1,0,True,False,False
+114,183,cheesecake Cheesecakes,False,apple,were,0.0,1,1.0,True,0,1,0,False,False,True
 1018,140,coworkers,False,with,at,0.0,1,1.0,False,0,0,0,False,False,True
 511,112,Pei,False,then,Wei,0.0,1,1.0,True,0,0,0,False,False,True
 7,29,higher,False,slightly,but,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
@@ -2702,14 +2702,14 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 508,86,tzatziki,False,the,is,1.0,2,0.5,False,1,0,0,True,False,False
 134,27,wary,False,but,The,0.0,1,1.0,False,0,0,0,False,False,True
 525,12,noodles,True,plain,with,1.0,2,0.05555555555555555,False,0,0,0,True,True,True
-368,31,pasta,False,tomato,and,0.0,1,0.05555555555555555,False,0,0,0,True,False,False
+368,31,pasta,False,tomato,and,0.0,1,0.05555555555555555,False,0,0,0,False,False,True
 609,24,debate Melty gelatinous,False,for,gummy,0.0,1,0.5,True,0,0,0,False,False,True
 613,27,meat carb,False,eggs,breakfast,0.0,1,1.0,False,0,0,0,False,False,True
 608,189,pasta,False,boyfriends,carbonara,1.0,3,0.05555555555555555,False,0,0,0,True,False,False
 130,112,iced tea Sooooo,False,was,ew,0.0,1,1.0,True,0,0,0,False,False,True
 129,29,french toast,True,the,It,1.0,1,1.0,False,0,0,0,True,True,True
 83,34,sees,False,server,you,0.0,1,1.0,False,0,0,0,False,False,True
-530,53,beans,False,green,very,0.0,1,0.1,False,0,0,1,True,False,False
+530,53,beans,False,green,very,0.0,1,0.1,False,0,0,1,False,False,True
 44,41,typically bubble tea,False,your,place,0.0,1,1.0,False,0,0,0,False,False,True
 526,44,laden,False,mucous,smokers,0.0,1,0.5,False,0,0,0,False,False,True
 163,13,and,False,mussels,my,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
@@ -2732,7 +2732,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 394,67,care,False,taken,of,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 108,127,oily,False,very,cupcake,0.0,1,0.5,False,0,0,0,False,False,True
 110,142,pork,True,the,was,1.0,7,0.037037037037037035,False,0,0,0,True,True,True
-21,135,salads,True,are,Which,0.0,3,0.25,False,0,0,0,True,True,True
+21,135,salads,True,are,Which,0.0,3,0.25,False,0,0,0,False,True,False
 128,86,enchilada and,False,chicken,my,0.0,1,1.0,False,0,0,0,False,False,True
 149,184,eggs,True,and,thats,1.0,1,0.05882352941176471,False,0,0,0,True,True,True
 244,21,and,False,deep,narrow,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
@@ -2752,7 +2752,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 142,72,centres YummyThe,False,gooey,waiter,0.0,1,1.0,True,0,0,0,False,False,True
 613,192,strawberry,True,blueberry,banana,1.0,1,0.3333333333333333,False,0,0,1,True,True,True
 614,92,forgotten,False,from,or,0.0,1,0.5,False,0,0,0,False,False,True
-620,53,beans,False,green,very,0.0,1,0.1,False,0,0,1,True,False,False
+620,53,beans,False,green,very,0.0,1,0.1,False,0,0,1,False,False,True
 120,39,cross,False,metal,on,0.0,1,1.0,False,1,0,0,False,False,True
 11,34,Dim,False,sheet,sum,0.0,1,1.0,True,0,0,0,False,False,True
 266,8,and Pop,False,Mom,greasy,0.0,1,1.0,True,0,0,0,False,False,True
@@ -2771,16 +2771,17 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1002,55,vegetarian and,False,youre,confused,0.0,1,0.25,False,0,0,0,False,False,True
 501,16,hungerstarved delusions,False,serious,that,0.0,1,1.0,False,0,0,0,False,False,True
 254,64,sausage and,False,The,roll,0.0,1,1.0,False,0,0,0,False,False,True
-165,51,pizzas,False,of,and,1.0,3,0.14285714285714285,False,0,0,0,False,False,True
+165,51,pizzas,False,of,and,1.0,3,0.14285714285714285,False,0,0,0,True,False,False
 272,97,and,False,tables,a,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 7,103,steamed rice noodle,True,cuon,and,1.0,1,1.0,False,0,0,0,True,True,True
 515,57,and kalamata olives,False,cucumbers,My,0.0,1,1.0,False,0,0,0,False,False,True
 1002,96,rice,False,fried,Its,0.0,1,0.05,False,0,0,0,False,False,True
-266,121,Caesar salad,True,fish,to,1.0,1,1.0,True,1,0,0,True,True,True
+266,121,Caesar salad,True,fish,to,1.0,1,1.0,True,1,0,0,False,True,False
 229,74,mozzarella,True,the,was,1.0,3,0.25,False,0,0,0,True,True,True
 129,69,steep,False,the,end,0.0,1,1.0,False,0,0,0,False,False,True
 152,44,awhile,False,and,Weve,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 501,176,flying rats,False,a,ass,0.0,1,1.0,False,0,0,0,False,False,True
+1018,43,drinks,True,and,took,1.0,1,0.030303030303030307,False,0,0,0,True,True,True
 610,100,warrant,False,should,a,0.0,1,1.0,False,0,0,0,False,False,True
 107,209,bread,True,the,wasnt,1.0,3,0.04,False,0,0,0,True,True,True
 514,33,wafting,False,sewage,from,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2825,6 +2826,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 265,93,grating,False,pretty,By,0.0,1,1.0,False,0,0,0,False,False,True
 230,12,and,False,look,feel,0.0,1,0.0010050251256281408,False,0,0,0,False,False,True
 2,29,and pork belly,False,tartar,to,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
+81,72,Avocado,True,with,BBQ,1.0,1,1.0,True,1,0,1,False,True,False
 171,170,cheese,True,the,Ill,1.0,2,0.025,False,0,0,0,True,True,True
 100,308,food,False,more,for,0.0,5,0.005405405405405407,False,0,0,0,False,False,True
 1011,18,grey,False,light,not,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2836,7 +2838,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 211,13,BBQ,True,some,A,0.0,1,0.2,True,0,0,0,False,True,False
 613,313,link,False,little,sausage,0.0,1,1.0,False,0,0,0,False,False,True
 508,3,hummus,True,a,fiend,1.0,1,0.125,False,0,0,0,True,True,True
-130,42,iced,False,and,tea,0.0,3,0.25,False,0,0,0,True,False,False
+130,42,iced,False,and,tea,0.0,3,0.25,False,0,0,0,False,False,True
 91,21,tear,False,and,down,0.0,1,1.0,False,0,0,0,False,False,True
 271,14,blows,False,here,Four,0.0,1,1.0,False,0,0,0,False,False,True
 100,193,bacon and,False,and,toast,0.0,1,0.2,False,0,0,0,False,False,True
@@ -2884,7 +2886,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 7,76,beef,True,phos,chicken,1.0,1,0.06666666666666668,False,0,0,0,True,True,True
 523,29,marks,False,quotation,around,0.0,1,0.5,False,0,0,0,False,False,True
 65,42,pork,False,a,bone,0.0,1,0.037037037037037035,False,0,0,0,False,False,True
-123,70,salad,True,a,There,0.0,2,0.037037037037037035,False,0,0,0,True,True,True
+123,70,salad,True,a,There,0.0,2,0.037037037037037035,False,0,0,0,False,True,False
 65,43,bone,False,pork,soup,0.0,1,0.2,False,0,0,0,False,False,True
 513,46,getting,False,ever,In,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 618,199,rice,False,and,an,0.0,1,0.05,False,0,0,0,False,False,True
@@ -2929,7 +2931,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 235,20,burger,True,chorizo,It,0.0,3,0.037037037037037035,False,0,0,0,False,True,False
 528,67,dish,False,this,apart,0.0,1,0.05263157894736842,False,0,0,0,False,False,True
 274,198,pipeselling liquor paloozas,False,crack,along,0.0,1,1.0,False,0,0,0,False,False,True
-265,198,Serrano,True,of,spiciness,1.0,1,1.0,True,1,0,0,True,True,True
+265,198,Serrano,True,of,spiciness,1.0,1,1.0,True,1,0,0,False,True,False
 53,16,dim,False,The,sum,0.0,2,0.2,False,0,0,0,False,False,True
 244,36,and,False,chips,salsa,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 208,5,food,False,the,was,1.0,1,0.005405405405405407,False,0,0,0,False,False,True
@@ -2999,9 +3001,9 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 149,132,sat,False,We,down,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 263,167,Diamonds,False,a,I,0.0,1,1.0,True,0,0,0,False,False,True
 501,108,sliders,True,The,are,1.0,1,1.0,False,0,0,0,True,True,True
-136,104,brunch,False,their,Now,0.0,4,0.07142857142857142,False,0,0,0,True,False,False
+136,104,brunch,False,their,Now,0.0,4,0.07142857142857142,False,0,0,0,False,False,True
 101,17,Japanese Korean,False,BEST,food,0.0,1,1.0,True,0,0,0,False,False,True
-261,101,brunch,False,good,sized,0.0,1,0.07142857142857142,False,0,0,0,True,False,False
+261,101,brunch,False,good,sized,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 99,19,and,False,occasions,its,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 251,12,fried,False,of,potato,0.0,1,0.05,False,0,0,0,False,False,True
 211,134,and cheese,False,mac,We,0.0,2,0.08333333333333333,False,0,0,0,False,False,True
@@ -3095,7 +3097,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 516,18,au naturel casing,False,an,They,0.0,1,1.0,False,0,0,0,False,False,True
 395,84,Boca,False,exploring,Park,0.0,1,1.0,True,0,0,0,False,False,True
 1000,20,peanut,False,warm,sauce,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-102,77,cheese,False,and,curds,0.0,1,0.025,False,0,0,0,True,False,False
+102,77,cheese,False,and,curds,0.0,1,0.025,False,0,0,0,False,False,True
 107,81,drinks and,False,our,food,0.0,1,0.2,False,0,0,0,False,False,True
 12,11,poutine and,False,confit,the,0.0,1,0.5,False,0,0,0,False,False,True
 71,25,Chinatown Smelt,False,of,amazing,0.0,1,1.0,True,0,0,0,False,False,True
@@ -3112,7 +3114,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 604,69,enforce,False,they,a,0.0,1,0.5,False,0,0,0,False,False,True
 112,152,sealed,False,in,packages,0.0,1,1.0,False,0,0,0,False,False,True
 513,254,potato salad,True,The,was,1.0,3,0.2,False,0,0,1,True,True,True
-138,21,Drinks,False,share,were,0.0,1,1.0,True,0,1,0,True,False,False
+138,21,Drinks,False,share,were,0.0,1,1.0,True,0,1,0,False,False,True
 102,77,fries and cheese,False,the,curds,0.0,1,1.0,False,0,0,0,False,False,True
 523,48,sloppy joe mix,False,like,than,0.0,1,1.0,False,0,0,0,False,False,True
 509,78,frothiness,False,opaque,will,0.0,1,1.0,False,0,0,0,False,False,True
@@ -3179,7 +3181,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 149,130,cheering,False,and,We,0.0,1,1.0,False,0,0,0,False,False,True
 221,28,sugar,False,have,donuts,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 258,201,confuses,False,it,me,0.0,1,1.0,False,0,0,0,False,False,True
-513,254,salad,False,potato,was,0.0,3,0.037037037037037035,False,0,0,0,True,False,False
+513,254,salad,False,potato,was,0.0,3,0.037037037037037035,False,0,0,0,False,False,True
 224,64,beers,True,few,and,1.0,1,0.5,False,0,0,0,True,True,True
 206,56,Popeyes,False,all,Chicken,0.0,2,0.5,True,0,0,0,False,False,True
 211,126,prefer,False,we,Neither,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
@@ -3195,9 +3197,9 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 272,154,bullseyes,False,double,so,0.0,2,0.5,False,0,0,0,False,False,True
 511,22,congee,False,like,If,0.0,2,0.3333333333333333,False,1,0,0,False,False,True
 116,25,heads,False,are,and,0.0,1,1.0,False,0,0,0,False,False,True
-609,329,coconut,True,with,Delish,0.0,1,0.2,False,0,0,1,True,True,True
+609,329,coconut,True,with,Delish,0.0,1,0.2,False,0,0,1,False,True,False
 511,158,food,False,the,is,1.0,1,0.005405405405405407,False,0,1,0,False,False,True
-108,90,Skor and chocolate,False,strawberry,All,0.0,1,1.0,True,0,1,0,True,False,False
+108,90,Skor and chocolate,False,strawberry,All,0.0,1,1.0,True,0,1,0,False,False,True
 152,96,comparable,False,have,for,0.0,1,1.0,False,0,0,0,False,False,True
 509,44,golden rationale,False,unassailable,for,0.0,1,1.0,False,0,0,0,False,False,True
 31,86,and,False,rice,the,0.0,4,0.0010050251256281408,False,1,1,0,False,False,True
@@ -3260,7 +3262,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 138,101,walking,False,guy,by,0.0,1,1.0,False,0,0,0,False,False,True
 513,133,slathered,False,concoctions,in,0.0,1,1.0,False,0,0,0,False,False,True
 258,250,flaming Parmesan sauce,True,the,The,1.0,1,1.0,True,0,0,0,True,True,True
-44,265,kumquat,True,no,taste,1.0,6,0.16666666666666666,False,0,0,1,True,True,True
 504,106,miles,False,three,away,0.0,1,0.5,False,0,0,0,False,False,True
 613,236,Kong Omelet,False,Hong,with,0.0,1,1.0,True,0,0,0,False,False,True
 1011,66,skins,False,the,were,1.0,1,0.5,False,0,1,0,True,False,False
@@ -3306,7 +3307,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1018,65,reviewer,False,another,not,0.0,1,0.5,False,0,0,0,False,False,True
 259,68,Szechuan,False,in,Sauce,0.0,1,0.5,True,0,0,0,False,False,True
 134,183,ones,False,good,that,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-61,131,pork,False,seaweed,belly,0.0,2,0.037037037037037035,False,0,0,0,True,False,False
+61,131,pork,False,seaweed,belly,0.0,2,0.037037037037037035,False,0,0,0,False,False,True
 1020,47,eater,False,healthy,as,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 161,58,tomato,True,one,per,1.0,1,0.08333333333333333,False,0,0,1,True,True,True
 53,53,dessert,False,the,section,1.0,1,0.125,False,0,0,0,True,False,False
@@ -3324,12 +3325,11 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 258,298,bacon scallions,False,dressing,and,0.0,1,1.0,False,0,0,0,False,False,True
 398,154,hummus,True,the,HERE,1.0,3,0.125,False,0,0,0,True,True,True
 2,12,and,False,decor,vibe,0.0,5,0.0010050251256281408,False,0,0,0,False,False,True
-11,25,dim,False,of,sum,0.0,2,0.2,False,0,0,0,True,False,False
 83,131,noodle and,False,spicy,shanghai,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 122,37,partied,False,my,ordered,0.0,1,1.0,False,0,0,0,False,False,True
 399,54,Park,False,the,again,0.0,1,0.3333333333333333,True,0,0,0,False,False,True
 398,44,wrap,True,the,that,1.0,1,0.5,False,0,0,0,True,True,True
-271,20,water,False,the,but,1.0,1,0.09090909090909093,False,0,0,0,False,False,True
+271,20,water,False,the,but,1.0,1,0.09090909090909093,False,0,0,0,True,False,False
 268,26,delight,False,with,the,0.0,1,0.5,False,0,0,0,False,False,True
 244,61,stacked quesadilla,False,steak,You,0.0,1,1.0,False,0,0,0,False,False,True
 528,65,sets,False,really,this,0.0,1,0.5,False,0,0,0,False,False,True
@@ -3411,7 +3411,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 612,134,runny yolk,False,no,goodness,0.0,1,0.5,False,0,0,0,False,False,True
 171,107,sauce rice and,False,in,a,0.0,1,1.0,False,0,0,0,False,False,True
 508,94,and,False,beef,chicken,0.0,13,0.0010050251256281408,False,0,0,0,False,False,True
-620,41,coconut,False,lemongrass,milk,0.0,1,0.2,False,0,0,1,True,False,False
+620,41,coconut,False,lemongrass,milk,0.0,1,0.2,False,0,0,1,False,False,True
 1032,35,taken,False,well,care,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 511,114,Pei Wei and,False,then,Panda,0.0,1,1.0,True,0,0,0,False,False,True
 524,99,affirmation,False,an,that,0.0,1,1.0,False,0,0,0,False,False,True
@@ -3544,7 +3544,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 20,16,and,False,friend,I,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 609,347,stick,False,just,with,0.0,1,0.5,False,0,0,0,False,False,True
 224,84,Pizza,False,Hawaiian,a,0.0,1,0.5,True,0,0,0,False,False,True
-14,62,dishes,False,the,had,1.0,1,0.0625,False,0,0,0,False,False,True
 258,172,and,False,area,a,0.0,5,0.0010050251256281408,False,0,0,0,False,False,True
 168,131,and,False,touch,the,0.0,10,0.0010050251256281408,False,0,0,0,False,False,True
 136,112,and,False,food,service,0.0,11,0.0010050251256281408,False,0,0,0,False,False,True
@@ -3566,7 +3565,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 513,145,phallic reference,False,a,about,0.0,1,1.0,False,0,0,0,False,False,True
 638,8,creme brulea cheesecake,True,ribs,and,0.0,1,1.0,False,0,0,0,False,True,False
 524,84,and,False,smooth,decadent,0.0,6,0.0010050251256281408,False,1,0,0,False,False,True
-514,49,fried zucchini sticks,False,overcooked,or,0.0,1,1.0,False,0,1,1,True,False,False
+514,49,fried zucchini sticks,False,overcooked,or,0.0,1,1.0,False,0,1,1,False,False,True
 130,137,and,False,peppers,mozzerella,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
 379,55,flies,False,catch,with,0.0,1,1.0,False,0,1,0,False,False,True
 511,115,and Panda,False,Wei,Express,0.0,1,1.0,True,0,0,0,False,False,True
@@ -3606,7 +3605,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 379,26,contact,False,into,with,0.0,1,1.0,False,0,0,0,False,False,True
 147,89,delivered,False,were,a,0.0,1,0.5,False,0,0,0,False,False,True
 508,227,tzatziki and,False,with,their,0.0,1,1.0,False,0,0,0,False,False,True
-232,35,rolled,False,five,tacos,0.0,2,0.2,False,0,0,0,True,False,False
 165,57,tricky,False,was,because,0.0,1,1.0,False,0,0,0,False,False,True
 1036,5,and,False,hours,the,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 612,86,Hawaiian pulled,False,the,pork,0.0,1,0.5,True,0,0,0,False,False,True
@@ -3619,7 +3617,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 262,131,au,False,the,jus,0.0,1,0.25,False,0,0,0,False,False,True
 94,65,earlier and,False,cooked,just,0.0,1,1.0,False,0,0,0,False,False,True
 609,242,honeydew,True,and,are,1.0,1,1.0,False,0,0,1,True,True,True
-604,209,hash,False,potato,is,0.0,2,0.2,False,0,0,0,True,False,False
 272,100,jukebox,False,decent,Pretty,0.0,1,1.0,False,0,0,0,False,False,True
 520,36,tossing,False,Even,some,0.0,1,1.0,False,0,0,0,False,False,True
 604,321,Soup,False,Tortilla,which,0.0,1,0.5,True,0,0,0,False,False,True
@@ -3643,12 +3640,12 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 620,64,crunchy,False,mega,Hot,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 39,35,potato,False,Sweet,wedges,0.0,1,0.06666666666666668,False,0,0,1,False,False,True
 609,43,mucous,False,of,laden,0.0,1,0.5,False,0,0,0,False,False,True
-11,15,dim,False,for,sum,0.0,2,0.2,False,0,0,0,True,False,False
+11,15,dim,False,for,sum,0.0,2,0.2,False,0,0,0,False,False,True
 14,79,catching,False,for,up,0.0,1,1.0,False,0,0,0,False,False,True
 274,171,scrawl,False,yearold,Come,0.0,1,1.0,False,0,0,0,False,False,True
 608,177,garlic,True,some,onions,1.0,3,0.1111111111111111,False,0,0,1,True,True,True
 83,77,pork noodle,True,veggie,and,1.0,1,1.0,False,1,0,0,True,True,True
-102,78,cheese curds,True,and,A,0.0,1,0.5,False,0,1,0,True,True,True
+102,78,cheese curds,True,and,A,0.0,1,0.5,False,0,1,0,False,True,False
 108,17,boasts,False,which,the,0.0,1,1.0,False,0,0,0,False,False,True
 83,12,moreThere,False,say,was,0.0,1,1.0,True,0,0,0,False,False,True
 136,150,biscuits,True,of,with,1.0,1,1.0,False,0,0,0,True,True,True
@@ -3669,30 +3666,29 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 65,24,mins,False,almost,before,0.0,1,0.125,False,0,0,0,False,False,True
 102,99,s glam,False,the,rock,0.0,1,1.0,False,0,0,0,False,False,True
 394,43,combinations,False,different,The,0.0,1,0.2,False,0,0,0,False,False,True
-604,229,hash,False,potato,and,0.0,2,0.2,False,0,0,0,True,False,False
+604,229,hash,False,potato,and,0.0,2,0.2,False,0,0,0,False,False,True
 158,179,particularly,False,been,good,0.0,1,0.25,False,0,0,0,False,False,True
 188,42,talk,False,to,loud,0.0,1,0.5,False,0,0,0,False,False,True
 112,149,sauce,False,tartar,came,0.0,1,0.021739130434782608,False,0,0,0,False,False,True
 268,140,Mexican joints,False,at,In,0.0,1,0.5,True,0,0,0,False,False,True
 5,3,almond,False,chocolate,croissant,0.0,1,1.0,False,0,0,0,False,False,True
 1014,88,bulgogi,False,the,beef,1.0,1,0.5,False,0,0,0,True,False,False
-31,7,Danforth,False,the,is,1.0,1,0.3333333333333333,True,0,0,0,False,False,True
+31,7,Danforth,False,the,is,1.0,1,0.3333333333333333,True,0,0,0,True,False,False
 2,34,salmon,True,a,dish,1.0,1,0.125,False,0,0,0,True,True,True
 152,77,and,False,toast,I,0.0,9,0.0010050251256281408,False,0,0,0,False,False,True
 169,207,speared,False,finally,a,0.0,1,1.0,False,0,0,0,False,False,True
-83,116,noodles,False,handmade,Will,0.0,2,0.05555555555555555,False,0,0,0,True,False,False
+83,116,noodles,False,handmade,Will,0.0,2,0.05555555555555555,False,0,0,0,False,False,True
 530,40,basil lemongrass,False,Sorry,coconut,0.0,1,0.5,False,0,0,1,False,False,True
 46,77,roasted,False,the,bone,0.0,1,0.25,False,0,0,0,False,False,True
 100,324,frites,False,Boom,are,0.0,1,1.0,False,1,0,0,False,False,True
 20,155,kimchi,True,no,The,1.0,1,0.3333333333333333,False,0,0,0,True,True,True
 169,64,drop food,False,will,on,0.0,1,1.0,False,0,0,0,False,False,True
-604,209,and potato hash,False,chicken,is,0.0,2,0.5,False,0,0,1,True,False,False
-1032,46,brunch,False,and,We,0.0,1,0.07142857142857142,False,0,0,0,True,False,False
-47,105,bacon,False,peameal,poached,0.0,2,0.07692307692307693,False,0,0,0,True,False,False
+1032,46,brunch,False,and,We,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
+47,105,bacon,False,peameal,poached,0.0,2,0.07692307692307693,False,0,0,0,False,False,True
 39,63,rolls,False,dragon,are,0.0,1,0.14285714285714285,False,0,0,0,False,False,True
 1011,29,dumplings,True,fried,I,0.0,5,0.14285714285714285,False,0,0,0,True,True,True
 139,16,Nutella Latte,False,a,on,1.0,1,1.0,True,0,0,0,True,False,False
-44,132,kumquat lemonade,True,supernova,under,1.0,4,0.25,False,0,0,1,False,True,False
+44,132,kumquat lemonade,True,supernova,under,1.0,4,0.25,False,0,0,1,True,True,True
 620,36,detectable,False,were,either,0.0,1,0.5,False,0,0,0,False,False,True
 108,60,and birthday,False,Twix,cake,0.0,1,1.0,False,0,0,0,False,False,True
 613,363,sprinkled,False,when,with,0.0,1,0.25,False,1,1,0,False,False,True
@@ -3726,8 +3722,8 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 16,34,and salty,False,tasty,but,0.0,1,0.5,False,0,0,0,False,False,True
 229,126,cheese and bacon,False,blue,add,0.0,1,1.0,False,0,0,0,False,False,True
 613,251,and,False,delicious,HUGE,0.0,15,0.0010050251256281408,False,0,0,0,False,False,True
-240,111,cheese,False,blue,crust,0.0,1,0.025,False,0,0,0,True,False,False
-61,143,Soup,True,good,was,0.0,1,0.5,True,0,1,0,True,True,True
+240,111,cheese,False,blue,crust,0.0,1,0.025,False,0,0,0,False,False,True
+61,143,Soup,True,good,was,0.0,1,0.5,True,0,1,0,False,True,False
 385,29,health,False,a,nut,0.0,1,1.0,False,0,0,0,False,False,True
 239,101,lines,False,long,are,0.0,1,1.0,False,0,0,0,False,False,True
 81,43,Maki,False,Couture,Signature,0.0,2,0.5,True,0,0,0,False,False,True
@@ -3749,7 +3745,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 608,297,and,False,crouton,topped,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
 365,110,vegetarian entree,False,the,which,1.0,1,1.0,False,0,0,0,True,False,False
 234,298,definite,False,a,plus,0.0,1,1.0,False,0,0,0,False,False,True
-46,107,marrow,False,bone,could,0.0,2,0.5,False,0,0,1,True,False,False
+46,107,marrow,False,bone,could,0.0,2,0.5,False,0,0,1,False,False,True
 171,142,charged,False,they,him,0.0,1,0.5,False,0,0,0,False,False,True
 135,33,coffee,True,and,and,1.0,2,0.05,False,0,0,0,True,True,True
 69,118,Vegetarian,False,broccoli,fried,0.0,1,1.0,True,0,0,0,False,False,True
@@ -3782,7 +3778,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 240,9,and,False,town,it,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 261,93,cheese and,False,cheddar,Hickmans,0.0,1,0.1,False,0,0,0,False,False,True
 237,121,burnt and,False,tasted,I,0.0,1,1.0,False,0,0,0,False,False,True
-528,120,meat,True,shredded,To,0.0,2,0.030303030303030307,False,1,0,0,True,True,True
+528,120,meat,True,shredded,To,0.0,2,0.030303030303030307,False,1,0,0,False,True,False
 158,77,eating,False,youre,there,0.0,2,0.09090909090909093,False,0,0,0,False,False,True
 1014,37,appreciate,False,I,how,0.0,1,0.5,False,0,0,0,False,False,True
 524,150,except,False,well,for,0.0,1,0.25,False,0,0,0,False,False,True
@@ -3791,7 +3787,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 606,35,families,False,kiddo,and,0.0,1,1.0,False,0,0,0,False,False,True
 518,123,and,False,atmosphere,maybe,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
 37,46,cough,False,banana,syrup,0.0,1,1.0,False,0,0,0,False,False,True
-69,94,beans,False,green,which,0.0,1,0.1,False,1,0,1,True,False,False
+69,94,beans,False,green,which,0.0,1,0.1,False,1,0,1,False,False,True
 507,25,sauces,False,their,Come,0.0,1,0.5,False,0,0,0,False,False,True
 266,125,fritter,False,pork,sandwich,0.0,1,1.0,False,0,0,0,False,False,True
 130,114,Sooooo ew Sandwich,False,tea,was,0.0,1,1.0,True,0,0,0,False,False,True
@@ -3815,17 +3811,17 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 608,122,toddler,False,the,special,0.0,1,1.0,False,0,0,0,False,False,True
 31,115,Roti,True,the,itself,1.0,1,1.0,True,0,0,0,True,True,True
 613,394,meat,True,eggs,and,1.0,2,0.030303030303030307,False,0,0,0,True,True,True
-44,253,peach,True,no,taste,1.0,3,0.25,False,0,0,1,False,True,False
+44,253,peach,True,no,taste,1.0,3,0.25,False,0,0,1,True,True,True
 509,141,moolah,False,any,on,0.0,1,1.0,False,0,0,0,False,False,True
 1011,137,veggie,False,of,dumplings,0.0,1,0.125,False,0,0,0,False,False,True
 375,3,vegetarian,False,many,options,0.0,1,0.04166666666666666,False,0,0,0,False,False,True
-609,190,sugar,False,no,added,0.0,2,0.1111111111111111,False,0,0,0,True,False,False
+609,190,sugar,False,no,added,0.0,2,0.1111111111111111,False,0,0,0,False,False,True
 1030,73,and words,False,mall,cant,0.0,1,1.0,False,0,0,0,False,False,True
 508,93,meat beef,False,gyro,and,0.0,1,1.0,False,0,0,0,False,False,True
 110,47,hands,False,your,It,0.0,1,0.5,False,0,0,0,False,False,True
 513,213,potato salad and,False,of,a,1.0,1,1.0,False,0,0,1,True,False,False
 272,54,schmansy,False,fancy,Its,0.0,1,1.0,False,0,0,0,False,False,True
-244,37,and salsa,False,chips,they,0.0,2,0.2,False,0,0,0,True,False,False
+244,37,and salsa,False,chips,they,0.0,2,0.2,False,0,0,0,False,False,True
 268,40,sides,False,perfect,and,0.0,2,0.16666666666666666,False,0,0,0,False,False,True
 1034,62,onion,True,with,and,1.0,1,0.09090909090909093,False,0,0,1,True,True,True
 266,121,salad,False,Caesar,to,0.0,1,0.037037037037037035,False,0,0,0,False,False,True
@@ -3843,13 +3839,12 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1018,121,happens,False,what,with,0.0,1,1.0,False,0,0,0,False,False,True
 64,61,noodles,True,The,had,1.0,1,0.05555555555555555,False,0,0,0,True,True,True
 229,125,cheese and,False,blue,bacon,0.0,1,0.1,False,0,0,0,False,False,True
-47,69,bacon,False,cured,or,0.0,2,0.07692307692307693,False,0,0,0,True,False,False
 257,87,breakfast pastries,False,some,There,0.0,1,1.0,False,0,0,0,False,False,True
 265,206,onion,True,some,although,1.0,1,0.09090909090909093,False,0,0,1,True,True,True
 1006,61,inedible,False,were,only,0.0,1,0.5,False,0,0,0,False,False,True
 1020,38,preface,False,me,this,0.0,1,0.5,False,0,0,0,False,False,True
 385,5,and,False,now,there,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
-111,9,ice cream,False,fudge,is,0.0,2,0.2,False,0,0,0,True,False,False
+111,9,ice cream,False,fudge,is,0.0,2,0.2,False,0,0,0,False,False,True
 169,118,pitch black,False,a,room,0.0,2,0.5,False,0,0,0,False,False,True
 71,52,inch cake,False,mini,was,0.0,1,1.0,False,0,0,0,False,False,True
 610,426,hypnotic,False,Your,grease,0.0,1,1.0,False,0,0,0,False,False,True
@@ -3869,7 +3864,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 511,77,mighty,False,the,have,1.0,2,0.5,False,0,0,0,True,False,False
 161,48,pizza,True,The,was,1.0,6,0.05,False,0,1,0,True,True,True
 123,67,fries,True,substitute,for,1.0,2,0.03448275862068965,False,0,0,0,True,True,True
-1041,16,soup,True,a,or,1.0,1,0.0625,False,0,0,0,False,True,False
+1041,16,soup,True,a,or,1.0,1,0.0625,False,0,0,0,True,True,True
 81,45,Signature roll,False,Maki,salmon,0.0,1,1.0,True,0,0,0,False,False,True
 25,13,and,False,posting,decided,0.0,2,0.0010050251256281408,False,0,0,0,False,False,True
 265,143,gallo,False,de,and,0.0,1,1.0,False,0,0,0,False,False,True
@@ -3943,7 +3938,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1011,105,Perhaps,False,sloppy,we,0.0,1,0.16666666666666666,True,0,0,0,False,False,True
 606,172,Cerreta,False,with,I,0.0,1,1.0,True,0,0,0,False,False,True
 613,247,cheddar cheese Ohmygod,False,and,It,0.0,1,1.0,True,0,0,0,False,False,True
-102,57,pork,False,pulled,poutine,0.0,2,0.037037037037037035,False,0,0,0,True,False,False
+102,57,pork,False,pulled,poutine,0.0,2,0.037037037037037035,False,0,0,0,False,False,True
 100,344,and,False,area,really,0.0,19,0.0010050251256281408,False,0,0,0,False,False,True
 1001,138,and,False,nicer,comfortable,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
 1011,101,and food,False,wait,that,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
@@ -3954,12 +3949,11 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 169,87,and dim,False,walls,lights,0.0,1,1.0,False,0,0,0,False,False,True
 610,24,burger sins,False,my,if,0.0,1,1.0,False,0,0,0,False,False,True
 268,54,oxtail,False,that,sauce,0.0,1,0.5,False,0,0,0,False,False,True
-44,148,kumquat lemonade,True,the,they,1.0,4,0.25,False,0,0,1,False,True,False
+44,148,kumquat lemonade,True,the,they,1.0,4,0.25,False,0,0,1,True,True,True
 513,33,mayo,True,pickles,spicy,1.0,2,0.16666666666666666,False,0,0,0,True,True,True
 161,101,garlic,False,The,bread,0.0,1,0.1111111111111111,False,0,0,1,False,False,True
 91,6,reception,False,wedding,The,0.0,1,1.0,False,0,0,0,False,False,True
-47,41,strawberry,False,the,shortcakes,0.0,1,0.3333333333333333,False,0,0,1,True,False,False
-146,178,meat,False,the,or,1.0,6,0.030303030303030307,False,0,0,0,False,False,True
+47,41,strawberry,False,the,shortcakes,0.0,1,0.3333333333333333,False,0,0,1,False,False,True
 265,63,duck,True,the,and,1.0,2,0.2,False,0,0,0,True,True,True
 606,152,ones,False,green,Theyre,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 514,42,Eww scrunchy noseDo,False,tastebuds,shriveled,0.0,1,1.0,True,0,0,0,False,False,True
@@ -3982,7 +3976,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1032,16,fries,False,potato,both,0.0,1,0.03448275862068965,False,1,0,0,False,False,True
 215,33,basket,False,a,of,1.0,1,1.0,False,0,0,0,True,False,False
 224,95,food,False,The,was,1.0,1,0.005405405405405407,False,0,0,0,False,False,True
-248,11,salsa,False,and,are,1.0,1,0.1111111111111111,False,0,1,0,False,False,True
+248,11,salsa,False,and,are,1.0,1,0.1111111111111111,False,0,1,0,True,False,False
 608,178,garlic onions,False,some,or,1.0,1,1.0,False,0,0,1,True,False,False
 399,18,sandwich,False,cheese,Very,0.0,1,0.045454545454545456,False,0,1,0,False,False,True
 506,104,and pinto,False,tortillas,beans,0.0,1,1.0,False,0,0,0,False,False,True
@@ -4122,7 +4116,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 112,60,and,False,fish,chips,0.0,9,0.0010050251256281408,False,0,0,0,False,False,True
 608,125,disguise,False,in,a,0.0,1,1.0,False,1,0,0,False,False,True
 46,107,bone marrow,True,knew,could,1.0,2,0.5,False,0,0,1,True,True,True
-83,2,noodles,False,made,fast,0.0,2,0.05555555555555555,False,0,0,0,True,False,False
+83,2,noodles,False,made,fast,0.0,2,0.05555555555555555,False,0,0,0,False,False,True
 136,259,brunch,False,the,itself,1.0,4,0.07142857142857142,False,0,0,0,True,False,False
 28,21,cream,False,organic,cheese,0.0,1,0.09090909090909093,False,0,0,0,False,False,True
 167,83,AND,False,fun,convenientThe,0.0,1,1.0,True,0,0,0,False,False,True
@@ -4169,7 +4163,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 100,265,drinks,False,Our,were,0.0,1,0.030303030303030307,False,0,0,0,False,False,True
 130,63,pomegranate juice,False,down,It,0.0,1,1.0,False,0,0,1,False,False,True
 526,67,milky,False,of,green,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-232,87,sour,False,and,cream,0.0,2,0.2,False,0,0,0,True,False,False
 146,258,accept,False,dont,credit,0.0,1,1.0,False,0,0,0,False,False,True
 128,111,and refried,False,tomatoes,beans,0.0,1,1.0,False,0,0,0,False,False,True
 128,114,appetizer,False,The,and,1.0,1,0.1111111111111111,False,0,0,0,True,False,False
@@ -4181,7 +4174,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 618,12,enchilada lunch,False,Chicken,special,0.0,2,0.5,False,0,0,0,False,False,True
 526,94,pop,False,would,in,0.0,1,0.25,False,0,0,0,False,False,True
 513,171,sauce,True,in,but,1.0,2,0.021739130434782608,False,1,0,0,True,True,True
-44,116,milk,False,oolong,tea,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+44,116,milk,False,oolong,tea,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 504,19,Barros,False,eat,every,0.0,1,1.0,True,0,0,0,False,False,True
 44,117,oolong milk tea,True,tea,supernova,0.0,2,0.5,False,0,0,0,False,True,False
 1001,58,pulled,False,hand,noodles,0.0,1,0.1,False,0,0,0,False,False,True
@@ -4190,7 +4183,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 260,184,cola,False,a,or,1.0,1,1.0,False,0,0,0,True,False,False
 168,13,and,False,ODB,my,0.0,10,0.0010050251256281408,False,0,0,0,False,False,True
 157,35,approximate,False,the,time,0.0,1,1.0,False,0,0,0,False,False,True
-102,47,poutine,True,pork,Both,0.0,4,0.07142857142857142,False,0,0,0,True,True,True
+102,47,poutine,True,pork,Both,0.0,4,0.07142857142857142,False,0,0,0,False,True,False
 509,319,central,False,the,room,0.0,1,0.5,False,0,0,0,False,False,True
 192,61,juice and,False,and,shakes,0.0,1,1.0,False,0,0,0,False,False,True
 27,36,disappointedWe,False,we,had,0.0,1,1.0,True,0,0,0,False,False,True
@@ -4248,7 +4241,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 134,21,food,False,Ethiopian,before,0.0,1,0.005405405405405407,False,0,0,0,False,False,True
 134,21,Ethiopian food,False,had,before,1.0,1,1.0,True,0,0,0,True,False,False
 64,104,ramen,True,few,options,1.0,1,0.14285714285714285,False,0,0,0,True,True,True
-251,13,fried potato,False,of,slices,0.0,1,1.0,False,0,1,1,True,False,False
+251,13,fried potato,False,of,slices,0.0,1,1.0,False,0,1,1,False,False,True
 609,344,kinda nast Eba,False,looked,should,0.0,1,1.0,True,0,0,0,False,False,True
 1002,27,hakka chinese,False,beat,spot,0.0,1,1.0,False,0,0,0,False,False,True
 161,60,tomato per slice,False,one,of,0.0,1,1.0,False,0,0,1,False,False,True
@@ -4305,7 +4298,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 27,46,omelette,True,The,was,1.0,2,0.25,False,0,1,0,True,True,True
 610,129,plastered,False,hadnt,their,0.0,1,1.0,False,0,0,0,False,False,True
 167,88,and,False,good,this,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
-167,162,beans,True,and,The,1.0,1,0.1,False,0,0,1,False,True,False
 1030,26,beans and,False,green,some,0.0,1,1.0,False,0,0,1,False,False,True
 385,71,hand,False,other,the,0.0,1,0.125,False,0,0,0,False,False,True
 224,89,wings and,False,of,a,1.0,1,0.3333333333333333,False,0,0,0,True,False,False
@@ -4315,7 +4307,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 73,32,chocolate,False,hot,They,0.0,3,0.07692307692307693,False,0,0,0,False,False,True
 246,62,cheese dip,False,queso,is,0.0,1,1.0,False,0,0,0,False,False,True
 56,30,assuming,False,feed,you,0.0,1,0.5,False,0,0,0,False,False,True
-136,112,food and,False,the,service,0.0,2,0.05,False,0,0,0,True,False,False
+136,112,food and,False,the,service,0.0,2,0.05,False,0,0,0,False,False,True
 516,26,floppy and tasting,False,Thin,of,0.0,1,1.0,False,0,0,0,False,False,True
 509,10,opened,False,it,and,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 110,27,pork,True,The,was,1.0,7,0.037037037037037035,False,0,0,0,True,True,True
@@ -4355,7 +4347,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 398,65,gem,False,hidden,You,0.0,1,1.0,False,0,0,0,False,False,True
 625,16,noodle dish and,False,dry,instead,0.0,1,1.0,False,0,0,0,False,False,True
 254,10,and,False,ratings,I,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
-1030,23,broccoli,True,had,green,0.0,1,0.3333333333333333,False,0,0,1,True,True,True
 152,17,breakfast foods,False,basic,and,1.0,1,1.0,False,0,0,0,True,False,False
 243,117,matter,False,not,who,0.0,1,0.25,False,0,0,0,False,False,True
 44,259,ice tea,False,peach,The,0.0,2,0.5,False,0,0,0,False,False,True
@@ -4384,7 +4375,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 257,48,inline,False,are,with,0.0,1,0.5,False,0,0,0,False,False,True
 7,36,Vietnamese,False,better,restaurants,0.0,2,0.5,True,0,0,0,False,False,True
 2,73,montreal,False,downtown,but,0.0,1,1.0,False,0,0,0,False,False,True
-612,87,pork,False,pulled,hash,0.0,2,0.037037037037037035,False,0,0,0,False,False,True
 210,79,food,False,fast,joint,0.0,4,0.005405405405405407,False,0,0,0,False,False,True
 501,119,fries,True,the,they,1.0,1,0.03448275862068965,False,0,0,0,True,True,True
 152,44,and awhile,False,once,Weve,0.0,1,0.5,False,0,0,0,False,False,True
@@ -4392,7 +4382,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 613,214,breakfast,False,traditional,combos,0.0,8,0.03571428571428571,False,0,0,0,False,False,True
 147,49,and,False,clean,trendy,0.0,10,0.0010050251256281408,False,0,0,0,False,False,True
 604,143,condition discussed,False,the,above,0.0,1,1.0,False,0,0,0,False,False,True
-399,17,cheese,False,goat,sandwich,0.0,1,0.025,False,0,0,0,True,False,False
 25,44,and choy,False,chinese,suey,0.0,1,1.0,False,0,0,0,False,False,True
 606,36,families and,False,kiddo,promote,0.0,1,1.0,False,0,0,0,False,False,True
 100,337,toast,True,of,Anyway,1.0,2,0.1,False,0,0,0,True,True,True
@@ -4401,7 +4390,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 225,56,coffee,True,and,upon,1.0,1,0.05,False,0,0,0,True,True,True
 143,30,pleasure,False,my,when,0.0,1,1.0,False,0,0,0,False,False,True
 129,49,toast bacon,False,eggs,etc,0.0,1,1.0,False,0,0,0,False,False,True
-83,103,beef,False,The,noodle,0.0,2,0.06666666666666668,False,1,0,0,True,False,False
 273,20,garlic tomato,False,in,sauce,0.0,1,1.0,False,0,0,1,False,False,True
 399,17,goat cheese,False,mushroom,sandwich,0.0,1,1.0,False,1,0,0,False,False,True
 37,31,cookies,True,varieties,and,1.0,1,0.25,False,0,0,0,True,True,True
@@ -4450,20 +4438,20 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 373,29,And,False,delicious,with,0.0,2,0.030303030303030307,True,0,0,0,False,False,True
 609,91,and,False,ASU,I,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
 368,87,food,False,The,and,1.0,1,0.005405405405405407,False,0,0,0,False,False,True
-632,31,crust,False,the,is,1.0,1,0.125,False,0,1,0,False,False,True
+632,31,crust,False,the,is,1.0,1,0.125,False,0,1,0,True,False,False
 1041,151,and,False,okay,the,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
 149,102,trashy,False,of,very,0.0,1,1.0,False,0,0,0,False,False,True
 518,107,dinner,False,the,specials,0.0,1,0.03333333333333333,False,0,0,0,False,False,True
 618,101,nonexistent,False,nearly,and,0.0,1,1.0,False,0,0,0,False,False,True
 93,38,and peach,False,omelet,waffles,0.0,1,1.0,False,0,0,1,False,False,True
-165,107,pizzas,False,the,we,1.0,3,0.14285714285714285,False,0,0,0,False,False,True
+165,107,pizzas,False,the,we,1.0,3,0.14285714285714285,False,0,0,0,True,False,False
 139,37,hazelnut,True,slight,flavour,1.0,1,1.0,False,0,0,0,True,True,True
 266,125,pork fritter,False,the,sandwich,0.0,1,1.0,False,0,0,0,False,False,True
 610,351,considering,False,issue,the,0.0,1,0.14285714285714285,False,0,0,0,False,False,True
 223,89,sandwich,True,and,were,1.0,2,0.045454545454545456,False,0,0,0,True,True,True
 604,340,ass,False,bad,and,0.0,1,0.25,False,0,0,0,False,False,True
 1001,25,and,False,cave,have,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
-509,204,food,False,the,is,1.0,2,0.005405405405405407,False,0,1,0,True,False,False
+509,204,food,False,the,is,1.0,2,0.005405405405405407,False,0,1,0,False,False,True
 365,32,and,False,accommodating,friendly,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 359,25,and salsa,False,Chips,given,0.0,1,0.2,False,0,0,0,False,False,True
 119,127,prix fixe and,False,the,it,1.0,1,1.0,False,0,0,0,True,False,False
@@ -4487,7 +4475,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 31,90,fish,False,sole,with,0.0,1,0.125,False,1,0,0,False,False,True
 604,114,Chambord and,False,the,the,1.0,1,1.0,True,0,0,0,True,False,False
 215,25,awhile unless,False,for,youre,0.0,1,1.0,False,0,0,0,False,False,True
-618,201,beans,False,an,that,0.0,1,0.1,False,0,0,1,True,False,False
+618,201,beans,False,an,that,0.0,1,0.1,False,0,0,1,False,False,True
 262,55,and,False,asparagus,rice,0.0,14,0.0010050251256281408,False,0,0,0,False,False,True
 513,136,and,False,sauce,served,0.0,9,0.0010050251256281408,False,0,0,0,False,False,True
 610,161,aint,False,just,on,0.0,1,0.5,False,0,0,0,False,False,True
@@ -4506,7 +4494,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 365,8,dinner,False,for,First,0.0,1,0.03333333333333333,False,0,0,0,False,False,True
 21,55,dinner,False,the,reservation,0.0,1,0.03333333333333333,False,0,0,0,False,False,True
 44,115,tea oolong,False,ice,milk,0.0,1,1.0,False,0,0,0,False,False,True
-612,120,meat,True,shredded,To,0.0,2,0.030303030303030307,False,1,0,0,True,True,True
+612,120,meat,True,shredded,To,0.0,2,0.030303030303030307,False,1,0,0,False,True,False
 610,217,onion,True,and,tidbits,1.0,1,0.09090909090909093,False,0,0,1,True,True,True
 114,15,and,False,party,we,0.0,14,0.0010050251256281408,False,0,0,0,False,False,True
 610,216,grilled mushroom and,False,little,onion,0.0,1,1.0,False,1,0,0,False,False,True
@@ -4576,7 +4564,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 506,241,and,False,Ash,University,0.0,9,0.0010050251256281408,False,0,0,0,False,False,True
 608,69,twentyodd,False,in,years,0.0,1,0.5,False,0,0,0,False,False,True
 165,15,and,False,good,the,0.0,3,0.0010050251256281408,False,0,0,0,False,False,True
-102,45,pulled,False,the,pork,0.0,2,0.1,False,0,0,0,True,False,False
 613,206,and,False,pancake,Belgian,0.0,15,0.0010050251256281408,False,0,0,0,False,False,True
 29,65,grilled pork,True,The,banh,1.0,1,1.0,False,0,0,0,True,True,True
 220,54,potato,False,baked,was,0.0,1,0.06666666666666668,False,0,0,1,False,False,True
@@ -4623,7 +4610,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 518,13,bread cabbage slaw,False,pita,and,0.0,1,1.0,False,0,0,1,False,False,True
 609,94,pop,False,would,in,0.0,1,0.25,False,0,0,0,False,False,True
 639,67,and chips,False,later,and,0.0,1,0.25,False,0,0,0,False,False,True
-1026,63,food and,False,delicious,fantastic,0.0,2,0.05,False,0,0,0,True,False,False
+1026,63,food and,False,delicious,fantastic,0.0,2,0.05,False,0,0,0,False,False,True
 604,122,and,False,Marnier,I,0.0,15,0.0010050251256281408,False,0,0,0,False,False,True
 520,60,and,False,platter,the,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 47,101,biscuit,False,buttermilk,topped,0.0,2,0.5,False,1,0,0,False,False,True
@@ -4633,7 +4620,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 271,233,foods reasonably,False,the,priced,0.0,1,1.0,False,0,0,0,False,False,True
 158,144,tasting,False,generic,and,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 116,27,and tails,False,heads,above,0.0,1,1.0,False,0,0,0,False,False,True
-44,114,peach ice tea,True,mousse,oolong,0.0,2,0.5,False,0,0,1,False,True,False
 83,78,and,False,noodle,a,0.0,5,0.0010050251256281408,False,0,0,0,False,False,True
 27,52,eggs benedict,True,The,were,1.0,2,0.25,False,0,0,0,True,True,True
 508,67,technically,False,Its,Turkish,0.0,1,0.5,False,0,0,0,False,False,True
@@ -4660,7 +4646,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 73,60,soy milk,True,with,and,1.0,1,1.0,False,1,0,0,True,True,True
 513,284,cheese,True,a,grater,1.0,2,0.025,False,0,0,0,True,True,True
 136,292,might,False,I,try,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
-258,252,sauce,True,The,had,1.0,3,0.021739130434782608,False,0,0,0,False,True,False
 49,14,and bread palso,False,cheese,carry,0.0,1,1.0,False,0,0,0,False,False,True
 604,320,Tortilla,False,the,Soup,0.0,1,1.0,True,0,0,0,False,False,True
 1003,24,halfway,False,stuffed,through,0.0,1,1.0,False,0,0,0,False,False,True
@@ -4683,7 +4668,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 136,39,nicely decorated,False,but,My,0.0,1,1.0,False,1,0,0,False,False,True
 124,115,dessert,False,declined,but,0.0,1,0.125,False,0,0,0,False,False,True
 365,97,vegetarian,False,a,your,0.0,2,0.04166666666666666,False,0,0,0,False,False,True
-85,34,fried,False,buttermilk,chicken,0.0,2,0.05,False,0,0,0,True,False,False
+85,34,fried,False,buttermilk,chicken,0.0,2,0.05,False,0,0,0,False,False,True
 136,73,Besides,False,around,not,0.0,1,1.0,True,0,0,0,False,False,True
 610,56,burger fries and,False,food,a,0.0,1,0.5,False,0,0,0,False,False,True
 268,176,mac,False,Kraft,and,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
@@ -4699,7 +4684,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 237,153,busier,False,been,I,0.0,1,1.0,False,0,0,0,False,False,True
 161,45,provolone tomatoes basil,False,mozzarella,parmesan,0.0,1,1.0,False,0,0,1,False,False,True
 120,134,and,False,time,giving,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
-618,152,Mexican food,False,of,is,1.0,2,0.14285714285714285,True,0,0,0,True,False,False
 501,112,terms,False,in,of,0.0,1,0.25,False,0,0,0,False,False,True
 152,105,spinach and cheese,False,the,omelet,0.0,1,1.0,False,0,0,1,False,False,True
 613,229,feta cheese,True,or,I,1.0,1,1.0,False,0,0,0,True,True,True
@@ -4707,7 +4691,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 274,184,foxy,False,looking,young,0.0,1,1.0,False,0,0,0,False,False,True
 235,95,ruin,False,will,the,0.0,1,0.5,False,0,0,0,False,False,True
 37,60,cream,False,ice,sandwiches,0.0,1,0.09090909090909093,False,0,0,0,False,False,True
-204,45,waffles,True,and,This,0.0,2,0.14285714285714285,False,0,0,0,True,True,True
+204,45,waffles,True,and,This,0.0,2,0.14285714285714285,False,0,0,0,False,True,False
 509,391,picture,False,train,in,0.0,1,0.5,False,0,0,0,False,False,True
 52,30,lunch,False,had,specials,0.0,1,0.043478260869565216,False,0,0,0,False,False,True
 38,35,move,False,you,alongLots,0.0,1,0.25,False,0,0,0,False,False,True
@@ -4718,7 +4702,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 526,25,Melty gelatinous gummy,False,debate,balls,0.0,1,0.5,True,0,0,0,False,False,True
 142,126,and,False,pricey,the,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 234,278,set,False,odd,up,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
-111,31,bread,False,the,pudding,0.0,1,0.04,False,0,0,0,True,False,False
+111,31,bread,False,the,pudding,0.0,1,0.04,False,0,0,0,False,False,True
 513,80,hairy,False,little,in,0.0,1,1.0,False,0,0,0,False,False,True
 608,203,carbonara,True,real,in,1.0,2,0.5,False,0,0,0,True,True,True
 501,213,And,False,in,the,0.0,1,0.030303030303030307,True,0,0,0,False,False,True
@@ -4749,11 +4733,12 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 604,118,Watermelon and,False,Frozen,the,0.0,1,1.0,True,0,0,1,False,False,True
 39,70,avocado,True,The,is,1.0,1,0.3333333333333333,False,0,0,1,True,True,True
 613,256,gigantic,False,were,like,0.0,1,0.5,False,0,0,0,False,False,True
+265,198,Serrano,True,of,spiciness,1.0,1,1.0,True,1,0,0,True,True,True
 196,47,bag,False,your,before,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 110,124,scallops and,False,dried,peanuts,0.0,1,1.0,False,0,0,0,False,False,True
 100,113,guessed,False,we,correctly,0.0,1,1.0,False,0,0,0,False,False,True
 605,88,sip,False,to,one,0.0,1,0.5,False,0,0,0,False,False,True
-21,74,salads,True,just,Just,0.0,3,0.25,False,0,0,0,True,True,True
+21,74,salads,True,just,Just,0.0,3,0.25,False,0,0,0,False,True,False
 523,59,Mexitalian burrito Consistently,False,freakin,the,0.0,1,1.0,True,0,0,0,False,False,True
 608,183,vaguely resembling seasoning,False,something,Failure,0.0,1,1.0,False,0,0,0,False,False,True
 134,106,lentils and,False,with,had,0.0,1,1.0,False,0,0,1,False,False,True
@@ -4789,7 +4774,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 31,85,fried rice,False,basil,and,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 130,54,reddish,False,dark,colour,0.0,1,1.0,False,0,0,0,False,False,True
 119,215,dish,False,huge,The,0.0,2,0.05263157894736842,False,0,0,0,False,False,True
-120,7,drinks,False,for,I,1.0,3,0.030303030303030307,False,0,0,0,False,False,True
+120,7,drinks,False,for,I,1.0,3,0.030303030303030307,False,0,0,0,True,False,False
 254,92,cheese curds,True,with,bacon,1.0,1,0.5,False,1,0,0,True,True,True
 94,57,meat,True,the,tasted,1.0,1,0.030303030303030307,False,0,0,0,True,True,True
 232,87,cheese and sour,False,of,cream,0.0,1,1.0,False,0,0,0,False,False,True
@@ -4834,7 +4819,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 526,25,gummy,False,gelatinous,balls,0.0,1,0.5,False,0,0,0,False,False,True
 261,96,Farms eggs,False,Hickmans,It,0.0,1,1.0,True,0,0,0,False,False,True
 163,39,pork,True,the,and,1.0,1,0.037037037037037035,False,0,0,0,True,True,True
-261,101,brunch,False,good,sized,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 224,135,sauce,False,much,on,1.0,1,0.021739130434782608,False,0,0,0,True,False,False
 99,94,ca BarBurrito charges,False,justeat,delivery,0.0,1,1.0,True,0,0,0,False,False,True
 158,138,pasta,True,own,but,1.0,2,0.05555555555555555,False,0,0,0,True,True,True
@@ -4845,12 +4829,11 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 518,21,lamb,True,The,that,1.0,1,0.3333333333333333,False,0,0,0,True,True,True
 1034,129,and,False,dad,I,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
 124,115,declined dessert,False,so,but,0.0,1,1.0,False,0,0,0,False,False,True
-69,94,beans,False,green,which,0.0,1,0.1,False,1,0,1,False,False,True
-375,16,salad,False,spinach,but,0.0,1,0.037037037037037035,False,0,0,0,True,False,False
+375,16,salad,False,spinach,but,0.0,1,0.037037037037037035,False,0,0,0,False,False,True
 61,85,water,False,soap,Which,0.0,2,0.09090909090909093,False,0,0,0,False,False,True
 509,334,leads,False,it,or,0.0,1,1.0,False,0,0,0,False,False,True
 254,65,sausage and roll,False,The,it,0.0,1,1.0,False,0,0,0,False,False,True
-16,43,meat,True,the,Not,0.0,2,0.030303030303030307,False,0,0,0,True,True,True
+16,43,meat,True,the,Not,0.0,2,0.030303030303030307,False,0,0,0,False,True,False
 396,12,peaches salad and,False,and,one,0.0,1,1.0,False,0,0,0,False,False,True
 620,44,and galanga,False,milk,Mixed,0.0,1,0.5,False,0,0,0,False,False,True
 1020,134,parked,False,be,right,0.0,1,1.0,False,0,0,0,False,False,True
@@ -4935,11 +4918,10 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 220,42,salad,True,The,bar,1.0,1,0.037037037037037035,False,0,0,0,True,True,True
 94,45,yuck,False,tortillas,No,0.0,1,1.0,False,1,0,0,False,False,True
 506,103,tortillas and,False,the,pinto,0.0,1,0.5,False,0,0,0,False,False,True
-244,37,and salsa,False,chips,they,0.0,2,0.2,False,0,0,0,False,False,True
-258,311,sauce,True,buffalo,to,1.0,3,0.021739130434782608,False,0,0,0,False,True,False
+258,311,sauce,True,buffalo,to,1.0,3,0.021739130434782608,False,0,0,0,True,True,True
 1003,19,vegetarian omelette,True,the,and,1.0,1,1.0,False,0,0,0,True,True,True
 609,151,reunion,False,sweet,it,0.0,1,1.0,False,0,0,0,False,False,True
-361,18,burger,False,tuna,and,0.0,1,0.037037037037037035,False,0,0,0,True,False,False
+361,18,burger,False,tuna,and,0.0,1,0.037037037037037035,False,0,0,0,False,False,True
 116,26,and,False,heads,tails,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 168,75,syrup and,False,of,the,0.0,1,1.0,False,0,0,0,False,False,True
 244,79,chips and,False,on,salsa,0.0,2,0.2,False,0,0,0,False,False,True
@@ -4961,13 +4943,11 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 12,13,trout,False,the,fish,0.0,1,1.0,False,0,0,0,False,False,True
 608,283,carbs,False,of,than,0.0,1,0.5,False,0,0,0,False,False,True
 1035,14,filled,False,huge,with,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-12,10,poutine,False,confit,and,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
-1005,14,noodles,False,pulled,Try,0.0,1,0.05555555555555555,False,0,0,0,True,False,False
 119,223,Winterlicious,False,the,menu,0.0,4,0.25,True,0,0,0,False,False,True
 260,230,Starbucks,False,multiple,The,0.0,1,0.5,True,0,0,0,False,False,True
 610,385,peanut shells,False,throw,on,0.0,1,1.0,False,0,0,0,False,False,True
 524,51,waffles,True,buttery,with,1.0,2,0.14285714285714285,False,0,0,0,True,True,True
-262,74,rice,False,the,pilaf,0.0,2,0.05,False,0,0,0,True,False,False
+262,74,rice,False,the,pilaf,0.0,2,0.05,False,0,0,0,False,False,True
 608,107,pasta thinking,False,asparagus,Heck,0.0,1,1.0,False,0,0,0,False,False,True
 610,410,talked,False,Ive,myself,0.0,1,1.0,False,0,0,0,False,False,True
 20,63,beer,False,ginger,which,0.0,1,0.08333333333333333,False,0,0,0,False,False,True
@@ -5065,7 +5045,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 520,128,El,False,like,Salvadoran,0.0,2,0.5,True,0,0,0,False,False,True
 232,19,questionable,False,is,The,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 135,25,annoying,False,is,order,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-163,18,salad,False,the,Both,0.0,1,0.037037037037037035,False,0,0,0,True,False,False
+163,18,salad,False,the,Both,0.0,1,0.037037037037037035,False,0,0,0,False,False,True
 210,29,mustard,False,One,only,0.0,1,0.25,False,0,0,0,False,False,True
 1020,87,sauces,True,the,on,1.0,1,0.5,False,0,0,0,True,True,True
 273,85,apples and,False,sliced,muddled,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5076,13 +5056,12 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 81,75,BBQ Eel Tuna,False,Avocado,and,0.0,1,1.0,True,0,0,0,False,False,True
 501,99,food and,False,bar,a,0.0,1,0.05,False,0,0,0,False,False,True
 355,23,food,False,their,Place,0.0,2,0.005405405405405407,False,0,0,0,False,False,True
-266,121,salad,False,Caesar,to,0.0,1,0.037037037037037035,False,0,0,0,True,False,False
 639,17,food,False,The,itself,1.0,3,0.005405405405405407,False,0,0,0,False,False,True
 399,56,and,False,again,am,0.0,2,0.0010050251256281408,False,0,0,0,False,False,True
 609,70,tea and,False,green,Eba,0.0,1,0.5,False,1,0,0,False,False,True
 500,10,rainy gloomy draining,False,dreary,no,0.0,1,1.0,False,0,1,0,False,False,True
 620,82,Scoville,False,your,craving,0.0,1,0.5,True,0,0,0,False,False,True
-240,104,filet,False,the,mignon,0.0,1,0.5,False,0,1,0,True,False,False
+240,104,filet,False,the,mignon,0.0,1,0.5,False,0,1,0,False,False,True
 170,54,pleased,False,was,with,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 604,189,bloody,False,doityourself,mary,0.0,1,1.0,False,0,0,0,False,False,True
 110,125,and peanuts,False,scallops,I,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5100,7 +5079,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 504,49,and,False,melty,they,0.0,7,0.0010050251256281408,False,1,0,0,False,False,True
 236,11,Angeles,False,Los,It,0.0,1,1.0,True,0,0,0,False,False,True
 66,34,mock,False,have,chicken,0.0,1,1.0,False,0,0,0,False,False,True
-370,13,cheese,False,and,burrito,0.0,1,0.025,False,0,0,0,True,False,False
+370,13,cheese,False,and,burrito,0.0,1,0.025,False,0,0,0,False,False,True
 39,44,mayo Rolls,False,wasabi,are,0.0,1,1.0,True,0,0,0,False,False,True
 2,28,pork,False,and,belly,1.0,1,0.037037037037037035,False,0,0,0,True,False,False
 107,24,block,False,a,away,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5112,7 +5091,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 240,121,food,False,The,is,1.0,2,0.005405405405405407,False,0,0,0,False,False,True
 202,3,fashion candy,False,old,store,0.0,1,1.0,False,0,0,0,False,False,True
 604,113,Chambord,True,the,and,1.0,1,1.0,True,0,0,0,True,True,True
-108,88,Skor,True,strawberry,and,1.0,1,1.0,True,0,1,0,False,True,False
+108,88,Skor,True,strawberry,and,1.0,1,1.0,True,0,1,0,True,True,True
 365,73,and,False,salad,another,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 608,178,onions,True,garlic,or,1.0,2,0.14285714285714285,False,0,0,1,True,True,True
 511,96,week,False,the,Not,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
@@ -5129,7 +5108,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 169,112,and,False,impaired,are,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
 608,260,contradictory,False,such,dishes,0.0,1,1.0,False,0,0,0,False,False,True
 145,38,flavoured lattes,False,did,Nope,0.0,1,1.0,False,0,0,0,False,False,True
-136,172,food and,False,their,we,0.0,2,0.05,False,0,0,0,True,False,False
 518,58,rice,True,biriani,which,1.0,3,0.05,False,0,0,0,True,True,True
 136,201,and,False,plate,cover,0.0,11,0.0010050251256281408,False,0,0,0,False,False,True
 16,23,sandwiches,True,rowThe,here,1.0,1,0.25,False,0,0,0,True,True,True
@@ -5166,11 +5144,11 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1002,93,manchurian balls,True,carby,egg,1.0,1,1.0,False,1,1,0,True,True,True
 612,153,Tiki,False,The,Time,0.0,1,0.5,True,0,0,0,False,False,True
 204,96,meatloaf and,False,the,he,0.0,1,1.0,False,0,0,0,False,False,True
-610,94,mushrooms,False,grilled,and,0.0,1,0.2,False,0,0,1,True,False,False
+610,94,mushrooms,False,grilled,and,0.0,1,0.2,False,0,0,1,False,False,True
 509,41,indisputable,False,the,unassailable,0.0,1,1.0,False,0,1,0,False,False,True
 46,79,roasted bone marrow,True,the,which,1.0,1,1.0,False,0,0,1,True,True,True
 163,65,pasta,False,the,noodles,1.0,4,0.05555555555555555,False,1,0,0,True,False,False
-605,52,drinks,False,frozen,taste,0.0,2,0.030303030303030307,False,0,0,0,True,False,False
+605,52,drinks,False,frozen,taste,0.0,2,0.030303030303030307,False,0,0,0,False,False,True
 618,118,Casa Reynoso grew,False,cheese,on,0.0,1,1.0,True,0,0,0,False,False,True
 268,32,and,False,plantains,braised,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
 119,125,prix,False,the,fixe,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5181,14 +5159,14 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 146,236,and,False,bit,as,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 608,139,and asparagus,False,salmon,floating,0.0,1,1.0,False,0,0,1,False,False,True
 609,41,chunks,False,phlegmatic,of,0.0,1,0.5,False,0,0,0,False,False,True
-262,56,rice,False,and,pilaf,0.0,2,0.05,False,0,0,0,True,False,False
+262,56,rice,False,and,pilaf,0.0,2,0.05,False,0,0,0,False,False,True
 265,129,hand,False,heavy,with,0.0,1,0.125,False,0,0,0,False,False,True
 513,199,Dagwood,False,my,which,0.0,2,0.5,True,0,0,0,False,False,True
 110,115,dan,False,the,dan,0.0,2,0.5,False,0,0,0,False,False,True
 124,66,promptly,False,were,served,0.0,1,1.0,False,0,0,0,False,False,True
 520,8,food,False,Salvadoran,Its,0.0,3,0.005405405405405407,False,0,0,0,False,False,True
-107,195,brushetta,True,our,The,0.0,3,0.3333333333333333,False,0,0,0,True,True,True
-266,74,cheese,False,cheddar,and,0.0,1,0.025,False,0,0,0,True,False,False
+107,195,brushetta,True,our,The,0.0,3,0.3333333333333333,False,0,0,0,False,True,False
+266,74,cheese,False,cheddar,and,0.0,1,0.025,False,0,0,0,False,False,True
 608,110,lox,False,yeah,me,0.0,1,1.0,False,0,0,0,False,False,True
 528,18,dollar,False,two,mimosas,0.0,1,0.125,False,0,0,0,False,False,True
 1013,18,Buddha,False,the,bowl,0.0,1,1.0,True,0,0,0,False,False,True
@@ -5365,8 +5343,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 119,261,cake,True,The,was,1.0,2,0.07142857142857142,False,0,0,0,True,True,True
 354,111,beer,True,the,The,1.0,1,0.08333333333333333,False,0,0,0,True,True,True
 528,14,And,False,tiki,they,0.0,1,0.030303030303030307,True,0,0,0,False,False,True
-262,74,rice,False,the,pilaf,0.0,2,0.05,False,0,0,0,False,False,True
-1034,72,pizza,True,style,is,1.0,4,0.05,False,0,0,0,False,True,False
 608,237,egg,True,raw,and,1.0,1,0.16666666666666666,False,0,0,0,True,True,True
 526,115,fare,False,break,but,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 93,63,chocolate croissant,True,the,was,1.0,1,1.0,False,0,0,0,True,True,True
@@ -5417,7 +5393,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 528,101,black,False,practically,in,0.0,1,0.14285714285714285,False,0,0,0,False,False,True
 394,52,and,False,people,our,0.0,3,0.0010050251256281408,False,0,0,0,False,False,True
 52,47,dynamic,False,katsu,california,0.0,1,1.0,False,0,0,0,False,False,True
-605,11,drinks,False,slushy,Slush,0.0,2,0.030303030303030307,False,0,0,0,True,False,False
+605,11,drinks,False,slushy,Slush,0.0,2,0.030303030303030307,False,0,0,0,False,False,True
 119,255,cake,True,toffee,I,1.0,2,0.07142857142857142,False,1,0,0,True,True,True
 81,48,tobiko,True,scallop,it,0.0,1,1.0,False,0,0,0,False,True,False
 1003,79,and,False,sweet,removed,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
@@ -5439,6 +5415,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 227,27,food,False,the,menu,0.0,2,0.005405405405405407,False,0,0,0,False,False,True
 526,6,names Boba tea,False,many,bubble,0.0,1,0.5,True,0,0,0,False,False,True
 204,84,and,False,good,Id,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
+514,45,potato skins,True,shriveled,overcooked,1.0,1,1.0,False,0,1,1,False,True,False
 134,58,salad,True,a,with,1.0,1,0.037037037037037035,False,0,0,0,True,True,True
 1006,25,Basil,False,the,Tofu,0.0,1,1.0,True,0,0,1,False,False,True
 608,185,seasoning Failure failure,False,resembling,failure,0.0,1,1.0,True,0,0,0,False,False,True
@@ -5485,9 +5462,9 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 605,61,Pina Colada,False,Octane,thing,1.0,1,1.0,True,0,0,0,True,False,False
 81,26,and felt,False,hubby,like,0.0,1,1.0,False,0,0,0,False,False,True
 1003,20,omelette and,False,vegetarian,was,0.0,1,0.5,False,0,0,0,False,False,True
-246,61,cheese,False,queso,dip,0.0,2,0.025,False,0,0,0,True,False,False
-612,86,pulled,False,Hawaiian,pork,0.0,2,0.1,False,0,0,0,True,False,False
-504,81,wings,True,The,are,1.0,1,0.1,False,1,1,0,False,True,False
+246,61,cheese,False,queso,dip,0.0,2,0.025,False,0,0,0,False,False,True
+612,86,pulled,False,Hawaiian,pork,0.0,2,0.1,False,0,0,0,False,False,True
+504,81,wings,True,The,are,1.0,1,0.1,False,1,1,0,True,True,True
 258,165,matter,False,that,There,0.0,1,0.25,False,0,0,0,False,False,True
 610,218,tidbits,False,onion,stay,0.0,1,1.0,False,0,0,0,False,False,True
 620,80,sate,False,to,your,0.0,1,0.5,False,0,0,0,False,False,True
@@ -5498,7 +5475,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 43,6,Queen,False,on,Street,0.0,1,1.0,True,0,0,0,False,False,True
 609,241,and,False,taro,honeydew,0.0,8,0.0010050251256281408,False,0,0,0,False,False,True
 119,150,garlic,True,a,which,1.0,1,0.1111111111111111,False,0,0,1,True,True,True
-169,129,black,False,pitch,You,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+169,129,black,False,pitch,You,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 612,57,benedict,False,eggs,were,0.0,1,0.25,False,0,0,0,False,False,True
 1035,91,vegetarian,False,a,so,0.0,1,0.04166666666666666,False,0,0,0,False,False,True
 500,7,dreary,False,a,rainy,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5509,7 +5486,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 610,203,burritos,True,the,from,1.0,1,0.3333333333333333,False,0,0,0,True,True,True
 265,194,juice,False,lemon,no,0.0,1,0.14285714285714285,False,0,1,0,False,False,True
 604,300,Cast Iron Skillet,False,the,Dumplings,0.0,1,1.0,True,0,0,0,False,False,True
-604,208,and potato,False,chicken,hash,0.0,2,0.5,False,0,0,1,True,False,False
+604,208,and potato,False,chicken,hash,0.0,2,0.5,False,0,0,1,False,False,True
 218,97,unless,False,so,someone,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 227,10,s,False,late,The,0.0,1,0.5,False,0,0,0,False,False,True
 43,2,bakery,False,this,while,0.0,1,0.5,False,0,0,0,False,False,True
@@ -5524,10 +5501,10 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 128,112,and refried beans,False,tomatoes,The,0.0,1,1.0,False,0,0,1,False,False,True
 604,163,care,False,to,that,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 604,363,margaritas,True,the,so,1.0,5,0.2,False,0,0,0,True,True,True
-1035,17,blueberries and,False,with,was,0.0,1,1.0,False,1,1,0,False,False,True
 128,129,and,False,good,food,0.0,12,0.0010050251256281408,False,0,0,0,False,False,True
 501,164,dud,False,the,pile,0.0,1,1.0,False,0,0,0,False,False,True
 606,91,rivers marshmallow,False,chocolate,clouds,0.0,1,1.0,False,0,1,0,False,False,True
+265,191,cilantro,True,of,or,1.0,1,1.0,False,0,1,1,False,True,False
 361,19,tuna burger and,False,ahi,French,0.0,1,1.0,False,0,0,0,False,False,True
 38,45,sandwich,True,the,isnt,1.0,1,0.045454545454545456,False,0,0,0,True,True,True
 373,198,Mexican,False,way,food,0.0,2,0.0625,True,0,0,0,False,False,True
@@ -5559,7 +5536,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 515,90,Greek,False,side,salad,0.0,1,1.0,True,0,0,0,False,False,True
 610,58,drink,False,a,Thats,0.0,1,0.06666666666666668,False,0,0,0,False,False,True
 620,74,tongue,False,your,so,0.0,1,0.5,False,0,0,0,False,False,True
-93,41,waffles,True,The,were,1.0,2,0.14285714285714285,False,0,1,0,False,True,False
 1023,89,leave,False,to,I,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 380,39,and,False,attentive,checked,0.0,1,0.0010050251256281408,False,0,0,0,False,False,True
 1014,80,ttoboki and,False,tsunami,the,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5590,9 +5566,8 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 221,47,priced,False,over,The,0.0,1,0.14285714285714285,False,0,0,0,False,False,True
 610,197,and,False,burger,peeling,0.0,7,0.0010050251256281408,False,0,0,0,False,False,True
 46,217,and,False,Foie,Nutella,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
-524,17,waffles,True,and,Perfectly,1.0,2,0.14285714285714285,False,0,1,0,False,True,False
 229,158,veal,True,The,is,1.0,2,0.25,False,0,0,0,True,True,True
-20,186,ramen,True,real,Ive,0.0,2,0.14285714285714285,False,0,0,0,True,True,True
+20,186,ramen,True,real,Ive,0.0,2,0.14285714285714285,False,0,0,0,False,True,False
 41,162,par,False,to,as,0.0,2,0.25,False,0,0,0,False,False,True
 369,148,might,False,you,not,0.0,1,0.1111111111111111,False,0,0,0,False,False,True
 169,49,clothes,False,BEST,to,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5612,7 +5587,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 135,34,and coffee and,False,side,food,0.0,1,1.0,False,0,0,0,False,False,True
 167,103,and,False,nice,the,0.0,6,0.0010050251256281408,False,0,0,0,False,False,True
 220,23,food,False,the,It,1.0,1,0.005405405405405407,False,0,0,0,False,False,True
-606,192,Candywhos,False,daughter,as,0.0,1,1.0,True,0,1,0,True,False,False
+606,192,Candywhos,False,daughter,as,0.0,1,1.0,True,0,1,0,False,False,True
 508,229,killer,False,their,spicy,0.0,1,1.0,False,0,0,0,False,False,True
 134,105,lentils,True,with,and,1.0,1,1.0,False,0,0,1,True,True,True
 1023,22,cremini,False,the,mushroom,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5622,7 +5597,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 385,117,serves,False,and,breakfast,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 1030,30,and cheese,False,mac,The,0.0,1,0.08333333333333333,False,0,0,0,False,False,True
 613,195,and,False,german,german,0.0,15,0.0010050251256281408,False,0,1,0,False,False,True
-163,66,noodles,False,pasta,were,0.0,1,0.05555555555555555,False,0,0,0,True,False,False
+163,66,noodles,False,pasta,were,0.0,1,0.05555555555555555,False,0,0,0,False,False,True
 123,104,complaining,False,bother,because,0.0,1,1.0,False,0,0,0,False,False,True
 52,54,and,False,good,very,0.0,3,0.0010050251256281408,False,0,1,0,False,False,True
 83,97,handmade,False,pork,noodle,0.0,2,0.5,False,0,0,0,False,False,True
@@ -5638,6 +5613,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 224,69,tequila,True,of,I,1.0,1,1.0,False,0,0,0,True,True,True
 223,13,and,False,from,decided,0.0,3,0.0010050251256281408,False,0,0,0,False,False,True
 620,66,apparently,False,Hot,translates,0.0,1,0.3333333333333333,False,1,0,0,False,False,True
+136,297,lunch,False,for,or,1.0,1,0.043478260869565216,False,0,0,0,True,False,False
 130,66,inedible,False,was,It,0.0,1,0.5,False,0,0,0,False,False,True
 606,91,marshmallow,True,rivers,clouds,1.0,1,1.0,False,1,1,0,True,True,True
 513,30,cheddar lettuce tomato,False,pastrami,onion,0.0,1,1.0,False,0,0,1,False,False,True
@@ -5676,7 +5652,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1005,25,yummyThe,False,and,food,0.0,1,1.0,True,1,0,0,False,False,True
 110,212,imagine,False,now,being,0.0,1,1.0,False,0,0,0,False,False,True
 69,100,Ma Pao,False,tasty,Tofu,0.0,1,1.0,True,0,0,0,False,False,True
-258,262,wings,True,The,were,1.0,2,0.1,False,0,1,0,False,True,False
 168,126,salad liked,False,potato,the,0.0,1,1.0,False,0,0,0,False,False,True
 20,111,pork,False,The,belly,0.0,1,0.037037037037037035,False,0,0,0,False,False,True
 618,89,busser,False,staff,hostess,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5698,7 +5673,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 19,27,burger,True,a,run,1.0,2,0.037037037037037035,False,0,0,0,True,True,True
 274,123,childes,False,screaming,just,0.0,1,1.0,False,0,0,0,False,False,True
 1013,34,chain,False,food,fresh,0.0,1,0.5,False,0,0,0,False,False,True
-528,112,pork,False,pulled,was,0.0,2,0.037037037037037035,False,0,0,0,True,False,False
+528,112,pork,False,pulled,was,0.0,2,0.037037037037037035,False,0,0,0,False,False,True
 152,53,food,False,the,as,1.0,1,0.005405405405405407,False,0,0,0,False,False,True
 21,213,mac and cheese,True,the,and,1.0,1,0.16666666666666666,False,0,0,0,True,True,True
 1002,95,egg fried,False,balls,rice,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5752,7 +5727,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 112,30,food,False,for,you,0.0,4,0.005405405405405407,False,0,0,0,False,False,True
 605,99,and,False,money,still,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 514,41,scrunchy,False,Eww,noseDo,0.0,1,1.0,False,0,0,0,False,False,True
-1005,45,noodle,False,the,soup,0.0,1,0.05882352941176471,False,0,0,0,True,False,False
 163,83,sauce,True,limited,had,1.0,1,0.021739130434782608,False,0,0,0,True,True,True
 112,134,and,False,fish,some,0.0,9,0.0010050251256281408,False,0,0,0,False,False,True
 123,101,potato,False,sweet,didnt,0.0,1,0.06666666666666668,False,0,0,1,False,False,True
@@ -5768,9 +5742,8 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 101,5,and,False,solid,the,0.0,1,0.0010050251256281408,False,0,0,0,False,False,True
 31,56,and,False,takeout,the,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 620,18,hand,False,heavy,with,0.0,1,0.125,False,0,0,0,False,False,True
-265,194,lemon juice,True,or,no,1.0,1,1.0,False,0,1,1,True,True,True
+265,194,lemon juice,True,or,no,1.0,1,1.0,False,0,1,1,False,True,False
 265,148,Baja sauce,True,puzzling,it,0.0,1,1.0,True,0,0,0,False,True,False
-146,199,meat,False,the,or,1.0,6,0.030303030303030307,False,0,0,0,False,False,True
 120,118,glasses,False,martini,We,0.0,1,1.0,False,1,0,0,False,False,True
 46,164,sandwich,True,a,that,1.0,2,0.045454545454545456,False,0,0,0,True,True,True
 513,128,monstrous,False,are,meat,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5795,7 +5768,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 1002,75,paneer,False,chilli,with,0.0,1,1.0,False,0,0,0,False,False,True
 260,304,and,False,friendly,helpful,0.0,5,0.0010050251256281408,False,0,0,0,False,False,True
 1018,56,frightened doggy,False,the,running,0.0,1,1.0,False,0,0,0,False,False,True
-1034,60,pizza,True,large,with,1.0,4,0.05,False,0,0,0,False,True,False
+1034,60,pizza,True,large,with,1.0,4,0.05,False,0,0,0,True,True,True
 229,76,pulled,False,was,from,0.0,1,0.1,False,0,0,0,False,False,True
 216,10,Mongolian,False,the,entree,0.0,1,1.0,True,0,0,0,False,False,True
 235,93,buds and,False,taste,will,0.0,1,1.0,False,0,0,0,False,False,True
@@ -5807,7 +5780,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 272,31,fireworks,False,and,So,0.0,1,1.0,False,0,0,0,False,False,True
 1000,58,saying,False,reviews,it,0.0,1,0.2,False,0,0,0,False,False,True
 221,23,minimal,False,very,They,0.0,1,1.0,False,0,0,0,False,False,True
-44,258,ice,False,peach,tea,0.0,2,0.1111111111111111,False,0,0,0,True,False,False
+44,258,ice,False,peach,tea,0.0,2,0.1111111111111111,False,0,0,0,False,False,True
 523,46,sloppy,False,like,joe,0.0,1,0.5,False,0,0,0,False,False,True
 258,298,dressing bacon scallions,False,ranch,and,0.0,1,1.0,False,0,0,0,False,False,True
 134,64,and,False,taste,jalapenos,0.0,5,0.0010050251256281408,False,0,0,0,False,False,True
@@ -5817,7 +5790,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 371,26,restaurants,False,nonfastfood,with,0.0,1,0.2,False,1,0,0,False,False,True
 122,188,pose,False,not,major,0.0,1,1.0,False,0,0,0,False,False,True
 618,207,stand,False,to,on,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-251,24,onions,False,green,I,0.0,1,0.14285714285714285,False,0,0,1,False,False,True
 136,60,step,False,you,on,0.0,1,1.0,False,0,0,0,False,False,True
 161,63,and,False,pizza,the,0.0,4,0.0010050251256281408,False,0,0,0,False,False,True
 259,86,stood,False,them,out,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
@@ -5886,7 +5858,7 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 20,158,ramen,True,Momofuko,was,1.0,2,0.14285714285714285,False,0,0,0,True,True,True
 524,88,mac and cheese,True,decadent,A,0.0,1,0.16666666666666666,False,0,0,0,False,True,False
 509,62,Distilled,False,idolization,from,0.0,1,1.0,True,0,0,0,False,False,True
-513,32,onion pickles,False,tomato,mayo,0.0,1,1.0,False,0,1,1,True,False,False
+513,32,onion pickles,False,tomato,mayo,0.0,1,1.0,False,0,1,1,False,False,True
 27,40,eggspectation,False,the,omelette,0.0,1,1.0,False,0,0,0,False,False,True
 167,38,CONFIRM,False,cannot,that,0.0,1,1.0,True,0,0,0,False,False,True
 1002,93,balls,False,manchurian,egg,0.0,1,0.3333333333333333,False,0,1,0,False,False,True

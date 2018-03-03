@@ -164,7 +164,7 @@
 162,32,38,and,False,up,go,0.0,2,0.002079002079002079,False,0,0,0,False,False,True
 163,32,44,food,False,The,is,1.0,3,0.012195121951219513,False,0,0,0,False,False,True
 164,32,49,sushi,True,the,does,1.0,2,0.2,False,1,0,0,True,True,True
-165,32,60,fish,True,the,is,1.0,1,0.14285714285714285,False,0,1,0,False,True,False
+165,32,60,fish,True,the,is,1.0,1,0.14285714285714285,False,0,1,0,True,True,True
 166,32,67,seems,False,everyone,to,0.0,1,0.125,False,0,0,0,False,False,True
 167,32,73,snow,False,the,crab,0.0,1,0.5,False,0,0,0,False,False,True
 168,32,74,snow crab,False,the,legs,0.0,1,1.0,False,0,0,0,False,False,True
@@ -253,7 +253,7 @@
 251,42,5,draws crowds,False,always,as,0.0,1,1.0,False,0,0,0,False,False,True
 252,42,8,walk,False,you,by,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 253,42,10,and,False,by,see,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
-254,42,18,noodles,True,fresh,Noodles,0.0,3,0.1,False,0,0,0,True,True,True
+254,42,18,noodles,True,fresh,Noodles,0.0,3,0.1,False,0,0,0,False,True,False
 255,42,19,Noodles,True,noodles,are,0.0,1,0.3333333333333333,True,1,1,0,False,True,False
 256,42,19,noodles Noodles,False,fresh,are,0.0,1,1.0,True,0,1,0,False,False,True
 257,42,22,and,False,delicious,you,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
@@ -266,7 +266,7 @@
 264,42,56,dan,False,the,dan,0.0,5,0.2,False,0,0,0,True,False,False
 265,42,57,dan,False,dan,noodles,0.0,5,0.2,False,0,0,0,True,False,False
 266,42,57,dan dan,False,the,noodles,1.0,2,0.5,False,0,0,0,False,False,True
-267,42,58,noodles,True,dan,There,0.0,3,0.1,False,0,0,0,True,True,True
+267,42,58,noodles,True,dan,There,0.0,3,0.1,False,0,0,0,False,True,False
 268,42,58,dan dan noodles,True,the,There,0.0,2,0.5,False,0,0,0,False,True,False
 269,42,58,dan noodles,False,dan,There,0.0,2,0.5,False,0,0,0,False,False,True
 270,42,65,peanut,False,spicy,sauce,0.0,1,0.5,False,0,0,0,False,False,True
@@ -288,7 +288,7 @@
 286,42,91,dan,False,dan,noodles,0.0,5,0.2,False,0,0,0,True,False,False
 287,42,91,dan dan,False,Suns,noodles,0.0,2,0.5,False,0,0,0,False,False,True
 288,42,91,Suns dan dan,False,of,noodles,0.0,1,1.0,True,0,0,0,False,False,True
-289,42,92,noodles,True,dan,my,0.0,3,0.1,False,0,0,0,True,True,True
+289,42,92,noodles,True,dan,my,0.0,3,0.1,False,0,0,0,False,True,False
 290,42,92,dan dan noodles,True,Suns,my,0.0,2,0.5,False,0,0,0,False,True,False
 291,42,92,dan noodles,False,dan,my,0.0,2,0.5,False,0,0,0,False,False,True
 292,42,95,and,False,bf,I,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
@@ -312,7 +312,7 @@
 310,51,34,and,False,fries,grilled,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
 311,51,34,fries and,False,burgers,grilled,0.0,2,0.25,False,0,0,0,False,False,True
 312,51,34,burgers fries and,False,food,grilled,0.0,1,1.0,False,0,0,0,False,False,True
-313,51,35,grilled,False,and,cheese,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+313,51,35,grilled,False,and,cheese,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 314,51,35,fries and grilled,False,burgers,cheese,0.0,1,1.0,False,0,0,0,False,False,True
 315,51,35,and grilled,False,fries,cheese,0.0,1,1.0,False,0,0,0,False,False,True
 316,51,36,cheese,False,grilled,sandwich,0.0,2,0.05,False,0,0,0,False,False,True
@@ -332,7 +332,7 @@
 330,51,51,onion rings piled,False,some,on,1.0,1,1.0,False,0,0,1,False,False,True
 331,51,51,rings piled,False,onion,on,0.0,1,1.0,False,0,0,0,False,False,True
 332,51,58,burger,True,decent,Girlfriend,1.0,2,0.05,False,0,0,0,True,True,True
-333,51,62,grilled,False,the,cheese,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+333,51,62,grilled,False,the,cheese,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 334,51,63,cheese,False,grilled,sandwich,0.0,2,0.05,False,0,0,0,False,False,True
 335,51,63,grilled cheese,False,the,sandwich,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 336,51,64,sandwich,False,cheese,with,0.0,2,0.07692307692307693,False,1,0,0,False,False,True
@@ -415,7 +415,7 @@
 413,57,12,baked French Toast,True,itThe,is,1.0,1,1.0,True,0,0,0,True,True,True
 414,57,12,French Toast,False,baked,is,0.0,1,1.0,True,0,0,0,False,False,True
 415,57,12,Toast,False,French,is,0.0,1,1.0,True,1,0,0,False,False,True
-416,57,18,thoughThe,False,portion,butter,0.0,1,1.0,True,0,1,0,True,False,False
+416,57,18,thoughThe,False,portion,butter,0.0,1,1.0,True,0,1,0,False,False,True
 417,57,19,butter,False,thoughThe,tart,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 418,57,19,thoughThe butter,False,portion,tart,0.0,1,1.0,True,0,0,0,False,False,True
 419,57,20,thoughThe butter tart,False,portion,was,0.0,1,1.0,True,0,0,0,False,False,True
@@ -437,7 +437,7 @@
 435,60,42,batter mahi,False,organic,mahi,0.0,1,1.0,False,0,0,0,False,False,True
 436,60,42,mahi,False,batter,mahi,0.0,2,0.5,False,1,0,0,False,False,True
 437,60,43,batter mahi mahi,False,organic,very,0.0,1,1.0,False,0,1,0,False,False,True
-438,60,43,mahi,False,mahi,very,0.0,2,0.5,False,0,1,0,True,False,False
+438,60,43,mahi,False,mahi,very,0.0,2,0.5,False,0,1,0,False,False,True
 439,60,43,mahi mahi,False,batter,very,0.0,1,1.0,False,1,1,0,False,False,True
 440,60,50,coleslaw,False,Creamy,is,0.0,1,1.0,False,1,0,0,False,False,True
 441,60,52,flavourless,False,is,Shared,0.0,1,1.0,False,0,0,0,False,False,True
@@ -516,7 +516,7 @@
 514,67,30,and,False,afternoon,only,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
 515,67,35,leftThey,False,was,have,0.0,1,1.0,True,0,0,0,False,False,True
 516,67,40,choose,False,to,from,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-517,67,43,Chocolate,True,Original,and,1.0,1,0.3333333333333333,True,0,0,0,False,True,False
+517,67,43,Chocolate,True,Original,and,1.0,1,0.3333333333333333,True,0,0,0,True,True,True
 518,67,44,and,False,Chocolate,Coffee,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
 519,67,44,Chocolate and,False,Original,Coffee,0.0,1,1.0,True,0,0,0,False,False,True
 520,67,45,Chocolate and Coffee,False,Original,My,0.0,1,1.0,True,0,0,0,False,False,True
@@ -536,7 +536,7 @@
 534,70,35,noodle soup,False,beef,grilled,0.0,1,0.5,False,0,0,0,False,False,True
 535,70,35,soup,False,noodle,grilled,0.0,1,0.07142857142857142,False,0,0,0,False,False,True
 536,70,35,beef noodle soup,True,ordered,grilled,1.0,1,1.0,False,0,0,0,True,True,True
-537,70,36,grilled,False,soup,pork,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+537,70,36,grilled,False,soup,pork,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 538,70,36,noodle soup grilled,False,beef,pork,0.0,1,1.0,False,0,0,0,False,False,True
 539,70,36,soup grilled,False,noodle,pork,0.0,1,1.0,False,0,0,0,False,False,True
 540,70,37,pork,False,grilled,chop,0.0,1,0.2,False,0,0,0,False,False,True
@@ -576,7 +576,7 @@
 574,77,41,base,False,soup,two,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 575,77,45,included,False,are,with,0.0,2,0.5,False,0,0,0,False,False,True
 576,77,51,types,False,each,of,0.0,1,0.5,False,0,0,0,False,False,True
-577,77,53,noodles,True,of,hot,0.0,4,0.1,False,0,0,0,True,True,True
+577,77,53,noodles,True,of,hot,0.0,4,0.1,False,0,0,0,False,True,False
 578,77,55,drink,False,hot,is,0.0,2,0.06666666666666668,False,0,0,0,False,False,True
 579,77,57,included,False,is,but,0.0,2,0.5,False,0,0,0,False,False,True
 580,77,64,chargeThen,False,additional,you,0.0,1,1.0,True,0,0,0,False,False,True
@@ -607,7 +607,7 @@
 605,77,88,fish tofu,True,filet,cabbage,1.0,1,1.0,False,0,0,0,True,True,True
 606,77,89,fish tofu cabbage,False,filet,and,0.0,1,1.0,False,0,1,1,False,False,True
 607,77,89,tofu cabbage,False,fish,and,0.0,1,1.0,False,1,1,1,False,False,True
-608,77,89,cabbage,True,tofu,and,1.0,1,1.0,False,0,1,1,True,True,True
+608,77,89,cabbage,True,tofu,and,1.0,1,1.0,False,0,1,1,False,True,False
 609,77,90,and,False,cabbage,flat,0.0,2,0.002079002079002079,False,0,0,0,False,False,True
 610,77,90,tofu cabbage and,False,fish,flat,0.0,1,1.0,False,1,0,1,False,False,True
 611,77,90,cabbage and,False,tofu,flat,0.0,1,1.0,False,0,0,1,False,False,True
@@ -678,12 +678,12 @@
 676,104,53,dressingtype,False,ranch,stuff,0.0,1,1.0,False,0,0,0,False,False,True
 677,104,54,ranch dressingtype stuff,False,with,and,1.0,1,1.0,False,0,0,0,False,False,True
 678,104,54,dressingtype stuff,False,ranch,and,0.0,1,1.0,False,0,0,0,False,False,True
-679,104,54,stuff,False,dressingtype,and,0.0,3,0.1,False,0,0,0,True,False,False
+679,104,54,stuff,False,dressingtype,and,0.0,3,0.1,False,0,0,0,False,False,True
 680,104,55,and,False,stuff,their,0.0,7,0.002079002079002079,False,0,0,0,False,False,True
 681,104,55,dressingtype stuff and,False,ranch,their,0.0,1,1.0,False,0,0,0,False,False,True
 682,104,55,stuff and,False,dressingtype,their,0.0,1,1.0,False,0,0,0,False,False,True
 683,104,57,naan,True,their,tastes,1.0,2,0.5,False,0,0,0,True,True,True
-684,104,65,stuff,False,the,is,1.0,3,0.1,False,0,1,0,False,False,True
+684,104,65,stuff,False,the,is,1.0,3,0.1,False,0,1,0,True,False,False
 685,104,70,naan,True,the,is,1.0,2,0.5,False,0,0,0,True,True,True
 686,104,73,plain,False,just,atrocious,0.0,1,1.0,False,0,0,0,False,False,True
 687,104,74,plain atrocious,False,just,I,0.0,1,1.0,False,0,0,0,False,False,True
@@ -809,7 +809,7 @@
 807,131,103,and whistles,False,bells,Really,0.0,1,1.0,False,0,0,0,False,False,True
 808,131,103,whistles,False,and,Really,0.0,1,1.0,False,0,0,0,False,False,True
 809,131,105,deserves,False,Really,a,0.0,1,1.0,False,0,0,0,False,False,True
-810,131,110,bean,False,red,is,0.0,1,0.2,False,0,0,1,True,False,False
+810,131,110,bean,False,red,is,0.0,1,0.2,False,0,0,1,False,False,True
 811,132,4,inclined,False,more,to,0.0,1,1.0,False,0,0,0,False,False,True
 812,132,16,rounding,False,Im,down,0.0,1,1.0,False,0,0,0,False,False,True
 813,132,22,Sunday,False,for,lunch,0.0,1,0.25,True,0,0,0,False,False,True
@@ -924,7 +924,7 @@
 922,133,176,pleased,False,very,Finally,0.0,1,0.5,False,0,0,0,False,False,True
 923,133,179,poutines,True,the,arrived,1.0,1,1.0,False,0,0,0,True,True,True
 924,133,194,matter,False,doesnt,okay,0.0,1,0.5,False,0,0,0,False,False,True
-925,133,197,stuff,False,this,was,0.0,2,0.1,False,0,0,0,True,False,False
+925,133,197,stuff,False,this,was,0.0,2,0.1,False,0,0,0,False,False,True
 926,133,199,HEAVEN,False,was,Both,0.0,1,1.0,True,0,0,0,False,False,True
 927,133,203,and,False,friend,I,0.0,14,0.002079002079002079,False,0,0,0,False,False,True
 928,133,208,and,False,bite,looked,0.0,14,0.002079002079002079,False,0,0,0,False,False,True
@@ -936,7 +936,7 @@
 934,133,230,and,False,amazing,they,0.0,14,0.002079002079002079,False,0,0,0,False,False,True
 935,133,235,and,False,were,The,0.0,14,0.002079002079002079,False,0,0,0,False,False,True
 936,133,237,Loosey,False,The,which,0.0,1,1.0,True,0,0,0,False,False,True
-937,133,241,proclaimed,False,also,as,0.0,2,0.5,False,0,1,0,True,False,False
+937,133,241,proclaimed,False,also,as,0.0,2,0.5,False,0,1,0,False,False,True
 938,133,250,moves,False,wrong,The,0.0,1,1.0,False,0,0,0,False,False,True
 939,133,252,drink,False,The,menu,0.0,1,0.06666666666666668,False,0,0,0,False,False,True
 940,133,256,adventurous,False,very,more,0.0,1,1.0,False,0,0,0,False,False,True
@@ -958,7 +958,7 @@
 956,133,301,alcoholic beverage,False,generic,came,0.0,1,1.0,False,0,0,0,False,False,True
 957,133,301,beverage,False,alcoholic,came,0.0,1,1.0,False,0,0,0,False,False,True
 958,133,311,and,False,reasonable,honestly,0.0,14,0.002079002079002079,False,0,0,0,False,False,True
-959,133,317,stuff,False,this,I,0.0,2,0.1,False,0,0,0,True,False,False
+959,133,317,stuff,False,this,I,0.0,2,0.1,False,0,0,0,False,False,True
 960,133,327,ideas,False,any,but,0.0,1,1.0,False,0,0,0,False,False,True
 961,133,338,food,False,fine,I,0.0,3,0.012195121951219513,False,1,0,0,False,False,True
 962,140,9,Mexican,False,wanted,food,0.0,1,0.125,True,0,0,0,False,False,True
@@ -1071,7 +1071,7 @@
 1069,141,59,mentioned,False,I,and,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 1070,141,60,and,False,mentioned,she,0.0,7,0.002079002079002079,False,0,0,0,False,False,True
 1071,141,60,mentioned and,False,I,she,0.0,1,1.0,False,0,0,0,False,False,True
-1072,141,66,container,False,small,with,0.0,1,0.5,False,0,1,0,True,False,False
+1072,141,66,container,False,small,with,0.0,1,0.5,False,0,1,0,False,False,True
 1073,141,68,grated,False,with,parmesan,0.0,1,1.0,False,0,0,0,False,False,True
 1074,141,69,parmesan,False,grated,cheese,0.0,1,0.5,False,0,0,0,False,False,True
 1075,141,69,grated parmesan,False,with,cheese,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1088,7 +1088,7 @@
 1086,141,79,cuts,False,it,the,0.0,1,1.0,False,0,0,0,False,False,True
 1087,141,81,pepper,True,the,taste,1.0,3,0.25,False,0,0,0,True,True,True
 1088,141,88,helped,False,really,the,0.0,1,0.25,False,0,0,0,False,False,True
-1089,141,90,soup,True,the,She,0.0,2,0.07142857142857142,False,0,0,0,True,True,True
+1089,141,90,soup,True,the,She,0.0,2,0.07142857142857142,False,0,0,0,False,True,False
 1090,141,106,complimentary,False,very,review,0.0,1,1.0,False,0,0,0,False,False,True
 1091,141,107,review,False,complimentary,of,0.0,1,0.14285714285714285,False,0,0,0,False,False,True
 1092,141,107,complimentary review,False,very,of,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1096,7 +1096,7 @@
 1094,141,115,salad,False,her,was,1.0,1,0.08333333333333333,False,0,0,0,True,False,False
 1095,141,118,and,False,great,she,0.0,7,0.002079002079002079,False,0,0,0,False,False,True
 1096,141,120,liked,False,she,the,0.0,1,0.25,False,0,0,0,False,False,True
-1097,141,122,pepper,True,the,So,0.0,3,0.25,False,0,0,0,True,True,True
+1097,141,122,pepper,True,the,So,0.0,3,0.25,False,0,0,0,False,True,False
 1098,141,128,AOkay,False,overall,it,0.0,1,1.0,True,0,0,0,False,False,True
 1099,141,135,and,False,though,I,0.0,7,0.002079002079002079,False,1,0,0,False,False,True
 1100,141,140,and,False,back,try,0.0,7,0.002079002079002079,False,0,0,0,False,False,True
@@ -1214,7 +1214,7 @@
 1212,151,186,and,False,food,area,0.0,11,0.002079002079002079,False,0,0,0,False,False,True
 1213,151,186,food and,False,the,area,0.0,1,0.14285714285714285,False,0,0,0,False,False,True
 1214,151,189,missing,False,Why,one,0.0,1,1.0,False,0,0,0,False,False,True
-1215,151,196,Italian,False,better,in,0.0,1,0.2,True,0,0,0,True,False,False
+1215,151,196,Italian,False,better,in,0.0,1,0.2,True,0,0,0,False,False,True
 1216,151,199,city,False,the,Im,1.0,1,1.0,False,0,0,0,True,False,False
 1217,151,201,picky,False,Im,enough,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 1218,151,209,blown,False,REALLY,away,0.0,1,0.5,False,0,0,0,False,False,True
@@ -1329,7 +1329,7 @@
 1327,160,183,clarification,False,for,I,1.0,1,1.0,False,0,0,0,True,False,False
 1328,160,195,miscommunication,False,some,somewhere,0.0,1,1.0,False,0,0,0,False,False,True
 1329,160,206,son,False,my,a,0.0,1,1.0,False,0,0,0,False,False,True
-1330,160,209,chocolate,True,little,thing,1.0,1,0.09090909090909093,False,0,0,0,False,True,False
+1330,160,209,chocolate,True,little,thing,1.0,1,0.09090909090909093,False,0,0,0,True,True,True
 1331,160,213,and,False,free,chatted,0.0,9,0.002079002079002079,False,0,0,0,False,False,True
 1332,160,214,and chatted,False,free,with,0.0,1,1.0,False,0,0,0,False,False,True
 1333,160,214,chatted,False,and,with,1.0,1,1.0,False,1,0,0,True,False,False
@@ -1357,7 +1357,7 @@
 1355,164,115,obliged,False,be,to,0.0,1,1.0,False,0,0,0,False,False,True
 1356,164,117,spend,False,to,on,0.0,1,0.5,False,0,0,0,False,False,True
 1357,164,119,dessert,False,on,after,0.0,4,0.14285714285714285,False,0,0,0,False,False,True
-1358,164,125,dinner,False,had,The,0.0,3,0.09090909090909093,False,0,0,0,True,False,False
+1358,164,125,dinner,False,had,The,0.0,3,0.09090909090909093,False,0,0,0,False,False,True
 1359,164,135,worked,False,usually,out,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 1360,164,141,dessert,False,had,and,1.0,4,0.14285714285714285,False,0,0,0,False,False,True
 1361,164,142,and,False,dessert,a,0.0,8,0.002079002079002079,False,0,0,0,False,False,True
@@ -1383,14 +1383,14 @@
 1381,164,267,and,False,black,white,0.0,8,0.002079002079002079,False,0,0,0,False,False,True
 1382,164,267,black and,False,in,white,0.0,1,1.0,False,0,0,0,False,False,True
 1383,164,269,and,False,white,looks,0.0,8,0.002079002079002079,False,0,0,0,False,False,True
-1384,164,275,desserts,False,The,though,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+1384,164,275,desserts,False,The,though,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 1385,164,277,WOW,False,though,Amazing,0.0,1,1.0,True,0,0,0,False,False,True
 1386,164,279,Chocolate,True,Amazing,fondue,1.0,2,0.3333333333333333,True,0,0,0,True,True,True
 1387,164,280,Chocolate fondue,False,Amazing,that,1.0,1,1.0,True,0,0,0,False,False,True
 1388,164,280,fondue,False,Chocolate,that,0.0,1,1.0,False,0,0,0,False,False,True
 1389,164,283,heavenly,False,is,Anyway,0.0,1,0.5,False,0,0,0,False,False,True
 1390,164,297,birthday,False,my,dinner,0.0,3,0.14285714285714285,False,0,0,0,False,False,True
-1391,164,298,dinner,False,birthday,Forget,0.0,3,0.09090909090909093,False,0,0,0,True,False,False
+1391,164,298,dinner,False,birthday,Forget,0.0,3,0.09090909090909093,False,0,0,0,False,False,True
 1392,164,298,birthday dinner,False,my,Forget,0.0,1,1.0,False,0,0,0,False,False,True
 1393,164,299,birthday dinner Forget,False,my,conventional,0.0,1,1.0,True,0,0,0,False,False,True
 1394,164,299,dinner Forget,False,birthday,conventional,0.0,1,1.0,True,0,0,0,False,False,True
@@ -1398,7 +1398,7 @@
 1396,164,300,dinner Forget conventional,False,birthday,dinner,0.0,1,1.0,True,0,0,0,False,False,True
 1397,164,300,Forget conventional,False,dinner,dinner,0.0,1,1.0,True,0,0,0,False,False,True
 1398,164,300,conventional,False,Forget,dinner,0.0,1,1.0,False,0,0,0,False,False,True
-1399,164,301,dinner,False,conventional,I,0.0,3,0.09090909090909093,False,0,0,0,True,False,False
+1399,164,301,dinner,False,conventional,I,0.0,3,0.09090909090909093,False,0,0,0,False,False,True
 1400,164,301,Forget conventional dinner,False,dinner,I,0.0,1,1.0,True,0,0,0,False,False,True
 1401,164,301,conventional dinner,False,Forget,I,0.0,1,1.0,False,0,0,0,False,False,True
 1402,164,305,sampler,False,a,platter,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1432,7 +1432,7 @@
 1430,172,113,dinner,False,wanted,as,0.0,1,0.09090909090909093,False,0,0,0,False,False,True
 1431,172,119,shrimp,True,the,We,1.0,1,0.14285714285714285,False,0,0,0,True,True,True
 1432,172,123,drinks,False,ordered,I,0.0,1,0.0625,False,0,0,0,False,False,True
-1433,172,127,tea,True,a,and,1.0,1,0.09090909090909093,False,0,0,0,False,True,False
+1433,172,127,tea,True,a,and,1.0,1,0.09090909090909093,False,0,0,0,True,True,True
 1434,172,128,and,False,tea,my,0.0,6,0.002079002079002079,False,0,0,0,False,False,True
 1435,172,128,tea and,False,a,my,0.0,1,1.0,False,0,0,0,False,False,True
 1436,172,133,mango,True,a,and,1.0,1,0.5,False,0,0,1,True,True,True
@@ -1449,7 +1449,7 @@
 1447,172,176,food,False,bland,generic,0.0,2,0.012195121951219513,False,0,0,0,False,False,True
 1448,172,177,generic,False,food,desserts,0.0,1,0.25,False,1,0,0,False,False,True
 1449,172,177,food generic,False,bland,desserts,0.0,1,1.0,False,0,0,0,False,False,True
-1450,172,178,desserts,False,generic,and,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+1450,172,178,desserts,False,generic,and,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 1451,172,178,food generic desserts,False,bland,and,1.0,1,1.0,False,0,0,0,False,False,True
 1452,172,178,generic desserts,False,food,and,0.0,1,1.0,False,1,0,0,False,False,True
 1453,172,179,and,False,desserts,TERRIBLE,0.0,6,0.002079002079002079,False,0,0,0,False,False,True
@@ -1459,7 +1459,7 @@
 1457,174,14,getting,False,been,a,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 1458,174,17,rap,False,bad,because,0.0,1,1.0,False,0,0,0,False,False,True
 1459,174,27,and,False,times,never,0.0,4,0.002079002079002079,False,0,0,0,False,False,True
-1460,174,38,review,False,my,of,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+1460,174,38,review,False,my,of,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 1461,174,47,experienced,False,have,That,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 1462,174,51,seems,False,it,like,0.0,1,0.125,False,0,0,0,False,False,True
 1463,174,57,experienced,False,have,bad,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
@@ -1489,7 +1489,7 @@
 1487,174,164,produce,False,to,I,0.0,1,0.5,False,0,0,0,False,False,True
 1488,174,167,guessing,False,am,that,0.0,1,1.0,False,0,0,0,False,False,True
 1489,174,173,towards,False,goes,the,0.0,1,1.0,False,0,0,0,False,False,True
-1490,174,184,review,False,same,to,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+1490,174,184,review,False,same,to,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 1491,174,187,Mexican,False,another,restaurant,0.0,4,0.125,True,0,0,0,False,False,True
 1492,174,193,Florida,False,in,and,1.0,1,1.0,True,0,0,0,True,False,False
 1493,174,194,and,False,Florida,it,0.0,4,0.002079002079002079,False,0,0,0,False,False,True
@@ -1553,12 +1553,12 @@
 1551,177,109,pasta pizza and,False,with,panzerotti,0.0,1,1.0,False,0,0,0,False,False,True
 1552,177,110,pizza and panzerotti,False,pasta,We,0.0,1,1.0,False,0,0,0,False,False,True
 1553,177,110,and panzerotti,False,pizza,We,0.0,1,1.0,False,0,0,0,False,False,True
-1554,177,110,panzerotti,True,and,We,0.0,3,0.3333333333333333,False,0,0,0,True,True,True
+1554,177,110,panzerotti,True,and,We,0.0,3,0.3333333333333333,False,0,0,0,False,True,False
 1555,177,118,raving,False,were,about,0.0,1,1.0,False,0,0,0,False,False,True
 1556,177,120,online,False,about,and,0.0,1,0.5,False,0,0,0,False,False,True
 1557,177,121,and,False,online,got,0.0,10,0.002079002079002079,False,0,0,0,False,False,True
 1558,177,121,online and,False,about,got,0.0,1,1.0,False,0,0,0,False,False,True
-1559,177,123,panzerotti,True,got,fried,0.0,3,0.3333333333333333,False,0,0,0,True,True,True
+1559,177,123,panzerotti,True,got,fried,0.0,3,0.3333333333333333,False,0,0,0,False,True,False
 1560,177,124,panzerotti fried,False,got,ones,0.0,1,1.0,False,0,0,0,False,False,True
 1561,177,124,fried,False,panzerotti,ones,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
 1562,177,125,panzerotti fried ones,False,got,OH,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1570,7 +1570,7 @@
 1568,177,134,rice,False,the,balls,0.0,1,0.1,False,0,0,0,False,False,True
 1569,177,135,rice balls,True,the,The,1.0,1,1.0,False,0,0,0,True,True,True
 1570,177,135,balls,False,rice,The,1.0,1,1.0,False,0,0,0,False,False,True
-1571,177,137,panzerotti,True,The,well,0.0,3,0.3333333333333333,False,0,0,0,True,True,True
+1571,177,137,panzerotti,True,The,well,0.0,3,0.3333333333333333,False,0,0,0,False,True,False
 1572,177,143,lose,False,they,one,0.0,1,1.0,False,0,0,0,False,False,True
 1573,177,149,food,False,the,itself,1.0,1,0.012195121951219513,False,0,0,0,False,False,True
 1574,177,154,messed,False,they,up,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
@@ -1639,17 +1639,17 @@
 1637,198,13,and toast,False,omelet,The,0.0,1,1.0,False,0,0,0,False,False,True
 1638,198,13,toast,True,and,The,1.0,1,1.0,False,0,0,0,False,True,False
 1639,199,7,send,False,They,you,0.0,1,0.5,False,0,0,0,False,False,True
-1640,199,10,email,False,an,telling,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1640,199,10,email,False,an,telling,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1641,199,14,noodles,True,your,food,1.0,1,0.1,False,0,0,0,True,True,True
 1642,199,15,food,False,noodles,is,0.0,2,0.012195121951219513,False,0,0,0,False,False,True
 1643,199,15,noodles food,False,your,is,1.0,1,1.0,False,0,0,0,False,False,True
 1644,199,20,picked,False,be,up,0.0,2,0.25,False,0,0,0,False,False,True
 1645,199,37,and,False,ready,that,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
 1646,199,50,receive,False,would,another,0.0,1,0.5,False,0,0,0,False,False,True
-1647,199,52,email,False,another,when,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1647,199,52,email,False,another,when,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1648,199,59,picked,False,be,up,0.0,2,0.25,False,0,0,0,False,False,True
 1649,199,68,sent,False,be,another,0.0,1,1.0,False,0,0,0,False,False,True
-1650,199,70,email,False,another,The,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1650,199,70,email,False,another,The,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1651,199,76,and,False,me,said,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
 1652,199,83,tell,False,to,you,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 1653,199,90,refund,False,just,me,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1685,10 +1685,10 @@
 1683,205,68,McDonalds except,False,typical,for,0.0,1,1.0,True,0,0,0,False,False,True
 1684,205,68,except,False,McDonalds,for,0.0,1,0.5,False,0,0,0,False,False,True
 1685,205,71,french,False,their,fries,0.0,2,0.5,False,0,0,0,False,False,True
-1686,205,72,fries,True,french,At,0.0,2,0.07142857142857142,False,0,0,0,True,True,True
+1686,205,72,fries,True,french,At,0.0,2,0.07142857142857142,False,0,0,0,False,True,False
 1687,205,72,french fries,True,their,At,0.0,1,1.0,False,0,0,0,False,True,False
 1688,205,75,McDonalds,False,most,I,0.0,3,0.25,True,0,0,0,False,False,True
-1689,205,79,fries,True,their,not,0.0,2,0.07142857142857142,False,0,0,0,True,True,True
+1689,205,79,fries,True,their,not,0.0,2,0.07142857142857142,False,0,0,0,False,True,False
 1690,205,87,and,False,old,it,0.0,1,0.002079002079002079,False,0,0,0,False,False,True
 1691,205,99,fryer,False,their,Ive,0.0,1,0.5,False,0,0,0,False,False,True
 1692,205,105,french,False,good,fry,0.0,2,0.5,False,0,0,0,False,False,True
@@ -1724,7 +1724,7 @@
 1722,212,73,Boy,False,Po,It,0.0,3,0.25,True,0,0,0,False,False,True
 1723,212,73,Po Boy,True,the,It,1.0,2,0.3333333333333333,True,0,0,0,True,True,True
 1724,212,78,grease,False,old,The,0.0,1,1.0,False,0,0,0,False,False,True
-1725,212,80,shrimp,True,The,were,1.0,2,0.14285714285714285,False,0,1,0,False,True,False
+1725,212,80,shrimp,True,The,were,1.0,2,0.14285714285714285,False,0,1,0,True,True,True
 1726,212,87,and,False,by,asked,0.0,4,0.002079002079002079,False,0,0,0,False,False,True
 1727,212,91,food,False,the,was,1.0,1,0.012195121951219513,False,0,0,0,False,False,True
 1728,212,99,smiled,False,just,and,1.0,1,1.0,False,0,0,0,True,False,False
@@ -1839,12 +1839,12 @@
 1837,231,90,annoying,False,was,The,0.0,1,0.5,False,0,0,0,False,False,True
 1838,231,92,clothes,False,The,iron,0.0,2,0.5,False,0,0,0,False,False,True
 1839,231,93,clothes iron,False,The,was,1.0,1,1.0,False,0,0,0,True,False,False
-1840,231,93,iron,False,clothes,was,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1840,231,93,iron,False,clothes,was,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1841,231,95,tied,False,was,to,0.0,1,1.0,False,0,0,0,False,False,True
 1842,231,98,ironing,False,the,board,0.0,1,1.0,False,0,0,0,False,False,True
 1843,231,99,ironing board,False,the,It,1.0,1,1.0,False,0,0,0,True,False,False
 1844,231,99,board,False,ironing,It,0.0,1,1.0,False,0,0,0,False,False,True
-1845,231,105,iron,False,to,my,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1845,231,105,iron,False,to,my,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1846,231,107,clothes,False,my,This,0.0,2,0.5,False,0,0,0,False,False,True
 1847,231,112,Motel,False,a,Six,0.0,1,1.0,True,0,0,0,False,False,True
 1848,231,113,Motel Six,False,a,i,0.0,1,1.0,True,0,0,0,False,False,True
@@ -1853,7 +1853,7 @@
 1851,231,121,security,False,a,cord,0.0,1,1.0,False,0,0,0,False,False,True
 1852,231,122,security cord,False,a,on,1.0,1,1.0,False,0,0,0,True,False,False
 1853,231,122,cord,False,security,on,0.0,1,1.0,False,0,0,0,False,False,True
-1854,231,125,iron,False,my,The,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1854,231,125,iron,False,my,The,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1855,231,132,separation,False,nice,from,0.0,1,1.0,False,0,0,0,False,False,True
 1856,231,138,Mandalay,False,of,Bay,0.0,2,0.3333333333333333,True,0,0,0,False,False,True
 1857,231,139,Mandalay Bay,False,of,The,1.0,2,0.3333333333333333,True,0,0,0,False,False,True
@@ -1876,7 +1876,7 @@
 1874,233,73,bag,False,mixed,Some,0.0,1,1.0,False,0,0,0,False,False,True
 1875,233,77,and,False,friendly,helpful,0.0,2,0.002079002079002079,False,0,0,0,False,False,True
 1876,238,9,landed,False,I,in,0.0,1,1.0,False,1,0,0,False,False,True
-1877,238,12,concourse,False,one,of,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1877,238,12,concourse,False,one,of,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1878,238,16,terminal,False,A,and,0.0,2,0.5,False,0,0,0,False,False,True
 1879,238,17,and,False,terminal,flew,0.0,4,0.002079002079002079,False,0,0,0,False,False,True
 1880,238,17,terminal and,False,A,flew,0.0,1,1.0,False,0,0,0,False,False,True
@@ -1889,21 +1889,21 @@
 1887,238,39,hope,False,me,for,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 1888,238,45,departure,False,my,gate,0.0,2,0.5,False,0,0,0,False,False,True
 1889,238,46,departure gate,False,my,Unfortunately,0.0,2,0.5,False,0,0,0,False,False,True
-1890,238,46,gate,False,departure,Unfortunately,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1890,238,46,gate,False,departure,Unfortunately,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1891,238,51,walk,False,long,to,0.0,1,0.16666666666666666,False,0,0,0,False,False,True
-1892,238,55,concourse,False,other,I,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1892,238,55,concourse,False,other,I,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1893,238,69,concourses,False,Both,had,0.0,1,1.0,False,0,0,0,False,False,True
 1894,238,75,gates,False,of,yet,0.0,1,1.0,False,0,0,0,False,False,True
 1895,238,79,loaded,False,was,with,0.0,1,1.0,False,0,0,0,False,False,True
 1896,238,82,and,False,options,the,0.0,4,0.002079002079002079,False,0,0,0,False,False,True
 1897,238,97,departure,False,my,gate,0.0,2,0.5,False,0,0,0,False,False,True
 1898,238,98,departure gate,False,my,I,1.0,2,0.5,False,0,0,0,True,False,False
-1899,238,98,gate,False,departure,I,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1899,238,98,gate,False,departure,I,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1900,238,105,wander,False,to,back,0.0,1,1.0,False,0,0,0,False,False,True
-1901,238,110,concourse,False,other,so,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1901,238,110,concourse,False,other,so,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1902,238,113,settled,False,I,for,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 1903,238,116,lesser,False,a,option,0.0,1,1.0,False,0,0,0,False,False,True
-1904,238,120,gate,False,my,Just,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+1904,238,120,gate,False,my,Just,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 1905,238,122,hope,False,Just,you,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 1906,238,129,terminals,False,change,or,0.0,1,1.0,False,0,0,0,False,False,True
 1907,238,131,rent,False,or,a,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2040,7 +2040,7 @@
 2038,247,70,meat,True,the,For,1.0,3,0.08333333333333333,False,0,0,0,True,True,True
 2039,247,72,dinner,False,For,I,0.0,1,0.09090909090909093,False,0,0,0,False,False,True
 2040,247,74,attempted,False,I,to,0.0,1,1.0,False,0,0,0,False,False,True
-2041,247,78,BLT,True,the,but,1.0,1,0.3333333333333333,True,0,0,0,False,True,False
+2041,247,78,BLT,True,the,but,1.0,1,0.3333333333333333,True,0,0,0,True,True,True
 2042,247,84,bacon,True,of,I,1.0,1,0.5,False,0,0,0,True,True,True
 2043,247,86,settled,False,I,for,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 2044,247,90,strips,False,chicken,It,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2067,15 +2067,15 @@
 2065,250,75,hallways and,False,rooms,elevators,0.0,1,1.0,False,0,0,0,False,False,True
 2066,250,82,updating,False,some,If,0.0,1,1.0,False,0,0,0,False,False,True
 2067,250,95,pinch,False,a,It,0.0,1,1.0,False,0,0,0,False,False,True
-2068,252,7,offstrip,False,good,casino,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
-2069,252,10,offstrip,False,The,part,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+2068,252,7,offstrip,False,good,casino,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
+2069,252,10,offstrip,False,The,part,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 2070,252,15,greatest,False,its,negative,0.0,1,1.0,False,0,0,0,False,False,True
 2071,252,23,leave,False,to,the,0.0,1,0.25,False,0,0,0,False,False,True
 2072,252,34,Rio,False,The,and,1.0,1,1.0,True,1,0,0,True,False,False
 2073,252,35,and,False,Rio,The,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
 2074,252,35,Rio and,False,The,The,0.0,1,1.0,True,1,0,0,False,False,True
 2075,252,37,Palms,False,The,are,1.0,1,1.0,True,0,0,0,True,False,False
-2076,252,42,offstrip,False,good,choices,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+2076,252,42,offstrip,False,good,choices,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 2077,252,45,attention,False,Pay,to,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 2078,252,48,tower,False,which,you,0.0,1,1.0,False,0,0,0,False,False,True
 2079,252,57,garage,False,parking,to,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2137,7 +2137,7 @@
 2135,253,188,whiskey,True,a,bar,1.0,2,0.5,False,0,0,0,True,True,True
 2136,253,194,drinks,False,the,will,0.0,3,0.0625,False,0,0,0,False,False,True
 2137,253,207,DJ,False,a,came,0.0,1,1.0,True,0,0,0,False,False,True
-2138,253,211,played,False,She,a,0.0,1,0.5,False,0,1,0,True,False,False
+2138,253,211,played,False,She,a,0.0,1,0.5,False,0,1,0,False,False,True
 2139,253,220,playing,False,was,a,0.0,1,0.5,False,0,0,0,False,False,True
 2140,253,222,preset,False,a,set,0.0,1,1.0,False,0,0,0,False,False,True
 2141,253,223,set,False,preset,list,0.0,2,0.5,False,0,0,0,False,False,True
@@ -2189,12 +2189,12 @@
 2187,267,11,Noodleoo,False,little,is,0.0,1,1.0,True,0,0,0,False,False,True
 2188,267,17,spokes,False,their,dog,0.0,1,1.0,False,0,0,0,False,False,True
 2189,267,18,spokes dog,False,their,in,0.0,1,1.0,False,0,0,0,False,False,True
-2190,267,18,dog,False,spokes,in,0.0,4,0.1,False,0,0,0,True,False,False
+2190,267,18,dog,False,spokes,in,0.0,4,0.1,False,0,0,0,False,False,True
 2191,267,25,Scooby,False,love,Dos,0.0,1,1.0,True,0,0,0,False,False,True
-2192,267,26,Scooby Dos,False,love,They,0.0,1,1.0,True,0,1,0,True,False,False
+2192,267,26,Scooby Dos,False,love,They,0.0,1,1.0,True,0,1,0,False,False,True
 2193,267,26,Dos,False,Scooby,They,0.0,2,0.5,True,0,1,0,False,False,True
 2194,267,31,buttfaced,False,little,dog,0.0,1,1.0,False,0,0,0,False,False,True
-2195,267,32,dog,False,buttfaced,like,0.0,4,0.1,False,0,0,0,True,False,False
+2195,267,32,dog,False,buttfaced,like,0.0,4,0.1,False,0,0,0,False,False,True
 2196,267,32,buttfaced dog,False,little,like,0.0,1,1.0,False,0,0,0,False,False,True
 2197,267,35,prince,False,a,and,1.0,1,1.0,False,0,0,0,True,False,False
 2198,267,36,and,False,prince,are,0.0,7,0.002079002079002079,False,0,0,0,False,False,True
@@ -2261,7 +2261,7 @@
 2259,267,150,snails and puppy,False,and,dog,0.0,1,1.0,False,0,0,0,False,False,True
 2260,267,150,and puppy,False,snails,dog,0.0,1,1.0,False,0,0,0,False,False,True
 2261,267,150,puppy,False,and,dog,0.0,1,1.0,False,0,0,0,False,False,True
-2262,267,151,dog,False,puppy,tails,0.0,4,0.1,False,0,0,0,True,False,False
+2262,267,151,dog,False,puppy,tails,0.0,4,0.1,False,0,0,0,False,False,True
 2263,267,151,and puppy dog,False,snails,tails,0.0,1,1.0,False,0,0,0,False,False,True
 2264,267,151,puppy dog,False,and,tails,0.0,1,1.0,False,0,0,0,False,False,True
 2265,267,152,puppy dog tails,False,and,Hes,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2283,7 +2283,7 @@
 2281,267,188,Smelly Dog,False,to,before,0.0,1,1.0,True,0,0,0,False,False,True
 2282,267,188,Dog,False,Smelly,before,0.0,1,1.0,True,0,0,0,False,False,True
 2283,267,191,unless,False,but,I,0.0,1,1.0,False,0,0,0,False,False,True
-2284,267,194,dog,False,need,sitting,0.0,4,0.1,False,0,0,0,True,False,False
+2284,267,194,dog,False,need,sitting,0.0,4,0.1,False,0,0,0,False,False,True
 2285,267,195,sitting,False,dog,play,0.0,1,0.2,False,0,0,0,False,False,True
 2286,267,195,dog sitting,False,need,play,0.0,1,1.0,False,0,0,0,False,False,True
 2287,267,204,Scoobys,False,with,They,0.0,1,1.0,True,0,0,0,False,False,True
@@ -2340,7 +2340,7 @@
 2338,269,107,pride,False,Irish,but,0.0,1,0.5,False,0,0,0,False,False,True
 2339,269,107,and Irish pride,False,heraldry,but,0.0,1,1.0,True,0,0,0,False,False,True
 2340,269,107,Irish pride,False,and,but,0.0,1,1.0,True,0,0,0,False,False,True
-2341,269,111,offerings,False,the,be,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+2341,269,111,offerings,False,the,be,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 2342,269,114,chotchke,False,too,to,0.0,1,1.0,False,0,0,0,False,False,True
 2343,269,120,leprechaun,False,Like,print,0.0,1,1.0,False,0,0,0,False,False,True
 2344,269,121,leprechaun print,False,Like,boxers,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2364,7 +2364,7 @@
 2362,269,143,act,False,class,When,0.0,1,1.0,False,0,0,0,False,False,True
 2363,269,147,entered,False,first,the,0.0,1,1.0,False,0,0,0,False,False,True
 2364,269,152,shocked,False,was,at,0.0,1,1.0,False,0,0,0,False,False,True
-2365,269,156,stuff,False,much,they,0.0,3,0.1,False,0,0,0,True,False,False
+2365,269,156,stuff,False,much,they,0.0,3,0.1,False,0,0,0,False,False,True
 2366,269,159,crammed,False,had,onto,0.0,1,0.5,False,0,0,0,False,False,True
 2367,269,168,claustrophobic,False,been,had,0.0,1,1.0,False,0,0,0,False,False,True
 2368,269,172,utilized,False,not,barriers,0.0,1,0.5,False,0,0,0,False,False,True
@@ -2380,11 +2380,11 @@
 2378,269,206,Irish,False,of,themed,0.0,6,0.16666666666666666,True,0,0,0,False,False,True
 2379,269,207,Irish themed,False,of,offerings,0.0,1,1.0,True,0,0,0,False,False,True
 2380,269,207,themed,False,Irish,offerings,0.0,2,0.5,False,0,0,0,False,False,True
-2381,269,208,offerings,False,themed,They,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+2381,269,208,offerings,False,themed,They,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 2382,269,208,Irish themed offerings,False,of,They,0.0,1,1.0,True,0,0,0,False,False,True
 2383,269,208,themed offerings,False,Irish,They,0.0,1,1.0,False,0,0,0,False,False,True
 2384,269,214,goofy,False,the,offerings,0.0,1,1.0,False,0,0,0,False,False,True
-2385,269,215,offerings,False,goofy,I,0.0,3,0.3333333333333333,False,0,0,0,True,False,False
+2385,269,215,offerings,False,goofy,I,0.0,3,0.3333333333333333,False,0,0,0,False,False,True
 2386,269,215,goofy offerings,False,the,I,1.0,1,1.0,False,0,0,0,True,False,False
 2387,269,218,imagined,False,had,to,0.0,1,1.0,False,0,1,0,False,False,True
 2388,269,221,jewelry,False,beautiful,china,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2407,14 +2407,14 @@
 2405,269,235,Irish food,False,imported,including,0.0,1,1.0,True,0,0,0,False,False,True
 2406,269,237,tea,False,including,sweets,0.0,1,0.09090909090909093,False,0,0,0,False,False,True
 2407,269,238,tea sweets,False,including,and,1.0,1,1.0,False,0,1,0,True,False,False
-2408,269,238,sweets,False,tea,and,0.0,1,0.5,False,0,1,0,True,False,False
+2408,269,238,sweets,False,tea,and,0.0,1,0.5,False,0,1,0,False,False,True
 2409,269,239,and,False,sweets,refrigerated,0.0,13,0.002079002079002079,False,0,0,0,False,False,True
 2410,269,239,tea sweets and,False,including,refrigerated,0.0,1,1.0,False,0,0,0,False,False,True
 2411,269,239,sweets and,False,tea,refrigerated,0.0,1,1.0,False,0,0,0,False,False,True
 2412,269,240,sweets and refrigerated,False,tea,stuff,0.0,1,1.0,False,0,0,0,False,False,True
 2413,269,240,and refrigerated,False,sweets,stuff,0.0,1,1.0,False,0,0,0,False,False,True
 2414,269,240,refrigerated,False,and,stuff,0.0,1,1.0,False,0,0,0,False,False,True
-2415,269,241,stuff,False,refrigerated,like,0.0,3,0.1,False,0,0,0,True,False,False
+2415,269,241,stuff,False,refrigerated,like,0.0,3,0.1,False,0,0,0,False,False,True
 2416,269,241,and refrigerated stuff,False,sweets,like,0.0,1,1.0,False,0,0,0,False,False,True
 2417,269,241,refrigerated stuff,False,and,like,0.0,1,1.0,False,0,0,0,False,False,True
 2418,269,243,sausages,False,like,He,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2600,12 +2600,12 @@
 2598,367,6,cream ish desserts,False,ice,pretty,0.0,1,1.0,False,0,0,0,False,False,True
 2599,367,6,ish desserts,False,cream,pretty,0.0,1,1.0,False,0,0,0,False,False,True
 2600,367,17,appreciate,False,I,good,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-2601,367,19,custard,True,good,froyo,0.0,3,0.3333333333333333,False,0,0,0,True,True,True
+2601,367,19,custard,True,good,froyo,0.0,3,0.3333333333333333,False,0,0,0,False,True,False
 2602,367,20,custard froyo,False,good,A,0.0,1,1.0,False,0,0,0,False,False,True
 2603,367,20,froyo,False,custard,A,0.0,1,1.0,False,1,0,0,False,False,True
 2604,367,26,and,False,here,both,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
-2605,367,43,custard,False,Good,is,1.0,3,0.3333333333333333,False,0,1,0,False,False,True
-2606,367,46,custard,False,good,but,1.0,3,0.3333333333333333,False,0,0,0,False,False,True
+2605,367,43,custard,False,Good,is,1.0,3,0.3333333333333333,False,0,1,0,True,False,False
+2606,367,46,custard,False,good,but,1.0,3,0.3333333333333333,False,0,0,0,True,False,False
 2607,367,50,covered,False,walls,in,0.0,1,0.25,False,0,0,0,False,False,True
 2608,367,52,antique,False,in,signs,0.0,1,1.0,False,0,0,0,False,False,True
 2609,367,53,signs,False,antique,license,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
@@ -2854,7 +2854,7 @@
 2852,503,11,stuff Hits,False,of,Soft,0.0,1,1.0,True,0,0,0,False,False,True
 2853,503,11,Hits,False,stuff,Soft,0.0,1,1.0,True,0,0,0,False,False,True
 2854,503,14,crab,False,shell,roll,1.0,2,0.3333333333333333,False,0,0,0,False,False,True
-2855,503,15,roll,False,crab,Beautiful,0.0,3,0.25,False,0,0,0,True,False,False
+2855,503,15,roll,False,crab,Beautiful,0.0,3,0.25,False,0,0,0,False,False,True
 2856,503,15,crab roll,False,shell,Beautiful,0.0,1,1.0,False,0,0,0,False,False,True
 2857,503,21,aioli,True,The,was,1.0,1,1.0,False,0,0,0,True,True,True
 2858,503,25,and,False,nice,the,0.0,8,0.002079002079002079,False,0,0,0,False,False,True
@@ -2876,17 +2876,17 @@
 2874,503,53,concerns,False,the,of,1.0,1,1.0,False,0,0,0,True,False,False
 2875,503,71,demand,False,you,for,0.0,1,1.0,False,0,0,0,False,False,True
 2876,503,74,Miso,False,more,eggplant,0.0,1,1.0,True,0,0,0,False,False,True
-2877,503,75,eggplant,False,Miso,Delicate,0.0,2,0.2,False,0,0,1,True,False,False
+2877,503,75,eggplant,False,Miso,Delicate,0.0,2,0.2,False,0,0,1,False,False,True
 2878,503,75,Miso eggplant,True,more,Delicate,0.0,1,1.0,True,0,0,1,False,True,False
 2879,503,76,Miso eggplant Delicate,False,more,and,1.0,1,1.0,True,0,1,1,False,False,True
 2880,503,76,eggplant Delicate,False,Miso,and,0.0,1,1.0,True,0,1,1,False,False,True
-2881,503,76,Delicate,False,eggplant,and,0.0,1,1.0,True,0,1,0,True,False,False
+2881,503,76,Delicate,False,eggplant,and,0.0,1,1.0,True,0,1,0,False,False,True
 2882,503,77,and,False,Delicate,creamy,0.0,8,0.002079002079002079,False,0,0,0,False,False,True
 2883,503,77,eggplant Delicate and,False,Miso,creamy,0.0,1,1.0,True,0,0,1,False,False,True
 2884,503,77,Delicate and,False,eggplant,creamy,0.0,1,1.0,True,0,0,0,False,False,True
 2885,503,82,believer,False,a,even,0.0,1,1.0,False,0,0,0,False,False,True
 2886,503,88,ardent,False,most,eggplant,0.0,1,1.0,False,0,0,0,False,False,True
-2887,503,89,eggplant,False,ardent,hater,0.0,2,0.2,False,0,0,1,True,False,False
+2887,503,89,eggplant,False,ardent,hater,0.0,2,0.2,False,0,0,1,False,False,True
 2888,503,89,ardent eggplant,False,most,hater,0.0,1,1.0,False,0,0,1,False,False,True
 2889,503,90,ardent eggplant hater,False,most,Perfect,0.0,1,1.0,False,0,0,1,False,False,True
 2890,503,90,eggplant hater,False,ardent,Perfect,0.0,1,1.0,False,0,0,1,False,False,True
@@ -2953,7 +2953,7 @@
 2951,503,200,Serviceable,False,cocktail,but,0.0,1,1.0,True,0,0,0,False,False,True
 2952,503,202,needed,False,but,something,0.0,2,0.3333333333333333,False,0,0,0,False,False,True
 2953,503,214,lemongrass,False,the,or,1.0,1,1.0,False,0,0,0,True,False,False
-2954,503,216,lime,False,or,Valet,0.0,2,0.5,False,0,0,1,True,False,False
+2954,503,216,lime,False,or,Valet,0.0,2,0.5,False,0,0,1,False,False,True
 2955,503,217,lime Valet,False,or,You,0.0,1,1.0,True,0,0,1,False,False,True
 2956,503,217,Valet,False,lime,You,0.0,1,1.0,True,0,0,0,False,False,True
 2957,503,219,gotta,False,You,Aint,0.0,1,1.0,False,0,0,0,False,False,True
@@ -2963,26 +2963,26 @@
 2961,503,227,pork,False,Crispy,belly,0.0,1,0.2,False,0,0,0,False,False,True
 2962,503,228,belly,False,pork,roll,0.0,1,0.5,False,0,0,0,False,False,True
 2963,503,228,pork belly,False,Crispy,roll,0.0,1,1.0,False,0,0,0,False,False,True
-2964,503,229,roll,False,belly,So,0.0,3,0.25,False,0,0,0,True,False,False
+2964,503,229,roll,False,belly,So,0.0,3,0.25,False,0,0,0,False,False,True
 2965,503,229,pork belly roll,False,Crispy,So,0.0,1,1.0,False,0,0,0,False,False,True
 2966,503,229,belly roll,False,pork,So,0.0,1,1.0,False,0,0,0,False,False,True
 2967,503,231,aggressively,False,So,salty,0.0,1,1.0,False,0,0,0,False,False,True
-2968,503,232,salty,False,aggressively,Could,0.0,3,0.25,False,0,0,0,True,False,False
+2968,503,232,salty,False,aggressively,Could,0.0,3,0.25,False,0,0,0,False,False,True
 2969,503,232,aggressively salty,False,So,Could,0.0,1,1.0,False,0,0,0,False,False,True
-2970,503,240,salty,False,so,Should,0.0,3,0.25,False,0,0,0,True,False,False
+2970,503,240,salty,False,so,Should,0.0,3,0.25,False,0,0,0,False,False,True
 2971,503,243,listened,False,have,to,1.0,1,1.0,False,0,0,0,True,False,False
 2972,503,249,reviewers,False,other,on,0.0,1,0.5,False,0,0,0,False,False,True
 2973,503,252,and,False,here,avoided,0.0,8,0.002079002079002079,False,0,0,0,False,False,True
 2974,503,253,and avoided,False,here,it,0.0,1,1.0,False,0,0,0,False,False,True
 2975,503,253,avoided,False,and,it,1.0,1,1.0,False,0,0,0,True,False,False
 2976,503,255,Korean,False,it,beef,0.0,3,0.3333333333333333,True,0,0,0,False,False,True
-2977,503,256,beef,False,Korean,taco,0.0,2,0.14285714285714285,False,0,0,0,True,False,False
+2977,503,256,beef,False,Korean,taco,0.0,2,0.14285714285714285,False,0,0,0,False,False,True
 2978,503,256,Korean beef,False,it,taco,0.0,2,0.5,True,0,0,0,False,False,True
 2979,503,257,Korean beef taco,True,it,Salt,0.0,1,1.0,True,0,0,0,False,True,False
 2980,503,257,beef taco,False,Korean,Salt,0.0,1,1.0,False,0,0,0,False,False,True
 2981,503,257,taco,False,beef,Salt,0.0,1,1.0,False,0,0,0,False,False,True
 2982,503,260,central,False,lick,So,0.0,1,1.0,False,0,1,0,False,False,True
-2983,503,262,salty,False,So,you,0.0,3,0.25,False,0,0,0,True,False,False
+2983,503,262,salty,False,So,you,0.0,3,0.25,False,0,0,0,False,False,True
 2984,503,270,bummer,False,a,Also,0.0,1,0.5,False,0,0,0,False,False,True
 2985,503,274,Korean,False,traditional,beef,0.0,3,0.3333333333333333,True,0,0,0,False,False,True
 2986,503,275,beef,False,Korean,like,0.0,2,0.14285714285714285,False,1,0,0,False,False,True
@@ -2992,7 +2992,7 @@
 2990,503,281,BBQ,False,Korean,but,0.0,1,0.5,True,0,1,0,False,False,True
 2991,503,283,shredded,False,but,Head,0.0,1,1.0,False,0,0,0,False,False,True
 2992,503,286,giant,False,on,shrimp,0.0,1,1.0,False,0,0,0,False,False,True
-2993,503,287,shrimp,True,giant,Shrimp,0.0,4,0.14285714285714285,False,0,0,0,True,True,True
+2993,503,287,shrimp,True,giant,Shrimp,0.0,4,0.14285714285714285,False,0,0,0,False,True,False
 2994,503,287,giant shrimp,False,on,Shrimp,0.0,1,1.0,False,0,0,0,False,False,True
 2995,503,288,Shrimp,True,shrimp,is,0.0,1,0.3333333333333333,True,0,0,0,False,True,False
 2996,503,288,giant shrimp Shrimp,False,on,is,0.0,1,1.0,True,0,0,0,False,False,True
@@ -3010,7 +3010,7 @@
 3008,503,304,and,False,shrimp,the,0.0,8,0.002079002079002079,False,1,0,0,False,False,True
 3009,503,304,rubbery shrimp and,False,bite,the,0.0,1,1.0,False,0,0,0,False,False,True
 3010,503,304,shrimp and,False,rubbery,the,0.0,1,1.0,False,0,0,0,False,False,True
-3011,503,310,rub,False,salt,The,0.0,1,0.5,False,0,1,0,True,False,False
+3011,503,310,rub,False,salt,The,0.0,1,0.5,False,0,1,0,False,False,True
 3012,503,312,pureed,False,The,garlic,0.0,1,1.0,False,0,0,0,False,False,True
 3013,503,313,garlic,True,pureed,and,1.0,1,0.3333333333333333,False,0,0,1,True,True,True
 3014,503,313,pureed garlic,False,The,and,1.0,1,1.0,False,0,0,1,False,False,True
@@ -3027,18 +3027,18 @@
 3025,503,317,cherry tomatoes,True,halved,were,1.0,1,1.0,False,0,0,1,True,True,True
 3026,503,317,tomatoes,False,cherry,were,0.0,1,0.5,False,0,0,0,False,False,True
 3027,503,320,insipid,False,pretty,too,0.0,1,1.0,False,0,0,0,False,False,True
-3028,503,329,shrimp,True,nasty,Nightclub,0.0,4,0.14285714285714285,False,0,0,0,True,True,True
+3028,503,329,shrimp,True,nasty,Nightclub,0.0,4,0.14285714285714285,False,0,0,0,False,True,False
 3029,505,2,drinking,False,not,the,0.0,1,1.0,False,0,0,0,False,False,True
 3030,505,4,kool,False,the,aid,0.0,1,1.0,False,0,0,0,False,False,True
 3031,505,5,kool aid,True,the,Sure,0.0,1,1.0,False,0,0,0,False,True,False
 3032,505,5,aid,False,kool,Sure,0.0,1,1.0,False,0,0,0,False,False,True
-3033,505,9,spinach,False,vegan,and,0.0,3,0.25,False,0,0,1,True,False,False
+3033,505,9,spinach,False,vegan,and,0.0,3,0.25,False,0,0,1,False,False,True
 3034,505,10,and,False,spinach,artichoke,0.0,11,0.002079002079002079,False,0,0,0,False,False,True
 3035,505,10,spinach and,False,vegan,artichoke,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
-3036,505,11,spinach and artichoke,False,vegan,dip,0.0,3,0.3333333333333333,False,0,0,1,True,False,False
+3036,505,11,spinach and artichoke,False,vegan,dip,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
 3037,505,11,and artichoke,False,spinach,dip,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
-3038,505,11,artichoke,False,and,dip,0.0,3,0.3333333333333333,False,0,0,1,True,False,False
-3039,505,12,dip,False,artichoke,and,0.0,3,0.2,False,0,0,0,True,False,False
+3038,505,11,artichoke,False,and,dip,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
+3039,505,12,dip,False,artichoke,and,0.0,3,0.2,False,0,0,0,False,False,True
 3040,505,12,and artichoke dip,False,spinach,and,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
 3041,505,12,artichoke dip,False,and,and,1.0,3,0.3333333333333333,False,0,0,1,True,False,False
 3042,505,13,and,False,dip,many,0.0,11,0.002079002079002079,False,0,0,0,False,False,True
@@ -3096,16 +3096,16 @@
 3094,505,86,send product,False,would,out,0.0,1,1.0,False,0,0,0,False,False,True
 3095,505,86,product,False,send,out,0.0,1,1.0,False,0,0,0,False,False,True
 3096,505,94,GLT,True,The,was,1.0,1,1.0,True,0,0,0,True,True,True
-3097,505,103,spinach,False,awesome,and,0.0,3,0.25,False,0,0,1,True,False,False
+3097,505,103,spinach,False,awesome,and,0.0,3,0.25,False,0,0,1,False,False,True
 3098,505,104,and,False,spinach,artichoke,0.0,11,0.002079002079002079,False,0,0,0,False,False,True
 3099,505,104,spinach and,False,awesome,artichoke,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
-3100,505,105,spinach and artichoke,False,awesome,dip,0.0,3,0.3333333333333333,False,0,1,1,True,False,False
+3100,505,105,spinach and artichoke,False,awesome,dip,0.0,3,0.3333333333333333,False,0,1,1,False,False,True
 3101,505,105,and artichoke,False,spinach,dip,0.0,3,0.3333333333333333,False,0,1,1,False,False,True
-3102,505,105,artichoke,False,and,dip,0.0,3,0.3333333333333333,False,0,1,1,True,False,False
-3103,505,106,dip,False,artichoke,slathered,0.0,3,0.2,False,0,0,0,True,False,False
+3102,505,105,artichoke,False,and,dip,0.0,3,0.3333333333333333,False,0,1,1,False,False,True
+3103,505,106,dip,False,artichoke,slathered,0.0,3,0.2,False,0,0,0,False,False,True
 3104,505,106,and artichoke dip,False,spinach,slathered,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
-3105,505,106,artichoke dip,False,and,slathered,0.0,3,0.3333333333333333,False,0,0,1,True,False,False
-3106,505,107,artichoke dip slathered,False,and,on,1.0,1,1.0,False,0,1,1,True,False,False
+3105,505,106,artichoke dip,False,and,slathered,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
+3106,505,107,artichoke dip slathered,False,and,on,1.0,1,1.0,False,0,1,1,False,False,True
 3107,505,107,dip slathered,False,artichoke,on,0.0,1,1.0,False,0,1,0,False,False,True
 3108,505,107,slathered,False,dip,on,0.0,1,1.0,False,0,1,0,False,False,True
 3109,505,116,paying,False,youre,serious,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
@@ -3147,10 +3147,10 @@
 3145,505,226,spinach,False,of,and,1.0,3,0.25,False,0,0,1,True,False,False
 3146,505,227,and,False,spinach,artichoke,0.0,11,0.002079002079002079,False,0,0,0,False,False,True
 3147,505,227,spinach and,False,of,artichoke,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
-3148,505,228,spinach and artichoke,False,of,dip,0.0,3,0.3333333333333333,False,0,0,1,True,False,False
+3148,505,228,spinach and artichoke,False,of,dip,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
 3149,505,228,and artichoke,False,spinach,dip,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
-3150,505,228,artichoke,False,and,dip,0.0,3,0.3333333333333333,False,0,0,1,True,False,False
-3151,505,229,dip,False,artichoke,on,0.0,3,0.2,False,0,0,0,True,False,False
+3150,505,228,artichoke,False,and,dip,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
+3151,505,229,dip,False,artichoke,on,0.0,3,0.2,False,0,0,0,False,False,True
 3152,505,229,and artichoke dip,False,spinach,on,0.0,3,0.3333333333333333,False,0,0,1,False,False,True
 3153,505,229,artichoke dip,False,and,on,1.0,3,0.3333333333333333,False,0,0,1,True,False,False
 3154,505,236,buy,False,could,a,0.0,1,0.2,False,0,1,0,False,False,True
@@ -3204,7 +3204,7 @@
 3202,510,80,pants,False,fancy,mushrooms,0.0,1,1.0,False,0,0,0,False,False,True
 3203,510,81,mushrooms,True,pants,high,1.0,1,0.3333333333333333,False,0,0,1,True,True,True
 3204,510,81,pants mushrooms,False,fancy,high,0.0,1,1.0,False,0,0,1,False,False,True
-3205,510,84,chocolate,True,quality,duck,1.0,1,0.09090909090909093,False,0,0,0,False,True,False
+3205,510,84,chocolate,True,quality,duck,1.0,1,0.09090909090909093,False,0,0,0,True,True,True
 3206,510,85,chocolate duck,False,quality,fat,0.0,1,1.0,False,0,0,0,False,False,True
 3207,510,85,duck,False,chocolate,fat,0.0,1,0.5,False,0,0,0,False,False,True
 3208,510,87,mangosteens,True,fat,outside,1.0,1,1.0,False,0,0,0,True,True,True
@@ -3263,7 +3263,7 @@
 3261,512,53,Leave Taco Nazo,False,REI,to,0.0,1,1.0,True,0,0,0,False,False,True
 3262,512,56,trash,False,us,people,0.0,1,0.5,False,0,0,0,False,False,True
 3263,512,60,kick,False,enjoy,ass,0.0,1,0.5,False,0,0,0,False,False,True
-3264,512,61,ass,False,kick,pork,0.0,1,0.5,False,0,1,0,True,False,False
+3264,512,61,ass,False,kick,pork,0.0,1,0.5,False,0,1,0,False,False,True
 3265,512,61,kick ass,False,enjoy,pork,0.0,1,1.0,False,0,1,0,False,False,True
 3266,512,62,pork,True,ass,pickled,1.0,1,0.2,False,1,0,0,False,True,False
 3267,512,62,kick ass pork,False,enjoy,pickled,0.0,1,1.0,False,0,0,0,False,False,True
@@ -3549,7 +3549,7 @@
 3547,527,61,cakes,False,crazy,Granted,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 3548,527,64,burger,True,the,is,1.0,6,0.05,False,0,1,0,True,True,True
 3549,527,67,perfection,False,juicy,grilled,0.0,1,0.25,False,0,0,0,False,False,True
-3550,527,68,grilled,False,perfection,to,0.0,2,0.14285714285714285,False,1,0,0,True,False,False
+3550,527,68,grilled,False,perfection,to,0.0,2,0.14285714285714285,False,1,0,0,False,False,True
 3551,527,68,perfection grilled,False,juicy,to,0.0,1,1.0,False,0,0,0,False,False,True
 3552,527,74,custom,False,many,toppings,0.0,1,1.0,False,0,0,0,False,False,True
 3553,527,78,hardening,False,your,arteries,0.0,1,1.0,False,0,0,0,False,False,True
@@ -3565,7 +3565,7 @@
 3563,527,95,mushrooms and,False,grilled,onions,0.0,1,1.0,False,0,0,1,False,False,True
 3564,527,96,mushrooms and onions,False,grilled,That,0.0,1,1.0,False,0,0,1,False,False,True
 3565,527,96,and onions,False,mushrooms,That,0.0,1,1.0,False,1,0,1,False,False,True
-3566,527,96,onions,True,and,That,0.0,1,0.3333333333333333,False,0,0,1,True,True,True
+3566,527,96,onions,True,and,That,0.0,1,0.3333333333333333,False,0,0,1,False,True,False
 3567,527,100,warrant,False,should,a,0.0,1,1.0,False,0,0,0,False,False,True
 3568,527,102,fourth,False,a,star,0.0,1,1.0,False,0,0,0,False,False,True
 3569,527,114,pop,False,a,like,0.0,1,0.5,False,0,0,0,False,False,True
@@ -3630,7 +3630,7 @@
 3628,602,10,food,False,Mexican,from,0.0,2,0.012195121951219513,False,0,0,0,False,False,True
 3629,602,10,Mexican food,False,based,from,0.0,1,0.2,True,0,0,0,False,False,True
 3630,602,12,fucking,False,from,Italian,0.0,1,1.0,False,0,0,0,False,False,True
-3631,602,13,Italian,False,fucking,Oregano,0.0,1,0.2,True,0,0,0,True,False,False
+3631,602,13,Italian,False,fucking,Oregano,0.0,1,0.2,True,0,0,0,False,False,True
 3632,602,13,fucking Italian,False,from,Oregano,0.0,1,1.0,True,0,0,0,False,False,True
 3633,602,14,fucking Italian Oregano,False,from,and,0.0,1,1.0,True,0,0,1,False,False,True
 3634,602,14,Italian Oregano,False,fucking,and,0.0,1,1.0,True,0,0,1,False,False,True
@@ -3682,7 +3682,7 @@
 3680,603,21,diabetic shock,False,of,to,1.0,1,1.0,False,0,0,0,True,False,False
 3681,603,21,shock,False,diabetic,to,0.0,1,1.0,False,0,0,0,False,False,True
 3682,603,24,pleaseTranslation,False,go,Lets,0.0,1,1.0,True,0,0,0,False,False,True
-3683,603,29,tea,False,sweet,a,0.0,3,0.09090909090909093,False,0,0,0,True,False,False
+3683,603,29,tea,False,sweet,a,0.0,3,0.09090909090909093,False,0,0,0,False,False,True
 3684,603,33,fried,False,of,chicken,0.0,4,0.16666666666666666,False,0,0,0,False,False,True
 3685,603,36,waffles,True,some,the,1.0,3,0.3333333333333333,False,0,1,0,True,True,True
 3686,603,38,fried,False,the,okra,0.0,4,0.16666666666666666,False,0,1,0,False,False,True
@@ -3701,7 +3701,7 @@
 3699,603,50,n cheese and,False,mac,a,0.0,1,1.0,False,0,0,0,False,False,True
 3700,603,52,slice,False,a,of,1.0,2,0.5,False,0,0,0,True,False,False
 3701,603,55,velvet,False,red,cake,0.0,2,0.5,False,0,0,0,False,False,True
-3702,603,56,cake,False,velvet,to,0.0,4,0.14285714285714285,False,0,0,0,True,False,False
+3702,603,56,cake,False,velvet,to,0.0,4,0.14285714285714285,False,0,0,0,False,False,True
 3703,603,56,velvet cake,False,red,to,0.0,2,0.5,False,0,0,0,False,False,True
 3704,603,59,Brimstone,False,go,was,0.0,1,1.0,True,0,0,0,False,False,True
 3705,603,63,air,False,the,a,1.0,1,1.0,False,0,0,0,True,False,False
@@ -3724,7 +3724,7 @@
 3722,603,108,function,False,to,properly,0.0,1,1.0,False,0,0,0,False,False,True
 3723,603,119,devious,False,terrible,things,0.0,1,1.0,False,0,0,0,False,False,True
 3724,603,127,and,False,chicken,waffles,0.0,14,0.002079002079002079,False,0,0,0,False,False,True
-3725,603,128,waffles,True,and,Pawnshops,0.0,3,0.3333333333333333,False,0,0,0,True,True,True
+3725,603,128,waffles,True,and,Pawnshops,0.0,3,0.3333333333333333,False,0,0,0,False,True,False
 3726,603,128,and waffles,False,chicken,Pawnshops,0.0,1,1.0,False,0,0,0,False,False,True
 3727,603,129,and waffles Pawnshops,False,chicken,would,0.0,1,1.0,True,0,0,0,False,False,True
 3728,603,129,waffles Pawnshops,False,and,would,0.0,1,1.0,True,0,0,0,False,False,True
@@ -4034,7 +4034,7 @@
 4032,1004,56,beef,False,the,burger,0.0,1,0.14285714285714285,False,0,0,0,False,False,True
 4033,1004,57,burger,True,beef,with,1.0,3,0.05,False,0,1,0,True,True,True
 4034,1004,57,beef burger,True,the,with,1.0,1,1.0,False,0,1,0,True,True,True
-4035,1004,60,mushrooms,False,wild,but,0.0,1,0.3333333333333333,False,0,0,1,True,False,False
+4035,1004,60,mushrooms,False,wild,but,0.0,1,0.3333333333333333,False,0,0,1,False,False,True
 4036,1004,63,felt,False,also,that,0.0,1,0.5,False,0,0,0,False,False,True
 4037,1004,73,and,False,fantastic,all,0.0,5,0.002079002079002079,False,0,0,0,False,False,True
 4038,1004,96,crescent,False,around,Id,0.0,1,1.0,False,0,0,0,False,False,True
@@ -4099,9 +4099,9 @@
 4097,1007,147,spices,False,different,that,1.0,1,0.5,False,0,0,1,True,False,False
 4098,1007,150,married,False,were,into,0.0,1,1.0,False,0,0,0,False,False,True
 4099,1007,153,milky,False,the,sweet,1.0,1,1.0,False,0,1,0,True,False,False
-4100,1007,155,chocolate,True,sweet,Beyond,0.0,6,0.09090909090909093,False,1,0,0,False,True,False
-4101,1007,156,chocolate Beyond,False,sweet,the,0.0,1,1.0,True,1,1,0,True,False,False
-4102,1007,156,Beyond,False,chocolate,the,0.0,1,1.0,True,1,1,0,True,False,False
+4100,1007,155,chocolate,True,sweet,Beyond,0.0,6,0.09090909090909093,False,1,0,0,True,True,True
+4101,1007,156,chocolate Beyond,False,sweet,the,0.0,1,1.0,True,1,1,0,False,False,True
+4102,1007,156,Beyond,False,chocolate,the,0.0,1,1.0,True,1,1,0,False,False,True
 4103,1007,159,treats,False,delicious,the,0.0,2,0.16666666666666666,False,0,0,0,False,False,True
 4104,1007,168,Chloe,False,pleasant,is,0.0,2,0.5,True,0,0,0,False,False,True
 4105,1007,172,delight,False,a,and,1.0,1,1.0,False,0,0,0,True,False,False
@@ -4210,7 +4210,7 @@
 4208,1010,32,browse,False,there,and,0.0,1,1.0,False,0,0,0,False,False,True
 4209,1010,33,and,False,browse,pick,0.0,5,0.002079002079002079,False,0,0,0,False,False,True
 4210,1010,33,browse and,False,there,pick,0.0,1,1.0,False,0,0,0,False,False,True
-4211,1010,38,tea,True,cool,to,1.0,1,0.09090909090909093,False,0,0,0,False,True,False
+4211,1010,38,tea,True,cool,to,1.0,1,0.09090909090909093,False,0,0,0,True,True,True
 4212,1010,43,spices,True,some,or,1.0,1,0.5,False,0,0,1,True,True,True
 4213,1010,45,ramen,True,or,brands,1.0,1,1.0,False,0,0,0,True,True,True
 4214,1010,46,ramen brands,False,or,you,0.0,1,1.0,False,0,0,0,False,False,True
@@ -4296,7 +4296,7 @@
 4294,1016,33,smoothie,False,blueberry,Everything,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 4295,1016,39,and,False,delicious,I,0.0,5,0.002079002079002079,False,0,0,0,False,False,True
 4296,1016,41,devoured,False,I,it,0.0,1,1.0,False,0,0,0,False,False,True
-4297,1016,48,potato,False,sweet,fries,0.0,1,1.0,False,0,1,1,True,False,False
+4297,1016,48,potato,False,sweet,fries,0.0,1,1.0,False,0,1,1,False,False,True
 4298,1016,49,fries,False,potato,good,0.0,3,0.07142857142857142,False,1,0,0,False,False,True
 4299,1016,49,potato fries,False,sweet,good,0.0,1,1.0,False,0,0,1,False,False,True
 4300,1016,58,tofu,False,the,fries,0.0,3,0.2,False,0,0,0,False,False,True
@@ -4431,7 +4431,7 @@
 4429,1024,5,food,False,fast,person,0.0,2,0.012195121951219513,False,0,0,0,False,False,True
 4430,1024,10,vegetarian,False,a,but,1.0,1,0.125,False,0,0,0,True,False,False
 4431,1024,17,playing,False,after,a,0.0,1,0.5,False,0,0,0,False,False,True
-4432,1024,23,Excalibur,False,the,one,1.0,1,0.3333333333333333,True,0,0,0,False,False,True
+4432,1024,23,Excalibur,False,the,one,1.0,1,0.3333333333333333,True,0,0,0,True,False,False
 4433,1024,26,and,False,night,went,0.0,3,0.002079002079002079,False,0,0,0,False,False,True
 4434,1024,30,band,False,my,members,0.0,1,1.0,False,0,0,0,False,False,True
 4435,1024,32,Lo,False,members,and,0.0,1,1.0,True,0,0,0,False,False,True
@@ -4637,7 +4637,7 @@
 4635,1042,5,food,False,The,is,1.0,2,0.012195121951219513,False,0,0,0,False,False,True
 4636,1042,7,overpriced,False,is,for,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
 4637,1042,13,shawarma,False,chicken,came,0.0,1,0.3333333333333333,False,0,0,0,False,False,True
-4638,1042,19,container,False,small,of,0.0,1,0.5,False,0,1,0,True,False,False
+4638,1042,19,container,False,small,of,0.0,1,0.5,False,0,1,0,False,False,True
 4639,1042,21,garlic,False,of,sauce,0.0,1,0.3333333333333333,False,0,0,1,False,False,True
 4640,1042,22,sauce,False,garlic,which,0.0,1,0.08333333333333333,False,0,0,0,False,False,True
 4641,1042,22,garlic sauce,True,of,which,1.0,1,1.0,False,0,0,1,True,True,True

@@ -8296,7 +8296,6 @@ docID,position,term,label_x,term_before_x,term_after_x,inPrefixSuffix,tf,idf,isC
 613,195,german and,False,banana,german,0.0,1,1.0,False,0,1,0
 613,196,german and german,False,banana,nutty,0.0,1,1.0,False,0,0,0
 613,196,and german,False,german,nutty,0.0,1,1.0,False,0,0,0
-613,199,Wowzer,False,varieties,There,0.0,1,1.0,True,1,0,0
 613,206,pancake and,False,regular,Belgian,0.0,1,1.0,False,0,0,0
 613,207,pancake and Belgian,False,regular,waffle,0.0,1,1.0,True,0,0,0
 613,207,and Belgian,False,pancake,waffle,0.0,1,1.0,True,0,0,0

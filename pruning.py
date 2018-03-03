@@ -25,7 +25,7 @@ class Prune(object):
                                  'watch','We', 'got', 'looking', 'overall', 'experience', 'get', 'fun', 'run', 'inside',
                                  'outside','mall', 'style', 'top', 'instead', 'somehow', 'certainly', 'ten', 'five',
                                  'option','four', 'very', 'very', 'just', 'awesome', 'choices', 'changes', 'strikes', 'shows',
-                                 'showed', 'business', 'overly', 'To', 'start', 'stop', 'split', 'We', 'pool', 'fall',
+                                 'showed', 'business', 'overly', 'To', 'start', 'stop', 'split', 'we', 'pool', 'fall',
                                  'Dont','bring', 'dont', 'why', 'juicy', 'exact', 'opposite', 'songs', 'saving', 'lung','scare',
                                  'high', 'setup', 'place', 'may', 'let', 'rave', 'cheap', 'end', 'weekends','weekdays', 'weekend',
                                  'weekday', 'take', 'crowd', 'crowded', 'went', 'go', 'husband', 'door', 'wife', 'girlfriend',
@@ -73,19 +73,19 @@ class Prune(object):
                                  'bother', 'although', 'anniversary', 'prices', 'term', 'price', 'terms'
                                  'room', 'multiple', 'flat', 'screens', 'screen', 'smile', 'smiles', 'loft',
                                  'majority', 'lake', 'patio', 'bitch', 'benefit', 'pipe', 'travel', 'less'
-                                 'filling', 'tasty', 'Dont', 'dont', 'suits', 'variation', 'lung', 'pearl',
+                                 'filling', 'tasty', 'dont', 'dont', 'suits', 'variation', 'lung', 'pearl',
                                  'pearls', 'scare', 'garbage', 'tacked', 'onto', 'but',
                                  'this', 'their', 'delicious', 'if', 'what',
-                                 'Only', 'only', 'taste', 'tasty', 'tasted', 'decided', 'so',
-                                 'positively', 'One', 'then', 'oil', 'guys' , 'texture', 'did', 'sample',
-                                 'sampling', 'delish', 'superb', 'Wowzer', 'smell', 'everywhere',
+                                 'only', 'taste', 'tasty', 'tasted', 'decided', 'so',
+                                 'positively', 'one', 'then', 'oil', 'guys' , 'texture', 'did', 'sample',
+                                 'sampling', 'delish', 'superb', 'wowzer', 'smell', 'everywhere',
                                  'part', 'parted', 'suburb', 'suburbs', 'among', 'amongst', 'smother',
                                  'buttery', 'crisp', 'crispy', 'highlight', 'highlighted', 'spicy',
                                  'hint', 'spiciness', 'listening', 'bucks', 'catch', 'relax', 'appointed',
-                                 'Four', 'dig', 'dug', 'succulent', 'One', 'one', 'Two', 'two', 'Three',
+                                 'four', 'dig', 'dug', 'succulent', 'one', 'two',
                                 'three', 'same', 'Same', 'host', 'hostess', 'yes', 'no', 'said', 'server', 'servers',
                                  'answer', 'disappointment', 'disppointment', 'streetcar', 'galaxy', 'pricier', 'hype', 'gulten', 'glutenfree', 'items', 'friend',
-                                 'friends', 'piece', 'month', 'Yelp', 'hubby', 'website', 'use', 'takeout',
+                                 'friends', 'piece', 'month', 'yelp', 'hubby', 'website', 'use', 'takeout',
                                  'specials', 'variety', 'fluffy', 'reservations', 'ingredients', 'favourite', 'polite', 'mood'
                                  'portion', 'bed', 'sink', 'bedroom', 'environment', 'seemed', 'walked', 'problem', 'heat', 'television',
                                  'televisions', 'decor', 'room', 'rooms', 'edge', 'outer', 'inner', 'chair', 'chairs', 'hotel',
@@ -235,8 +235,3 @@ class Prune(object):
             if flag:
                 todrop.append(term)
         self.data = self.data[~self.data.term.isin(todrop)]
-
-    def saveData(self):
-        self.data.to_csv('trainingdata_nostopwords_nopronouns_2.csv')
-
-

@@ -243,9 +243,7 @@ class Classifiers(object):
 
         self.print_report(scores)
         self.print_confusion_matrix(self.valid_data_labels, pred)
-        self.print_output(pred)
-		
-        test_pred = decTree.predict(self.test_data)
+
 
         cv_acc = 1.0 * accuracy / self.folds
         print ('Cross validated accuracy - %f' % cv_acc)
@@ -274,6 +272,11 @@ class Classifiers(object):
 
         self.print_report(scores)
         self.print_confusion_matrix(self.valid_data_labels, pred)
+        self.print_output(pred)
+
+        test_pred = gradBoostingClf.predict(self.test_data)
+        self.print_output_test(test_pred)
+
         cv_acc = 1.0 * accuracy / self.folds
         print ('Cross validated accuracy - %f' % cv_acc)
         print ('\n-----------------------------')

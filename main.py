@@ -62,12 +62,12 @@ def main():
     print ('Gradient Boosting accuracy - %f', gradB)
 
     # Postprocessing -
-    print ('\nValidation results from Decision Tree')
+    print ('\nValidation results from Gradient Boosting')
     post = post_processing.PostProcessing()
     post.takeLongest('output.csv', 'pruned_train.csv')
 
     print ('\n----------')
-    print ('Test results from Decision Tree')
+    print ('Test results from Gradient Boosting')
     post.takeLongest('output_test.csv', 'pruned_test.csv')
     print('----------')
 

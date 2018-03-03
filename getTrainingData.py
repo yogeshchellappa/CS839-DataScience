@@ -53,8 +53,29 @@ def getTrainingData(reviewFolderPath):
 		capitalizedWord += sum(1 for c in review if c.isupper())
 		
 		review = review.replace("."," ")
-		# Stores the food items detected
+		review = review.replace("/>", "/> ")
+		parts = list(filter(None, review.strip().split(' ')))
+
+		i = 0
 		foodItems = []
+		indices = []
+		while i < len(parts):
+			fooditem = ''
+			if parts[i][0] == '<':
+				while True:
+					fooditem = fooditem + parts[i] + ' '
+					if parts[i][-1] == '>':
+						break
+					i += 1
+				print (fooditem)
+				foodItems.append(fooditem[1:-3])
+				indices.append(i)
+			i += 1
+
+		review = review.replace("<", "")
+		review = review.replace("/>", "")
+		'''			
+		# Stores the food items detected
 		
 		# Stores the indices of the detected items
 		indices = []
@@ -63,10 +84,15 @@ def getTrainingData(reviewFolderPath):
 		pattern = re.compile('<.*?\/>')
 		
 		# Find all the food items using regex
-		foodMatches = pattern.findall(review)
-		
+
+		foodMatches = []
+		indices = []
+
+		foodMatches = pattern.findall(reviews)
+
 		# Replace annotated items without the tags
-		for annotatedFoodItem in foodMatches:
+
+		for annotatedFoodItem in foodItems:
 			foodItemWithoutTags = annotatedFoodItem[1:-2]
 			review = review.replace(annotatedFoodItem, foodItemWithoutTags)
 			
@@ -77,14 +103,14 @@ def getTrainingData(reviewFolderPath):
 				count += 1
 			else:
 				noncount += 1
-				
+
 		# Next, get the indices of the food items
 		for item in foodItems:
 			indices += [[i.start(), i.end()] for i in list(re.finditer(item, review))]
 			
 		# Merge intervals
 		indices = mergeIntervals(indices)
-		
+		'''
 		# Finally, build the json
 		record = OrderedDict()
 

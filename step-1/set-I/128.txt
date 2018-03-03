@@ -6,7 +6,7 @@ The restaurant is tacky, stereotypical, but cozy and we were quickly greeted and
 
 I ordered a <chicken/> <enchilada/> and my husband ordered the <chimichanga/>. 
 
-The food came out and the was served with <rice/>, a <salad/> (sort of Italian dressing with <tomatoes/>) and refried <beans/>. 
+The food came out and the was served with <rice/>, a <salad/> (sort of <Italian dressing/> with <tomatoes/>) and refried <beans/>. 
 
 The appetizer and our main courses came to $30 and we were VERY full. 
 

@@ -171,6 +171,7 @@ class Features(object):
 
         if readFrom:
             data_final = pd.read_csv(readFrom)
+            print (data_final.keys())
         else:
             feat_list = ['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient']
 
@@ -183,8 +184,8 @@ class Features(object):
             print (data_final.keys())
             data_final = data_final.drop(columns=['label_y', 'term_before_y', 'term_after_y'])
             data_final = data_final.drop_duplicates()
-
-            data_final.to_csv(saveTo)
+            print(data_final.keys())
+            data_final.to_csv(saveTo, index=False)
 
         if withRos:
             ros = RandomOverSampler(random_state=42)

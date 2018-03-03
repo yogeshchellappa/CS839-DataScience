@@ -12,6 +12,7 @@ import pandas as pd
 
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+import post_processing
 
 def main():
     if len(sys.argv) > 2:
@@ -35,21 +36,21 @@ def main():
 
     # Generate features, labels
     feat_train = features.Features()
-    feat_train.getAllFeatures(prune_train.data, data_orig, 'prefix_suffix.csv', 'step-1/food_adj.csv', 'step-1/veggie_and_fruits.csv', saveTo='features_train.csv', withRos=True)
+    feat_train.getAllFeatures(prune_train.data, data_orig, 'prefix_suffix.csv', 'food_adj.txt', 'food_veggie.txt', saveTo='features_train.csv', withRos=False, readFrom='features_train.csv')
 
     feat_test = features.Features()
-    feat_test.getAllFeatures(prune_test.data, data_test_orig, 'prefix_suffix.csv', 'step-1/food_adj.csv', 'step-1/veggie_and_fruits.csv', saveTo='features_test.csv', withRos=True)
+    feat_test.getAllFeatures(prune_test.data, data_test_orig, 'prefix_suffix.csv', 'food_adj.txt', 'food_veggie.txt', saveTo='features_test.csv', withRos=False, readFrom='features_test.csv')
 
     # Split data
-    data = classifiers.Data(feat_train.features, feat_train.labels, feat_test.features, feat_test.labels)
+    data = classifiers.Data(feat_train.data_all, feat_train.features, feat_train.labels, feat_test.data_all, feat_test.features, feat_test.labels)
 
     # Train classifiers
     clf = classifiers.Classifiers(data)
 
+    dtAcc = clf.decisionTree()
     linRegAcc = clf.linearRegression()
     logRegAcc = clf.logisticRegression()
     svmAcc = clf.svm_classify()
-    dtAcc = clf.decisionTree()
     rfAcc = clf.randomForest()
     gradB = clf.gradientBoostingClassifier()
 
@@ -59,6 +60,16 @@ def main():
     print ('Decision Tree accuracy - %f', dtAcc)
     print ('Random Forest accuracy - %f', rfAcc)
     print ('Gradient Boosting accuracy - %f', gradB)
+
+    # Postprocessing -
+    print ('Validation results from Decision Tree')
+    post = post_processing.PostProcessing()
+    post.takeLongest('output.csv', 'pruned_train.csv')
+
+    print ('----------')
+    print ('Test results from Decision Tree')
+    post.takeLongest('output_test.csv', 'pruned_test.csv')
+    print('----------')
 
 if __name__ == "__main__":
     main()

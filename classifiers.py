@@ -87,13 +87,15 @@ class Classifiers(object):
 
     def print_output(self, pred):
         for i in range(len(pred)):
-            self.data_all[i] = np.insert(self.data_all[i], self.data_all[i].shape[-1]-1, pred[i], axis=1)
-        #print (self.data_all[0][0], self.valid_data[0][0])
+            self.data_all[i] = np.insert(self.data_all[i], self.data_all[i].shape[-1], pred[i], axis=1)
+            self.valid_data_labels[i] = np.reshape(self.valid_data_labels[i], newshape=(self.valid_data_labels[i].shape[0],))
+            self.data_all[i] = np.insert(self.data_all[i], self.data_all[i].shape[-1], self.valid_data_labels[i], axis=1)
+
+        print (self.data_all[0].shape)
         towrite = np.stack((self.data_all[i] for i in range(len(pred))), axis=0)
         towrite = np.reshape(towrite, newshape=(towrite.shape[0]*towrite.shape[1], towrite.shape[2]))
-        #print (towrite)
-        df = pd.DataFrame(towrite, columns = ['docID', 'position', 'term', 'label_x', 'term_before_x', 'term_after_x', 'inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient', 'pred_label'])
-        df['true=pred'] = df.apply(lambda row: row['label_x'] == row['pred_label'], axis=1)
+        df = pd.DataFrame(towrite, columns = ['docID', 'position', 'term', 'label_x', 'term_before_x', 'term_after_x', 'inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient', 'pred_label', 'actual_label'])
+        df['true=pred'] = df.apply(lambda row: row['actual_label'] == row['pred_label'], axis=1)
         df = df.drop_duplicates()
         df.to_csv('output.csv', index=None)
 

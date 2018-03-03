@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 class Data(object):
-    def __init__(self, data_all, train_features, train_labels, test_features, test_labels):
+    def __init__(self, data_all, train_features, train_labels, test_all, test_features, test_labels):
         self.train_data = []
         self.train_data_labels = []
         self.valid_data = []
@@ -28,6 +28,7 @@ class Data(object):
 
         self.test_data = test_features
         self.test_data_labels = test_labels
+        self.test_data_all = test_all
 
         stratifiedsplit = StratifiedShuffleSplit(n_splits=5, test_size=0.20, random_state=42)
         for train_index, valid_index in stratifiedsplit.split(train_features, train_labels):
@@ -36,6 +37,7 @@ class Data(object):
             self.valid_data.append(train_features[valid_index])
             self.valid_data_labels.append(train_labels[valid_index])
             self.valid_data_all.append(data_all[valid_index])
+
 
 class Classifiers(object):
     def __init__(self, data):
@@ -48,6 +50,7 @@ class Classifiers(object):
         self.folds = 5
 
         self.data_all = data.valid_data_all
+        self.test_data_all = data.test_data_all
 
     def print_report(self, scores):
         print ('Classification report - ')
@@ -98,6 +101,16 @@ class Classifiers(object):
         df['true=pred'] = df.apply(lambda row: row['actual_label'] == row['pred_label'], axis=1)
         df = df.drop_duplicates()
         df.to_csv('output.csv', index=None)
+
+    def print_output_test(self, pred):
+        self.test_data_all = np.insert(self.test_data_all, self.test_data_all.shape[-1], pred, axis=1)
+        self.test_data_labels = np.reshape(self.test_data_labels, newshape=(self.test_data_labels.shape[0],))
+        self.test_data_all = np.insert(self.test_data_all, self.test_data_all.shape[-1], self.test_data_labels, axis=1)
+
+        df = pd.DataFrame(self.test_data_all, columns = ['docID', 'position', 'term', 'label_x', 'term_before_x', 'term_after_x', 'inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient', 'pred_label', 'actual_label'])
+        df['true=pred'] = df.apply(lambda row: row['actual_label'] == row['pred_label'], axis=1)
+        df = df.drop_duplicates()
+        df.to_csv('output_test.csv', index=None)
 
     def svm_classify(self, kernel='linear', max_iter=10, *kwargs):
         svc = SVC(kernel=kernel, max_iter=max_iter)
@@ -228,7 +241,6 @@ class Classifiers(object):
 
             pred.append(valid_pred)
             scores.append(precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
-            print (precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
             accuracy += valid_acc
 
         self.print_report(scores)
@@ -238,6 +250,7 @@ class Classifiers(object):
         test_pred = decTree.predict(self.test_data)
         print("TEST DATA")
         print(precision_recall_fscore_support(self.test_data_labels, test_pred))
+        self.print_output_test( test_pred)
         print("END OF TESTING")
 
         print ('Feature importance (higher => more important')

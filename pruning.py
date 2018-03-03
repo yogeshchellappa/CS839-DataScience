@@ -166,7 +166,9 @@ class Prune(object):
                                  'toppings', 'topped', 'tabs', 'iceberg', 'kinks', 'book', 'bowl', 'atrias', 'arcadia', 'angelsservice',
                                  'curried', 'refills', 'refill', 'twin', 'th', 'munching', 'mightly', 'large', 'cerratas', 'nutty', 'art'
                                  'killed', 'expected', 'suburbanite', 'pola', 'toasted', 'painting', 'accompanying', 'bits', 'cashier', 'cashiers',
-                                 'magic', 'pixie', 'dust', 'odb', 'washrooms', 'washroom', 'cuisine', 'epic', 'pupusas'})
+                                 'magic', 'pixie', 'dust', 'odb', 'washrooms', 'washroom', 'cuisine', 'epic', 'pupusas',
+                                 'dinners', 'cheesy', 'side', 'bottle', 'bottles', 'rolling', 'freshly', 'valley', 'panasian', 'starter', 'strange',
+                                 'stanger', 'damn', 'upon', 'mixed', 'grill', 'platters', 'platter', 'overpowering'})
 
         self.stopwords = set(['a', 'about', 'above', 'after', 'again', 'against', 'all', 'am', 'an', 'any',
                               'are', "aren't", 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below',

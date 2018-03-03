@@ -47,13 +47,18 @@ def getTrainingData(reviewFolderPath):
 		filePointer = open(file, 'r')
 		review = filePointer.read()
 		filePointer.close()
-		
+
+		fileName = file.split("/")[-1].split("\\")[-1].split(".")[0]
+		record = OrderedDict()
+		record["id"] = fileName
+
 		review = review.translate(translator)
 		
 		capitalizedWord += sum(1 for c in review if c.isupper())
 		
 		review = review.replace("."," ")
 		review = review.replace("/>", "/> ")
+		review = review.replace("\/", " ")
 		parts = list(filter(None, review.strip().split(' ')))
 
 		i = 0
@@ -61,13 +66,14 @@ def getTrainingData(reviewFolderPath):
 		indices = []
 		while i < len(parts):
 			fooditem = ''
+			if record['id'] == '152':
+				print (parts[i], i)
 			if parts[i][0] == '<':
 				while True:
 					fooditem = fooditem + parts[i] + ' '
 					if parts[i][-1] == '>':
 						break
 					i += 1
-				print (fooditem)
 				foodItems.append(fooditem[1:-3])
 				indices.append(i)
 			i += 1
@@ -112,11 +118,10 @@ def getTrainingData(reviewFolderPath):
 		indices = mergeIntervals(indices)
 		'''
 		# Finally, build the json
-		record = OrderedDict()
+
 
 		# File name serves as record ID
-		fileName = file.split("/")[-1].split("\\")[-1].split(".")[0]
-		record["id"] = fileName
+
 		
 		# Since we skipped / as it was present in the tags, now we remove / as well
 		review = review.replace("/"," ")

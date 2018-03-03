@@ -17,6 +17,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import precision_recall_fscore_support
 import numpy as np
 import pandas as pd
+from sklearn.externals import joblib
 
 class Data(object):
     def __init__(self, data_all, train_features, train_labels, test_all, test_features, test_labels):
@@ -277,6 +278,9 @@ class Classifiers(object):
         test_pred = gradBoostingClf.predict(self.test_data)
         self.print_output_test(test_pred)
 
+        joblib.dump(gradBoostingClf, 'GradientBoostingClassifier.pkl')
+        print("\nSaved Classifier successfully!\n")
+		
         cv_acc = 1.0 * accuracy / self.folds
         print ('Cross validated accuracy - %f' % cv_acc)
         print ('\n-----------------------------')

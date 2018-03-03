@@ -50,19 +50,19 @@ class Features(object):
 
     def pos_before(self, row, window_size):
         # Need to add support for window size > 1
-        return row['position'] - len(row['term'].split(' '))
+        return row['position'] - len(row['term'].split(' ')) - window_size
 
     def pos_after(self, row, window_size):
         # Need to add support for window size > 1
-        return row['position'] + 1
+        return row['position'] + 1 + window_size
 
     def getPosBeforeAfter(self, win_size_before, win_size_after, data, data_orig):
 
-        data.loc[:,'pos_before'] = pd.Series(np.random.randn(len(data)), index=data.index)
-        data.loc[:,'pos_after'] = pd.Series(np.random.randn(len(data)), index=data.index)
+        data['pos_before'] = pd.Series(np.random.randn(len(data)), index=data.index)
+        data['pos_after'] = pd.Series(np.random.randn(len(data)), index=data.index)
 
-        data.loc[:,'pos_before'] = data.apply(lambda row: self.pos_before(row, win_size_before), axis=1)
-        data.loc[:,'pos_after'] = data.apply(lambda row: self.pos_after(row, win_size_after), axis=1)
+        data['pos_before'] = data.apply(lambda row: self.pos_before(row, win_size_before), axis=1)
+        data['pos_after'] = data.apply(lambda row: self.pos_after(row, win_size_after), axis=1)
 
         data_single = data_orig[data_orig['term'].apply(lambda x: len(x.split(' ')) == 1)]
 
@@ -76,8 +76,7 @@ class Features(object):
         merged_after = merged_after.drop(
             columns=['pos_before', 'pos_after', 'position_y', 'label_y'])
 
-        merged_all = pd.merge(left=merged_before, right=merged_after, on=['docID', 'term_x', 'position_x'], how='inner')
-        merged_all = merged_all.drop(columns=['label_x_y'])
+        merged_all = pd.merge(left=merged_before, right=merged_after, on=['docID', 'term_x', 'position_x', 'label_x'], how='inner')
 
         merged_all.columns = ['docID', 'position', 'term', 'label', 'term_before', 'term_after']
         return merged_all
@@ -91,20 +90,20 @@ class Features(object):
         Takes the complete dataframe and returns an array of features
         [prefix_food_desc, contains_veggie_or_fruit]
         '''
-        term = 'term'
-        doc_id = 'docID'
-        position = 'position'
-        p_doc_id, p_term = None, None
+
         prefix_food_desc, suffix_food_desc, contains_veggie_or_fruit = [], [], []
-        
+
+        data_forpos = data_prune[['docID', 'position', 'term', 'label']]
         # join with original data to get positions
-        data = self.getPosBeforeAfter(1, 1, data_prune[[doc_id, position, 'term', 'label']], data_orig)
+        data = self.getPosBeforeAfter(1, 1, data_forpos, data_orig)
 
         # read list of words describing food
-        food_adj = pd.read_csv(path_adj)['words'].tolist()
+        food_adj = set(line.strip() for line in open(path_adj))
+        #food_adj = pd.read_csv(path_adj)['words'].tolist()
 
         # read list of vegetable and fruit names
-        veggie_and_fruit = pd.read_csv(path_veg)['words'].tolist()
+        veggie_and_fruit = set(line.strip() for line in open(path_veg))
+        #veggie_and_fruit = pd.read_csv(path_veg)['words'].tolist()
 
         # iterate over each row in the dataframe
         for index, row in data.iterrows():
@@ -119,8 +118,8 @@ class Features(object):
 
             # if any sub-string of the word is a vegetable or fruit name
             contains_veggie_or_fruit.append(0)
-            for s in self.getAllSubstrings(row[term]):
-                if s in veggie_and_fruit:
+            for s in row['term'].strip().split(' '): #self.getAllSubstrings(row['term']):
+                if s.lower() in veggie_and_fruit:
                     contains_veggie_or_fruit.pop()
                     contains_veggie_or_fruit.append(1)
                     break
@@ -129,7 +128,7 @@ class Features(object):
         data['hasDescriptiveSuffix'] = suffix_food_desc
         data['hasIngredient'] = contains_veggie_or_fruit
 
-        return pd.merge(left=data_prune, right=data, left_on=['docID', 'position'], right_on=['docID', 'position'])
+        return pd.merge(left=data_prune, right=data, left_on=['docID', 'position', 'term'], right_on=['docID', 'position', 'term'])
 
     def getAllSubstrings(self, word):
         tok = word.strip().split(' ')
@@ -152,7 +151,7 @@ class Features(object):
         for row in reader:
             prefix_suffix.add((row[0], row[1]))
 
-        data_pos = self.getPosBeforeAfter(1, 1, data, data_orig)
+        data_pos = self.getPosBeforeAfter(0, 0, data, data_orig)
         data_pos['inPrefixSuffix'] = pd.Series(np.zeros(len(data_pos)), index=data_pos.index)
 
         for index, row in data_pos.iterrows():
@@ -163,27 +162,36 @@ class Features(object):
 
         return data_pos
 
-    def getAllFeatures(self, data, data_orig, prefixsuffixFile, path_adj, path_veg, saveTo, withRos):
+    def getAllFeatures(self, data, data_orig, prefixsuffixFile, path_adj, path_veg, saveTo, withRos, readFrom):
         '''
         :param data: pandas data frame
         :return: None
         Calculates all the features of the data
         '''
-        feat_list = ['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient']
 
-        data_prefsuff = self.getPrefixSuffixFeature(data, data_orig, prefixsuffixFile)
-        data_tf = self.calculateTF(data_prefsuff)
-        data_idf = self.calculateIDF(data_tf)
-        data_cap = self.isCapitalized(data_idf)
-        data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
-        data_final.to_csv(saveTo)
+        if readFrom:
+            data_final = pd.read_csv(readFrom)
+        else:
+            feat_list = ['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient']
+
+            data_prefsuff = self.getPrefixSuffixFeature(data, data_orig, prefixsuffixFile)
+            data_tf = self.calculateTF(data_prefsuff)
+            data_idf = self.calculateIDF(data_tf)
+            data_cap = self.isCapitalized(data_idf)
+            data_final = self.attachDictFeatures(data_cap, data_orig, path_adj, path_veg)
+
+            print (data_final.keys())
+            data_final = data_final.drop(columns=['label_y', 'term_before_y', 'term_after_y'])
+            data_final = data_final.drop_duplicates()
+
+            data_final.to_csv(saveTo)
 
         if withRos:
             ros = RandomOverSampler(random_state=42)
             self.features, self.labels = ros.fit_sample(data_final[feat_list], data_final[data_final.columns[3]])
-            return data_final
+            self.data_all = data_final.as_matrix()
         else:
             self.features = data_final.as_matrix(columns=['inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient'])
             self.labels = data_final.as_matrix(columns=['label_x'])
-            return data_final
-            
+            self.data_all = data_final.as_matrix()
+

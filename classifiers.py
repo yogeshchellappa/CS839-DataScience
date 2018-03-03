@@ -16,25 +16,26 @@ from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import precision_recall_fscore_support
 import numpy as np
+import pandas as pd
 
 class Data(object):
-    def __init__(self, train_features, train_labels, test_features, test_labels):
+    def __init__(self, data_all, train_features, train_labels, test_features, test_labels):
         self.train_data = []
         self.train_data_labels = []
         self.valid_data = []
         self.valid_data_labels = []
+        self.valid_data_all = []
 
         self.test_data = test_features
         self.test_data_labels = test_labels
 
         stratifiedsplit = StratifiedShuffleSplit(n_splits=5, test_size=0.20, random_state=42)
-
         for train_index, valid_index in stratifiedsplit.split(train_features, train_labels):
             self.train_data.append(train_features[train_index])
             self.train_data_labels.append(train_labels[train_index])
             self.valid_data.append(train_features[valid_index])
             self.valid_data_labels.append(train_labels[valid_index])
-
+            self.valid_data_all.append(data_all[valid_index])
 
 class Classifiers(object):
     def __init__(self, data):
@@ -45,6 +46,8 @@ class Classifiers(object):
         self.test_data = data.test_data
         self.test_data_labels = data.test_data_labels
         self.folds = 5
+
+        self.data_all = data.valid_data_all
 
     def print_report(self, scores):
         print ('Classification report - ')
@@ -82,6 +85,17 @@ class Classifiers(object):
 
         print (matrix)
 
+    def print_output(self, pred):
+        for i in range(len(pred)):
+            self.data_all[i] = np.insert(self.data_all[i], self.data_all[i].shape[-1]-1, pred[i], axis=1)
+        #print (self.data_all[0][0], self.valid_data[0][0])
+        towrite = np.stack((self.data_all[i] for i in range(len(pred))), axis=0)
+        towrite = np.reshape(towrite, newshape=(towrite.shape[0]*towrite.shape[1], towrite.shape[2]))
+        #print (towrite)
+        df = pd.DataFrame(towrite, columns = ['docID', 'position', 'term', 'label_x', 'term_before_x', 'term_after_x', 'inPrefixSuffix', 'tf', 'idf', 'isCapitalized', 'hasDescriptivePrefix', 'hasDescriptiveSuffix', 'hasIngredient', 'pred_label'])
+        df['true=pred'] = df.apply(lambda row: row['label_x'] == row['pred_label'], axis=1)
+        df = df.drop_duplicates()
+        df.to_csv('output.csv', index=None)
 
     def svm_classify(self, kernel='linear', max_iter=10, *kwargs):
         svc = SVC(kernel=kernel, max_iter=max_iter)
@@ -103,7 +117,7 @@ class Classifiers(object):
             accuracy += valid_acc
 
         self.print_report(scores)
-        self.print_confusion_matrix(pred, self.valid_data_labels)
+        self.print_confusion_matrix(self.valid_data_labels, pred)
         cv_acc = 1.0*accuracy/self.folds
 
         print ('Cross validated accuracy - %f' %cv_acc)
@@ -129,7 +143,7 @@ class Classifiers(object):
             accuracy += valid_acc
 
         self.print_report(scores)
-        self.print_confusion_matrix(pred, self.valid_data_labels)
+        self.print_confusion_matrix(self.valid_data_labels, pred)
         cv_acc = 1.0 * accuracy / self.folds
         print ('Cross validated accuracy - %f' % cv_acc)
         print ('-----------------------------')
@@ -150,14 +164,14 @@ class Classifiers(object):
             valid_acc = linReg.score(self.valid_data[f], self.valid_data_labels[f])
             valid_pred = linReg.predict(self.valid_data[f])
 
-            pred.append(valid_pred)
             valid_pred = (valid_pred>0.5).astype(int)
+            pred.append(valid_pred)
             scores.append(precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
 
             accuracy += valid_acc
 
         self.print_report(scores)
-        self.print_confusion_matrix(pred, self.valid_data_labels)
+        self.print_confusion_matrix(self.valid_data_labels, pred)
         cv_acc = 1.0 * accuracy / self.folds
         print ('Cross validated accuracy - %f' % cv_acc)
         print ('-----------------------------')
@@ -185,7 +199,7 @@ class Classifiers(object):
             accuracy += valid_acc
 
         self.print_report(scores)
-        self.print_confusion_matrix(pred, self.valid_data_labels)
+        self.print_confusion_matrix(self.valid_data_labels, pred)
         print('Feature importance (higher => more important')
         print(randForest.feature_importances_)
         cv_acc = 1.0 * accuracy / self.folds
@@ -212,11 +226,12 @@ class Classifiers(object):
 
             pred.append(valid_pred)
             scores.append(precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
-
+            print (precision_recall_fscore_support(self.valid_data_labels[f], valid_pred))
             accuracy += valid_acc
 
         self.print_report(scores)
-        self.print_confusion_matrix(pred, self.valid_data_labels)
+        self.print_confusion_matrix(self.valid_data_labels, pred)
+        self.print_output(pred)
 		
         test_pred = decTree.predict(self.test_data)
         print("TEST DATA")
@@ -251,7 +266,7 @@ class Classifiers(object):
             accuracy += valid_acc
 
         self.print_report(scores)
-        self.print_confusion_matrix(pred, self.valid_data_labels)
+        self.print_confusion_matrix(self.valid_data_labels, pred)
         cv_acc = 1.0 * accuracy / self.folds
         print ('Cross validated accuracy - %f' % cv_acc)
         print ('-----------------------------')

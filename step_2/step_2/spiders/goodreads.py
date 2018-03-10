@@ -6,7 +6,7 @@ from scrapy.exceptions import CloseSpider
 
 class GoodReadsSpider(scrapy.Spider):
     counter = 0
-    max_count = 25
+    max_count = 3000
     name = "goodreads"
 
     def start_requests(self):
@@ -52,7 +52,8 @@ class GoodReadsSpider(scrapy.Spider):
                 'book_format': book_format,
                 'count_pages': count_pages,
                 'publisher': publisher,
-                'date_published': date_published
+                'date_published': date_published,
+                'source': response.url
             }
 
 

@@ -27,7 +27,7 @@ CONCURRENT_REQUESTS = 1
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 5
+DOWNLOAD_DELAY = 2.5
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 CONCURRENT_REQUESTS_PER_IP = 1
@@ -77,9 +77,9 @@ AUTOTHROTTLE_ENABLED = True
 AUTOTHROTTLE_MAX_DELAY = 120
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-AUTOTHROTTLE_TARGET_CONCURRENCY = 0.03
+AUTOTHROTTLE_TARGET_CONCURRENCY = 0.25
 # Enable showing throttling stats for every response received:
-AUTOTHROTTLE_DEBUG = False
+AUTOTHROTTLE_DEBUG = True
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings

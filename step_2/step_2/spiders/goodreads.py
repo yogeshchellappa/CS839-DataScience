@@ -1,6 +1,7 @@
-import scrapy
-import re
 from datetime import datetime
+
+import re
+import scrapy
 from scrapy.exceptions import CloseSpider
 
 
@@ -11,7 +12,8 @@ class GoodReadsSpider(scrapy.Spider):
 
     def start_requests(self):
         urls = [
-            'https://www.goodreads.com/search?page=1&q=fiction&tab=books'
+            'https://www.goodreads.com/search?utf8=%E2%9C%93&q=fantasy&search_type=books',
+            'https://www.goodreads.com/search?utf8=%E2%9C%93&q=adventure&search_type=books'
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
@@ -31,30 +33,38 @@ class GoodReadsSpider(scrapy.Spider):
         if self.counter > self.max_count:
             raise CloseSpider('Finished scraping %s pages' % self.max_count)
         else:
-            book_id = re.split("^(.*)(show\/)([0-9]*)(.*)$", response.url)[3]
-            book_name = response.xpath("//h1[@id='bookTitle']/text()").extract()[0].strip()
-            book_name_alt = response.xpath(
-                "//div[@id='bookDataBox']/div[@class='clearFloats']/div[@class='infoBoxRowItem']/text()").extract()[
-                0].strip()
-            author = response.xpath("//a[@class='authorName']/span/text()").extract()[0].strip()
-            avg_rating = response.xpath("//span[@class='average']/text()").extract()[0].strip()
-            book_format = response.xpath("//span[@itemprop='bookFormat']/text()").extract()[0].strip()
-            count_pages = to_int(response.xpath("//span[@itemprop='numberOfPages']/text()").extract())
-            publisher, date_published = extract_info(
-                response.xpath("//div[@id='details']/div[@class='row'][2]/text()").extract()[0])
-            self.counter += 1
-            yield {
-                'id': 'gr_%s' % book_id,
-                'book_name': book_name,
-                'book_name_alt': book_name_alt,
-                'author': author,
-                'avg_rating': avg_rating,
-                'book_format': book_format,
-                'count_pages': count_pages,
-                'publisher': publisher,
-                'date_published': date_published,
-                'source': response.url
-            }
+            try:
+                book_id = re.split("^(.*)(show\/)([0-9]*)(.*)$", response.url)[3]
+                book_name = get_first(response.xpath("//h1[@id='bookTitle']/text()").extract())
+                book_name_alt = get_first(response.xpath(
+                    "//div[@id='bookDataBox']/div[@class='clearFloats']/div[@class='infoBoxRowItem']/text()").extract())
+                author = get_first(response.xpath("//a[@class='authorName']/span/text()").extract())
+                avg_rating = get_first(response.xpath("//span[@class='average']/text()").extract())
+                book_format = get_first(response.xpath("//span[@itemprop='bookFormat']/text()").extract())
+                count_pages = to_int(response.xpath("//span[@itemprop='numberOfPages']/text()").extract())
+                publisher, date_published = extract_attrs(
+                    response.xpath("//div[@id='details']/div[@class='row'][2]/text()").extract())
+                self.counter += 1
+                self.log('[INFO] Captured URL #{} : {}'.format(self.counter, response.url))
+                yield {
+                    'id': 'gr_%s' % book_id,
+                    'book_name': book_name,
+                    'book_name_alt': book_name_alt,
+                    'author': author,
+                    'avg_rating': avg_rating,
+                    'book_format': book_format,
+                    'count_pages': count_pages,
+                    'publisher': publisher,
+                    'date_published': date_published,
+                    'source': response.url
+                }
+            except Exception as e:
+                self.log('[WARN] Skipping URL: {}'.format(response.url))
+                self.log(e)
+
+
+def get_first(l):
+    return l[0].strip() if len(l) else None
 
 
 def to_int(param):
@@ -64,10 +74,19 @@ def to_int(param):
         return -1
 
 
-def extract_info(param):
-    m = re.split("^(Published)(.*)( by )(.*)$", re.sub('\s+', ' ', param).strip())
-    return m[4].strip(), to_date(m[2]) if len(m[2]) > 0 else None
+def extract_attrs(param):
+    p_split = re.split("^(Published)(.*)( by )(.*)$", re.sub('\s+', ' ', param[0]).strip()) if len(param) else []
+    if len(p_split) > 4:
+        return p_split[4].strip(), to_date(p_split[2])
+    else:
+        return None, None
 
 
 def to_date(param):
-    return datetime.strptime(re.sub(r'([0-9])+(th|nd|rd|st)', r'\1', param).strip(), "%B %d %Y")
+    if len(param):
+        try:
+            return datetime.strptime(re.sub(r'([0-9]+)(th|nd|rd|st)', r'\1', param).strip(), "%B %d %Y")
+        except ValueError:
+            return datetime.strptime(param.strip(), "%B %Y")
+    else:
+        return None

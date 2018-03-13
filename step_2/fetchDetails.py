@@ -210,9 +210,6 @@ def main(amazonBooksJson, existingIDs, cleanDB, startRange, endRange):
 	# Add the cleaned output to DB
 	cleanJsonAndAddToSource(outputFile, cleanDB)
 	
-	# Handle retries
-	
-	
 		
 if __name__ == "__main__":
 	if len(sys.argv) < 5:

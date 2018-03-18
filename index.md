@@ -1,5 +1,4 @@
 # Lord of the Fries
-Extracting food items as entities from Yelp reviews. 
 
 ## Members: 
 * Shantanu Singhal (singhal5@wisc.edu)

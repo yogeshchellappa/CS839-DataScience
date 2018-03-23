@@ -16,9 +16,7 @@
 
 
 ## Stage 2 - Data Extraction from Web Sources
-* [Table A (Amazon)](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/source1.csv)
-* [Table B (Goodreads)](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/source2.csv)
-  * [README](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/README.md)
-* [Code for Table A](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step_2/AmazonCrawlerCode)
-* [Code for Table B](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/step_2/spiders/goodreads.py)
+* [DATA](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step_2/DATA)
+  * [README](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/DATA/README.md)
+* [CODE](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step_2/CODE)
 * [Stage 2 Report](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/Report%20-%20Stage%202.pdf)

@@ -38,5 +38,24 @@ def main():
     source_1.to_csv('source1_cleaned.csv', index=False)
     source_2.to_csv('source2_cleaned.csv', index=False)
 
+def getNonOverlaps():
+    source_1 = pd.read_csv('source1_cleaned.csv')
+    source_2 = pd.read_csv('source2_cleaned.csv')
+
+    source_1['Name'] = source_1.apply(lambda row : row['Name'].lower() if row['Name'] != np.nan else row['Name'], axis=1)
+    source_2['Name'] = source_2.apply(lambda row: row['Name'].lower() if row['Name'] != np.nan else row['Name'], axis=1)
+
+    joined = pd.merge(left=source_1, right=source_2, on=['Name'], how='inner')
+
+    print ('Number of unique books in common')
+    print (len(set(joined.ID_x)), len(set(joined.ID_y)))
+
+    with open('nonoverlap_source1.txt', 'w+') as f:
+        f.write(str(list(set(source_1.ID) - set(joined.ID_x))))
+
+    with open('nonoverlap_source2.txt', 'w+') as f:
+        f.write(str(list(set(source_2.ID) - set(joined.ID_y))))
+
 if __name__ == "__main__":
     main()
+    getNonOverlaps()

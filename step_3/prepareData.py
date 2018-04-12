@@ -50,10 +50,10 @@ def getNonOverlaps():
     print ('Number of unique books in common')
     print (len(set(joined.ID_x)), len(set(joined.ID_y)))
 
-    with open('nonoverlap_source1.txt', 'w+') as f:
+    with open('nonoverlap_source1.txt', 'w') as f:
         f.write(str(list(set(source_1.ID) - set(joined.ID_x))))
 
-    with open('nonoverlap_source2.txt', 'w+') as f:
+    with open('nonoverlap_source2.txt', 'w') as f:
         f.write(str(list(set(source_2.ID) - set(joined.ID_y))))
 
 if __name__ == "__main__":

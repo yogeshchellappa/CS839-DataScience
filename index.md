@@ -20,3 +20,10 @@
   * [README](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/DATA/README.md)
 * [CODE](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step_2/CODE)
 * [Stage 2 Report](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_2/Project%20Report.pdf)
+
+
+## Stage 3 - Entity Matching
+* [DATA](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step_3/DATA)
+  * [README](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_3/DATA/README.md)
+* [CODE](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step_3/CODE)
+* [Stage 3 Report](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_3/Project%20Report.pdf)

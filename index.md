@@ -32,3 +32,10 @@
 * [CODE](https://github.com/yogeshchellappa/CS839-DataScience/tree/master/step_3/Code)
   * [Jupyter Notebook](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_3/Code/Stage%203%20-%20Jupyter%20Notebook.ipynb)
 * [Stage 3 Report](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_3/Project%20Report.pdf)
+
+
+## Stage 4 - Data Merging and Analysis
+* [Table E](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_4/Code/E.csv)
+* [Matches between A and B](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_4/Code/merged.csv)
+* [Merging Script](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_4/Code/merger.py)
+* [Stage 4 Report](https://github.com/yogeshchellappa/CS839-DataScience/blob/master/step_4/Project%20Report.pdf)
